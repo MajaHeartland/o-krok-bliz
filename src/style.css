@@ -17,7 +17,7 @@ body {
 }
 
 .hero-section h5 {
-  margin: 8px auto 0 auto;
+  margin: 8px auto 31px auto;
   font-weight: 600;
   font-size: 1.25rem;
   color: #0db3b3;
@@ -33,7 +33,7 @@ body {
 
 .hero-section .hero-image-container p {
   margin: 0;
-  padding: 72px 45px 0;
+  padding: 41px 45px 0;
   font-size: 1.0625rem;
   line-height: 176%;
   font-weight: 600;
