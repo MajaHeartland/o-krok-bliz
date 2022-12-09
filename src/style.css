@@ -64,3 +64,12 @@ body {
   border-radius: 27px;
   border: none;
 }
+
+.hero-section .hero-outro p {
+  margin: 24px auto 0;
+  padding: 0 24px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 176%;
+  color: #264747;
+}
