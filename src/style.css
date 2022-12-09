@@ -58,7 +58,7 @@ body {
 }
 
 .hero-section .hero-image-container button {
-  margin: 24px auto 0;
+  margin: 24px auto 31px;
   padding: 14px 55px;
   font-weight: 600;
   font-size: 1.0625rem;
