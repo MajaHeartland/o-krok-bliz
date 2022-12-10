@@ -27,6 +27,12 @@ h3 {
   line-height: 176%;
 }
 
+.line {
+  background: #fabd45;
+  border: none;
+  height: 1px;
+}
+
 .hero-section {
   margin-top: 65px;
 }
@@ -108,9 +114,6 @@ h3 {
 }
 .co-je-to-koucink .line {
   margin: 32px auto 0;
-  background: #fabd45;
-  border: none;
-  height: 1px;
 }
 
 @media (max-width: 360px) {
@@ -127,4 +130,13 @@ h3 {
   .hero-section .hero-image-container button {
     padding: 14px 30px;
   }
-} ;
+}
+
+button.dropdown-toggle {
+  border: none;
+  background: transparent;
+  display: flex;
+}
+button.dropdown-toggle::after {
+  display: none !important;
+}
