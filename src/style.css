@@ -111,3 +111,9 @@ h3 {
   border: none;
   height: 1px;
 }
+
+@media (max-width: 360px) {
+  .hero-section .hero-image-container button {
+    padding: 14px 30px;
+  }
+} ;
