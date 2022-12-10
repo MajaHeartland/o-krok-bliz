@@ -3,6 +3,9 @@
 body {
   font-family: "Inter", sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -91,6 +94,7 @@ h3 {
 
 .co-je-to-koucink {
   background: linear-gradient(#fff, #e1f8f8);
+  padding: 0 24px;
 }
 
 .co-je-to-koucink h2 {
