@@ -93,8 +93,9 @@ h3 {
 }
 
 .co-je-to-koucink {
-  background: linear-gradient(#fff, #e1f8f8);
+  background-image: url(img/gradient-background.svg);
   padding: 0 24px;
+  min-height: 730px;
 }
 
 .co-je-to-koucink h2 {
