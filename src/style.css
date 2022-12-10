@@ -113,6 +113,13 @@ h3 {
 }
 
 @media (max-width: 360px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+  .hero-section .hero-image-container p {
+    font-size: 1rem;
+    padding: 41px 10px 0;
+  }
   .hero-section .hero-image-container button {
     padding: 14px 30px;
   }
