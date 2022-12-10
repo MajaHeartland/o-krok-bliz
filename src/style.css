@@ -89,6 +89,10 @@ h3 {
   padding: 0 24px;
 }
 
+.co-je-to-koucink {
+  background: linear-gradient(#fff, #e1f8f8);
+}
+
 .co-je-to-koucink h2 {
   margin: 56px auto 0;
 }
