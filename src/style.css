@@ -122,7 +122,11 @@ h3 {
   border: none;
   background: transparent;
   display: flex;
+
+  justify-content: space-between;
+  width: 100%;
 }
+
 .s-cim-mohu-pomoci button.dropdown-toggle::after {
   display: none !important;
 }
