@@ -20,6 +20,12 @@ h3 {
   color: #008080;
 }
 
+h4 {
+  font-weight: 600;
+  font-size: 17px;
+  color: #264747;
+}
+
 .mobile-body {
   margin: 0;
   font-size: 1.0625rem;
@@ -122,13 +128,25 @@ h3 {
   border: none;
   background: transparent;
   display: flex;
-
-  justify-content: space-between;
   width: 100%;
 }
 
 .s-cim-mohu-pomoci button.dropdown-toggle::after {
   display: none !important;
+}
+
+.proc-zkusit-koucink {
+  background-image: url(img/gradient-background.svg);
+}
+
+.proc-zkusit-koucink button {
+  background: linear-gradient(90deg, #00adad 0%, #008080 100%);
+  border-radius: 26px;
+  padding: 14px 61.5px;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
 }
 
 @media (max-width: 360px) {
