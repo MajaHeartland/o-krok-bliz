@@ -164,6 +164,19 @@ h4 {
   border: none;
 }
 
+.pojdme-se-poznat h2.blue {
+  color: #008080;
+}
+
+.pojdme-se-poznat h3.dark-blue {
+  color: #264747;
+  text-align: left;
+}
+
+.pojdme-se-poznat p {
+  text-align: left;
+}
+
 @media (max-width: 360px) {
   .mobile-body {
     font-size: 1rem;
