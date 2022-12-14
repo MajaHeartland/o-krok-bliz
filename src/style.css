@@ -137,6 +137,20 @@ h4 {
 
 .proc-zkusit-koucink {
   background-image: url(img/gradient-background.svg);
+  margin-top: 56px;
+  padding: 0 24px;
+}
+
+.proc-zkusit-koucink .icon {
+  margin-bottom: 8px;
+}
+
+.proc-zkusit-koucink h4 {
+  margin-bottom: 16px;
+}
+
+.proc-zkusit-koucink .mobile-body {
+  margin-bottom: 32px;
 }
 
 .proc-zkusit-koucink button {
