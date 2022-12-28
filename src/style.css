@@ -26,6 +26,13 @@ h4 {
   color: #264747;
 }
 
+button {
+  padding: 14px 61.5px;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+}
 .mobile-body {
   margin: 0;
   font-size: 1.0625rem;
@@ -91,13 +98,9 @@ h4 {
 
 .hero-section .hero-image-container button {
   margin: 24px auto 31px;
-  padding: 14px 55px;
-  font-weight: 600;
-  font-size: 1.0625rem;
   color: #264747;
   background: linear-gradient(90deg, #ffd480 0%, #fabd45 100%);
-  border-radius: 27px;
-  border: none;
+  border-radius: 26px;
 }
 
 .hero-section .hero-outro p {
@@ -129,6 +132,12 @@ h4 {
   background: transparent;
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.s-cim-mohu-pomoci button.dropdown-toggle img {
+  margin-left: 24px;
 }
 
 .s-cim-mohu-pomoci button.dropdown-toggle::after {
@@ -155,13 +164,8 @@ h4 {
 
 .proc-zkusit-koucink button {
   background: linear-gradient(90deg, #00adad 0%, #008080 100%);
-  border-radius: 26px;
-  padding: 14px 61.5px;
   margin-bottom: 65px;
-  color: white;
-  font-weight: 600;
-  font-size: 17px;
-  border: none;
+  border-radius: 26px;
 }
 
 .pojdme-se-poznat h2.blue {
@@ -171,10 +175,40 @@ h4 {
 .pojdme-se-poznat h3.dark-blue {
   color: #264747;
   text-align: left;
+  margin: 40px 24px;
 }
 
 .pojdme-se-poznat p {
   text-align: left;
+  margin: auto 24px;
+  font-size: 1.0625rem;
+  line-height: 176%;
+}
+
+.pojdme-se-poznat .poznej-mne-vic-button {
+  border-radius: 26px;
+  background: #264747;
+  padding: 14px 101.5px;
+  margin-top: 24px;
+}
+
+.pojdme-se-poznat .pojdme-se-potkat-button {
+  background: linear-gradient(90deg, #00adad 0%, #008080 100%);
+  border-radius: 26px;
+  padding: 14px 88.5px;
+  margin-top: 24px;
+}
+
+.zustanme-v-kontaktu {
+  padding: 40px 24px;
+}
+.zustanme-v-kontaktu,
+.zustanme-v-kontaktu .mobile-body {
+  background: #005656;
+  color: #def0f0;
+}
+.zustanme-v-kontaktu h2 {
+  color: #c0ebeb;
 }
 
 @media (max-width: 360px) {
