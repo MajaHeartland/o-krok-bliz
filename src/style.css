@@ -212,11 +212,19 @@ button.dropdown-toggle {
   background-color: #008080;
   color: white;
   text-align: left;
+  width: 222px;
+  border-radius: 26px;
+  padding: 24px;
 }
 .zkusenosti h3 {
   color: white;
+  margin-top: 16px;
 }
 
+.zkusenosti p {
+  font-size: 0.9375rem;
+  line-height: 133%;
+}
 .zustanme-v-kontaktu {
   padding: 40px 24px;
 }
