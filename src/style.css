@@ -33,6 +33,12 @@ button {
   font-size: 17px;
   border: none;
 }
+
+ul li {
+  color: #264747;
+  font-size: 1.0625rem;
+  line-height: 176%;
+}
 .mobile-body {
   margin: 0;
   font-size: 1.0625rem;
@@ -127,13 +133,16 @@ button {
   margin: 16px 0;
 }
 
-.s-cim-mohu-pomoci button.dropdown-toggle {
+button.dropdown-toggle {
   border: none;
   background: transparent;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: stretch;
+  box-shadow: #e1f8f8 0px 8px 24px;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .s-cim-mohu-pomoci button.dropdown-toggle img {
@@ -199,6 +208,15 @@ button {
   margin-top: 24px;
 }
 
+.zkusenosti .carousel-item {
+  background-color: #008080;
+  color: white;
+  text-align: left;
+}
+.zkusenosti h3 {
+  color: white;
+}
+
 .zustanme-v-kontaktu {
   padding: 40px 24px;
 }
@@ -209,6 +227,9 @@ button {
 }
 .zustanme-v-kontaktu h2 {
   color: #c0ebeb;
+}
+.zustanme-v-kontaktu .line {
+  background-color: #c0ebeb;
 }
 
 @media (max-width: 360px) {
