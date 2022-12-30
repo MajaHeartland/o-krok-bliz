@@ -133,16 +133,20 @@ ul li {
   margin: 16px 0;
 }
 
-button.dropdown-toggle {
+.s-cim-mohu-pomoci button.dropdown-toggle {
   border: none;
   background: transparent;
   display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: stretch;
-  box-shadow: #e1f8f8 0px 8px 24px;
-  width: 80vw;
+  align-items: baseline;
+  justify-content: center;
+  box-shadow: #e1f8f8 0px 4px 6px;
   margin: 0 auto;
+  width: 80vw;
+  border-radius: 16px;
+}
+
+.s-cim-mohu-pomoci h3 {
+  font-size: 1.25rem;
 }
 
 .s-cim-mohu-pomoci button.dropdown-toggle img {
@@ -177,6 +181,11 @@ button.dropdown-toggle {
   border-radius: 26px;
 }
 
+.jak-koucink-probiha .carousel__track {
+  list-style: none;
+  padding: 0;
+}
+
 .pojdme-se-poznat h2.blue {
   color: #008080;
 }
@@ -208,7 +217,10 @@ button.dropdown-toggle {
   margin-top: 24px;
 }
 
-.zkusenosti .carousel-item {
+.zkusenosti {
+  margin: 56px auto;
+}
+.zkusenosti .carousel-inner {
   background-color: #008080;
   color: white;
   text-align: left;
@@ -216,6 +228,11 @@ button.dropdown-toggle {
   border-radius: 26px;
   padding: 24px;
 }
+
+.zkusenosti .carousel-item {
+  display: inline-block;
+}
+
 .zkusenosti h3 {
   color: white;
   margin-top: 16px;
@@ -224,6 +241,21 @@ button.dropdown-toggle {
 .zkusenosti p {
   font-size: 0.9375rem;
   line-height: 133%;
+}
+
+.zkusenosti .carousel-indicators {
+  position: absolute;
+  bottom: -50px;
+}
+.zkusenosti .carousel-indicators button {
+  background-color: #547474;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.zkusenosti .carousel-indicators .active {
+  background-color: #fabd45;
 }
 .zustanme-v-kontaktu {
   padding: 40px 24px;
@@ -238,6 +270,35 @@ button.dropdown-toggle {
 }
 .zustanme-v-kontaktu .line {
   background-color: #c0ebeb;
+}
+
+.otazky {
+  margin-top: 40px;
+}
+
+.otazky button.dropdown-toggle {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  box-shadow: #e1f8f8 0px 4px 6px;
+  margin: 0 auto;
+  width: 80vw;
+  border-radius: 16px;
+}
+
+.otazky h3 {
+  font-size: 1.0625rem;
+  color: #008080;
+}
+
+.otazky button.dropdown-toggle img {
+  margin-left: 24px;
+}
+
+.s-cim-mohu-pomoci button.dropdown-toggle::after {
+  display: none !important;
 }
 
 @media (max-width: 360px) {
