@@ -275,39 +275,7 @@ ul li {
 .zkusenosti {
   margin: 56px auto;
 }
-.zkusenosti .carousel-inner {
-  background-color: #008080;
-  color: white;
-  text-align: left;
-  width: 222px;
-  border-radius: 26px;
-  padding: 24px;
-}
 
-.zkusenosti h3 {
-  color: white;
-  margin-top: 16px;
-}
-
-.zkusenosti p {
-  font-size: 0.9375rem;
-  line-height: 133%;
-}
-
-.zkusenosti .carousel-indicators {
-  position: absolute;
-  bottom: -50px;
-}
-.zkusenosti .carousel-indicators button {
-  background-color: #547474;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.zkusenosti .carousel-indicators .active {
-  background-color: #fabd45;
-}
 .zustanme-v-kontaktu {
   padding: 40px 24px;
 }
