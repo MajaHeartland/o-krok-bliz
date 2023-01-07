@@ -33,8 +33,19 @@ button {
   font-weight: 600;
   font-size: 17px;
   border: none;
+  width: 327px;
+  margin: 0 auto;
 }
 
+.blue-button,
+.poznej-mne-vic-button {
+  border-radius: 26px;
+  margin-top: 24px;
+}
+
+.blue-button {
+  background: linear-gradient(90deg, #00adad 0%, #008080 100%);
+}
 ul li {
   color: #264747;
   font-size: 1.0625rem;
@@ -143,7 +154,7 @@ ul li {
   color: #e1f8f8;
 }
 
-.hero-section .hero-image-container button {
+.hero-section .hero-button {
   margin: 24px auto 31px;
   color: #264747;
   background: linear-gradient(90deg, #ffd480 0%, #fabd45 100%);
@@ -217,9 +228,7 @@ ul li {
 }
 
 .proc-zkusit-koucink button {
-  background: linear-gradient(90deg, #00adad 0%, #008080 100%);
   margin-bottom: 65px;
-  border-radius: 26px;
 }
 
 .jak-koucink-probiha .slide {
@@ -258,18 +267,13 @@ ul li {
   line-height: 176%;
 }
 
-.pojdme-se-poznat .poznej-mne-vic-button {
-  border-radius: 26px;
-  background: #264747;
-  padding: 14px 101.5px;
-  margin-top: 24px;
+.pojdme-se-poznat .faded {
+  /* background: linear-gradient(#000 20%, transparent 80%);
+  -webkit-background-clip: text; */
 }
 
-.pojdme-se-poznat .pojdme-se-potkat-button {
-  background: linear-gradient(90deg, #00adad 0%, #008080 100%);
-  border-radius: 26px;
-  padding: 14px 88.5px;
-  margin-top: 24px;
+.pojdme-se-poznat .poznej-mne-vic-button {
+  background: #264747;
 }
 
 .zkusenosti {
@@ -327,8 +331,8 @@ ul li {
     font-size: 1rem;
     padding: 41px 10px 0;
   }
-  .hero-section .hero-image-container button {
-    padding: 14px 30px;
+  .hero-section .hero-button {
+    max-width: fit-content;
   }
 }
 

@@ -27,7 +27,7 @@
           </p>
           <h2>Pojďme se potkat!</h2>
           <h4>Pomohu Ti udělat první krok.</h4>
-          <button>Úvodní setkání ZDARMA</button>
+          <button class="hero-button">Úvodní setkání ZDARMA</button>
           <div class="hero-outro big-screen d-none">
             <p class="mobile-body">
               Zajděme například na kávu, pojďme se projít nebo si jen zavolejme.
@@ -163,7 +163,7 @@
         Koučink Ti pomůže implementovat akční kroky a s použitím Tvých silných
         stránek dosahovat změn krok po kroku.
       </p>
-      <button>Domluvit setkání zdarma</button>
+      <button class="blue-button">Domluvit setkání zdarma</button>
     </section>
     <section class="jak-koucink-probiha">
       <h2>Jak koučink se mnou probíhá?</h2>
@@ -227,29 +227,31 @@
         management, kde mne nadchnul agilní způsob řízení projektů. A to mne
         dovedlo až k mé současné práci UX Designéra.
         <br />
-        <br />
-        Jenže mi k naplněnému životu stále něco chybělo. Díky koučování jsem si
-        znovu zvědomila, že mne více naplňuje napomáhat v rozvoji lidem, nežli
-        rozvíjet produkt (i když ten je taky pro lidi, že). A tak jsem
-        absolbovala certifikovaný koučovací výcvik u Ing. Jiřího Kunčara PCC
-        (ICF).
-        <br />
-        <br />
-        Do koučování zapojuji znalosti z UX Designu a agilního vývoje produktu -
-        pojďmě pomocí malých změn postupně vylepšovat i Tvůj život! Ale řekněme
-        si to na rovinu. Pokud sám/a něco nechceš změnit, já Ti nepomůžu.
-        <br />
-        <br />
-        Vím, že důvěra se nevytvoří lusknutím prstu, a proto je zachování
-        mlčenlivosti samozřejmostí a koučování probíhá v souladu s etickým
-        kodexem ICF.
-        <br />
-        <br />
-        Abych Tě na Tvé ceste mohla správně doprovázet, i pro mne je důležité,
-        abychom si “sedli”. Proto je úvodní setkání zdarma.
+        <br /><span class="d-none">
+          Jenže mi k naplněnému životu stále něco chybělo. Díky koučování jsem
+          si znovu zvědomila, že mne více naplňuje napomáhat v rozvoji lidem,
+          nežli rozvíjet produkt (i když ten je taky pro lidi, že). A tak jsem
+          absolbovala certifikovaný koučovací výcvik u Ing. Jiřího Kunčara PCC
+          (ICF).
+          <br />
+          <br />
+          Do koučování zapojuji znalosti z UX Designu a agilního vývoje produktu
+          - pojďmě pomocí malých změn postupně vylepšovat i Tvůj život! Ale
+          řekněme si to na rovinu. Pokud sám/a něco nechceš změnit, já Ti
+          nepomůžu.
+          <br />
+          <br />
+          Vím, že důvěra se nevytvoří lusknutím prstu, a proto je zachování
+          mlčenlivosti samozřejmostí a koučování probíhá v souladu s etickým
+          kodexem ICF.
+          <br />
+          <br />
+          Abych Tě na Tvé ceste mohla správně doprovázet, i pro mne je důležité,
+          abychom si “sedli”. Proto je úvodní setkání zdarma.</span
+        >
       </p>
       <button class="poznej-mne-vic-button">Poznej mne víc</button>
-      <button class="pojdme-se-potkat-button">Pojďme se potkat!</button>
+      <button class="blue-button">Pojďme se potkat!</button>
     </section>
 
     <section class="zkusenosti">
@@ -431,6 +433,29 @@
         Pokud cítíš, že bychom si “sedli”,tak mi napiš. Do 48 h se Ti ozvu a
         domluvíme se na termínu.
       </p>
+      <form
+        action="https://formsubmit.co/maja.ditrtova@outlook.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Koučink-Rezervace" />
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Jméno a příjmení"
+          required
+        />
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input
+          type="text"
+          name="topic"
+          placeholder="Co bys chtěl/a probrat?"
+          required
+        />
+        <button class="blue-button d-block" id="form-button" type="submit">
+          Odeslat Rezervaci
+        </button>
+      </form>
     </section>
     <section class="sam-sobe-koucem">
       <h2>Sám sobě koučem</h2>
@@ -495,17 +520,24 @@
         <img
           src="/src/icons/email.svg"
           alt="email-icon"
+          class="p-3"
         />koucink@terezaneradova.cz
       </div>
       <br />
       <div class="linkedin">
-        <img src="/src/icons/linkedin.svg" alt="linkedin-iicon" />Zjisti o mne
-        více
+        <img
+          src="/src/icons/linkedin.svg"
+          alt="linkedin-icon"
+          class="p-3"
+        />Zjisti o mne více
       </div>
       <br />
       <div class="instagram">
-        <img src="/src/icons/instagram.svg" alt="instagram-icon" />Čekuj mě na
-        Instáči
+        <img
+          src="/src/icons/instagram.svg"
+          alt="instagram-icon"
+          class="p-3"
+        />Čekuj mě na Instáči
       </div>
       <hr class="line" width="48px" />
       <p class="mobile-body">
