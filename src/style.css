@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+:root {
+  --primary-default: #008080;
+  --secondary-default: #264747;
+  --primary-light: #0db3b3;
+  --primary-ultralight: #e1f8f8;
+  --secondary-ultralight: #def0f0;
+  --primary-verylight: #c0ebeb;
+  --yellow-light: #fabd45;
+  --primary-dark: #005656;
+}
+/* defaults */
 body {
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -7,31 +18,31 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+h2,
+h4 {
+  color: var(--secondary-default);
+}
 
-/* default */
 h2 {
   font-size: 1.625rem;
   font-weight: 700;
-  color: #264747;
 }
 
 h3 {
   font-weight: 700;
   font-size: 1.25rem;
-  color: #008080;
+  color: var(--primary-default);
 }
 
-h4 {
+h4,
+button {
   font-weight: 600;
-  font-size: 17px;
-  color: #264747;
+  font-size: 1.0625rem;
 }
 
 button {
   padding: 14px 61.5px;
   color: white;
-  font-weight: 600;
-  font-size: 17px;
   border: none;
   width: 327px;
   margin: 0 auto;
@@ -46,21 +57,15 @@ button {
 .blue-button {
   background: linear-gradient(90deg, #00adad 0%, #008080 100%);
 }
-ul li {
-  color: #264747;
-  font-size: 1.0625rem;
-  line-height: 176%;
-}
+ul li,
 .mobile-body {
-  margin: 0;
+  color: var(--secondary-default);
   font-size: 1.0625rem;
-  font-weight: 400;
-  color: #264747;
   line-height: 176%;
 }
 
 .line {
-  background: #fabd45;
+  background: var(--yellow-light);
   border: none;
   height: 1px;
   margin: 32px auto;
@@ -88,7 +93,7 @@ ul li {
 }
 
 .slide {
-  background-color: #008080;
+  background-color: var(--primary-default);
   color: white;
   text-align: left;
   border-radius: 26px;
@@ -113,7 +118,7 @@ ul li {
   margin: 0 auto 0 auto;
   font-weight: 500;
   font-size: 2.125rem;
-  color: #008080;
+  color: var(--primary-default);
   letter-spacing: 0.04em;
 }
 
@@ -121,7 +126,7 @@ ul li {
   margin: 8px auto 31px auto;
   font-weight: 600;
   font-size: 1.25rem;
-  color: #0db3b3;
+  color: var(--primary-light);
   letter-spacing: 0.04em;
 }
 
@@ -137,7 +142,7 @@ ul li {
   font-size: 1.0625rem;
   line-height: 176%;
   font-weight: 600;
-  color: #def0f0;
+  color: var(--secondary-ultralight);
 }
 
 .hero-section .hero-image-container h2 {
@@ -151,12 +156,12 @@ ul li {
   margin: 8px auto 0;
   font-size: 1.0625rem;
   font-weight: 600;
-  color: #e1f8f8;
+  color: var(--primary-ultralight);
 }
 
 .hero-section .hero-button {
   margin: 24px auto 31px;
-  color: #264747;
+  color: var(--secondary-default);
   background: linear-gradient(90deg, #ffd480 0%, #fabd45 100%);
   border-radius: 26px;
 }
@@ -191,7 +196,7 @@ ul li {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
-  box-shadow: #e1f8f8 0px 4px 6px;
+  box-shadow: var(--primary-ultralight) 0px 4px 6px;
   margin: 0 auto;
   width: 80vw;
   border-radius: 16px;
@@ -240,22 +245,22 @@ ul li {
 }
 
 .jak-koucink-probiha .slide h3 {
-  color: #008080;
+  color: var(--primary-default);
   padding-right: 50%;
   padding-left: 24px;
 }
 
 .jak-koucink-probiha .slide p {
-  color: #264747;
+  color: var(--secondary-default);
   padding: 16px 24px 0;
 }
 
 .pojdme-se-poznat h2.blue {
-  color: #008080;
+  color: var(--primary-default);
 }
 
 .pojdme-se-poznat h3.dark-blue {
-  color: #264747;
+  color: var(--secondary-default);
   text-align: left;
   margin: 40px 24px;
 }
@@ -273,7 +278,7 @@ ul li {
 }
 
 .pojdme-se-poznat .poznej-mne-vic-button {
-  background: #264747;
+  background: var(--secondary-default);
 }
 
 .zkusenosti {
@@ -285,14 +290,14 @@ ul li {
 }
 .zustanme-v-kontaktu,
 .zustanme-v-kontaktu .mobile-body {
-  background: #005656;
-  color: #def0f0;
+  background: var(--primary-dark);
+  color: var(--secondary-ultralight);
 }
 .zustanme-v-kontaktu h2 {
-  color: #c0ebeb;
+  color: var(--primary-verylight);
 }
 .zustanme-v-kontaktu .line {
-  background-color: #c0ebeb;
+  background-color: var(--primary-verylight);
 }
 
 .otazky {
@@ -305,7 +310,7 @@ ul li {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  box-shadow: #e1f8f8 0px 4px 6px;
+  box-shadow: var(--primary-ultralight) 0px 4px 6px;
   margin: 0 auto;
   width: 80vw;
   border-radius: 16px;
@@ -313,7 +318,7 @@ ul li {
 
 .otazky h3 {
   font-size: 1.0625rem;
-  color: #008080;
+  color: var(--primary-default);
 }
 
 .otazky button.dropdown-toggle img {
