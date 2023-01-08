@@ -12,6 +12,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
     <section class="hero-section">
@@ -176,8 +181,8 @@
     <section class="jak-koucink-probiha">
       <h2 class="mobile-h2">Jak koučink se mnou probíhá?</h2>
       <hr class="line" width="48px" />
-      <div class="slider-container">
-        <div data-slide="1" class="slide">
+      <div class="main-carousel slider-container">
+        <div class="slide cell">
           <h3 class="jak-koucink-probiha__carousel-heading">
             Úvodní setkání zdarma
           </h3>
@@ -187,7 +192,7 @@
             se obě strany cítily dobře.
           </p>
         </div>
-        <div data-slide="2" class="slide">
+        <div class="slide cell">
           <h3 class="jak-koucink-probiha__carousel-heading">
             První hodina koučování
           </h3>
@@ -197,7 +202,7 @@
             najdeš odpovědi na tvoje otázky a stanovíš si akční kroky.
           </p>
         </div>
-        <div data-slide="3" class="slide">
+        <div class="slide cell">
           <h3 class="jak-koucink-probiha__carousel-heading">Další koučování</h3>
           <p class="jak-koucink-probiha__carousel-text">
             Za jak dlouho se potkáme i jaké téma si budeš chtít řešit, je čistě
@@ -206,7 +211,7 @@
             po 14 dnech. Ideálně ve stejný den a čas.
           </p>
         </div>
-        <div data-slide="4" class="slide">
+        <div class="slide cell">
           <h3 class="jak-koucink-probiha__carousel-heading">A co dál?</h3>
           <p class="jak-koucink-probiha__carousel-text">
             Principy koučování, které si na setkáních ukážeme, můžeš využít i ve
@@ -215,13 +220,8 @@
           </p>
         </div>
       </div>
-      <div class="pagination-container">
-        <div data-page="1" class="page active-page"></div>
-        <div data-page="2" class="page"></div>
-        <div data-page="3" class="page"></div>
-        <div data-page="4" class="page"></div>
-      </div>
     </section>
+
     <section class="pojdme-se-poznat">
       <h2 class="mobile-h2">Pojďme se trochu poznat</h2>
       <h2 class="mobile-h2 blue">Ahoj, těší mě</h2>
@@ -569,7 +569,14 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+      $(".main-carousel").flickity({
+        // options
+        cellAlign: "left",
+        contain: true,
+      });
+    </script>
     <script src="/src/script.js"></script>
   </body>
 </html>
