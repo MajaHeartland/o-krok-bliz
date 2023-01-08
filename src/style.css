@@ -133,7 +133,7 @@ button {
   text-align: left;
   padding: 48px 24px 0;
   min-height: 100%;
-  margin: auto 10px;
+  /* margin: auto 10px; */
 }
 
 .dot {
