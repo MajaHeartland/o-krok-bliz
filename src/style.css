@@ -246,32 +246,33 @@ button {
   display: none;
 }
 
+.slider-container {
+  margin-bottom: 50px;
+}
 .cell {
   width: 222px;
   border-radius: 26px;
   text-align: left;
   background-color: white;
-  box-shadow: 0px 4px 16px rgba(0, 128, 128, 0.1);
+  box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
   background-image: url(./icons/01.svg);
   background-repeat: no-repeat;
   padding: 48px 24px 0;
+  /* min-height: 415px; */
+  margin: auto 10px;
+}
+
+.dot {
+  background-color: var(--secondary-light);
+}
+
+.dot.is-selected {
+  background-color: var(--yellow-light) !important;
 }
 
 .jak-koucink-probiha__carousel-heading {
   padding-right: 50%;
 }
-
-/* .jak-koucink-probiha .slide {
-  background-color: white;
-  box-shadow: 0px 4px 16px rgba(0, 128, 128, 0.1);
-  background-image: url(./icons/01.svg);
-  background-repeat: no-repeat;
-  padding: 48px 24px 0;
-}
-
-.jak-koucink-probiha__carousel-heading {
-  padding-right: 50%;
-} */
 
 .pojdme-se-poznat h3.dark-blue {
   text-align: left;
@@ -383,34 +384,4 @@ button {
   .slider-container {
     grid-template-columns: repeat(4, 222px);
   }
-}
-/* 
-.pagination-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-  min-height: 100px;
-}
-
-.page {
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  background-color: var(--secondary-light);
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-.page:hover {
-  background-color: var(--yellow-light);
-}
-
-.active-page {
-  background-color: var(--yellow-light);
-} */
-
-.main-carousel {
-  width: 100%;
-  height: 100%;
 }
