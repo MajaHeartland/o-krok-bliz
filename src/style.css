@@ -119,6 +119,31 @@ button {
   background: var(--primary-verylight);
 }
 
+/* carousel */
+.flickity-button {
+  display: none;
+}
+
+.slider-container {
+  margin-bottom: 50px;
+}
+.cell {
+  width: 222px;
+  border-radius: 26px;
+  text-align: left;
+  padding: 48px 24px 0;
+  min-height: 100%;
+  margin: auto 10px;
+}
+
+.dot {
+  background-color: var(--secondary-light);
+}
+
+.dot.is-selected {
+  background-color: var(--yellow-light) !important;
+}
+
 /* sections */
 .hero-section {
   margin-top: 65px;
@@ -242,32 +267,11 @@ button {
   margin-bottom: 65px;
 }
 
-.flickity-button {
-  display: none;
-}
-
-.slider-container {
-  margin-bottom: 50px;
-}
-.cell {
-  width: 222px;
-  border-radius: 26px;
-  text-align: left;
+.jak-koucink-probiha .cell {
   background-color: white;
   box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
   background-image: url(./icons/01.svg);
   background-repeat: no-repeat;
-  padding: 48px 24px 0;
-  min-height: 100%;
-  margin: auto 10px;
-}
-
-.dot {
-  background-color: var(--secondary-light);
-}
-
-.dot.is-selected {
-  background-color: var(--yellow-light) !important;
 }
 
 .jak-koucink-probiha__carousel-heading {
@@ -299,7 +303,8 @@ button {
   margin: 56px auto;
 }
 
-.zkusenosti .slide {
+.zkusenosti .cell {
+  background-color: var(--primary-dark);
   color: white;
   padding: 1rem;
 }
