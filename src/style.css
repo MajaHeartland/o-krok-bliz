@@ -20,6 +20,9 @@ body {
   box-sizing: border-box;
 }
 
+section {
+  margin-bottom: 56px;
+}
 /* font-colours */
 .mobile-h2,
 .mobile-h4,
@@ -208,10 +211,6 @@ button {
   min-height: 730px;
 }
 
-.co-je-to-koucink h2 {
-  margin: 56px auto 0;
-}
-
 .co-je-to-koucink h3 {
   margin: 16px auto 0;
   line-height: 125%;
@@ -233,10 +232,6 @@ button {
   border-radius: 16px;
 }
 
-.s-cim-mohu-pomoci h3 {
-  font-size: 1.25rem;
-}
-
 .s-cim-mohu-pomoci button.dropdown-toggle img {
   margin-left: 24px;
 }
@@ -247,7 +242,6 @@ button {
 
 .proc-zkusit-koucink {
   background-image: url(img/gradient-background.svg);
-  margin-top: 56px;
   padding: 0 24px;
 }
 
@@ -261,10 +255,6 @@ button {
 
 .proc-zkusit-koucink .mobile-body {
   margin-bottom: 32px;
-}
-
-.proc-zkusit-koucink button {
-  margin-bottom: 65px;
 }
 
 .jak-koucink-probiha .cell {
@@ -299,10 +289,6 @@ button {
   background: var(--secondary-default);
 }
 
-.zkusenosti {
-  margin: 56px auto;
-}
-
 .zkusenosti .cell {
   background-color: var(--primary-dark);
   color: white;
@@ -325,10 +311,6 @@ button {
 
 .zustanme-v-kontaktu {
   padding: 40px 24px;
-}
-
-.otazky {
-  margin-top: 40px;
 }
 
 .otazky button.dropdown-toggle {
