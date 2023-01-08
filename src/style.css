@@ -390,3 +390,28 @@ button {
     grid-template-columns: repeat(4, 222px);
   }
 }
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  min-height: 100px;
+}
+
+.page {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #669999;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.page:hover {
+  background-color: var(--yellow-light);
+}
+
+.active-page {
+  background-color: var(--yellow-light);
+}
