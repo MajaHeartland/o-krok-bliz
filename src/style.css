@@ -10,7 +10,7 @@
   --yellow-light: #fabd45;
   --primary-dark: #005656;
 }
-/* defaults */
+/***** defaults *****/
 body {
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -18,27 +18,74 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-h2,
-h4 {
+
+/* font-colours */
+.mobile-h2,
+.mobile-h4,
+.mobile-body,
+.s-cim-mohu-pomoci__list,
+.hero-button,
+.jak-koucink-probiha__carousel-text,
+.pojdme-se-poznat h3.dark-blue {
   color: var(--secondary-default);
+}
+
+.zustanme-v-kontaktu h2 {
+  color: var(--primary-verylight);
+}
+
+h3,
+.hero-section h1,
+.jak-koucink-probiha__carousel-heading,
+.pojdme-se-poznat h2.blue,
+.otazky h3 {
+  color: var(--primary-default);
+}
+
+.hero-section .hero-image-container p,
+.zustanme-v-kontaktu,
+.zustanme-v-kontaktu .mobile-body {
+  color: var(--secondary-ultralight);
+}
+
+.zustanme-v-kontaktu,
+.zustanme-v-kontaktu .mobile-body,
+.slide {
+  background: var(--primary-dark);
+}
+
+/* font styles */
+h2,
+h3 {
+  font-weight: 700;
 }
 
 h2 {
   font-size: 1.625rem;
-  font-weight: 700;
 }
 
 h3 {
-  font-weight: 700;
   font-size: 1.25rem;
-  color: var(--primary-default);
+}
+
+h4,
+button,
+.s-cim-mohu-pomoci__list,
+.mobile-body {
+  font-size: 1.0625rem;
 }
 
 h4,
 button {
   font-weight: 600;
-  font-size: 1.0625rem;
 }
+
+.s-cim-mohu-pomoci__list,
+.mobile-body {
+  line-height: 176%;
+}
+
+/* buttons */
 
 button {
   padding: 14px 61.5px;
@@ -57,18 +104,18 @@ button {
 .blue-button {
   background: linear-gradient(90deg, #00adad 0%, #008080 100%);
 }
-ul li,
-.mobile-body {
-  color: var(--secondary-default);
-  font-size: 1.0625rem;
-  line-height: 176%;
-}
+
+/* lines */
 
 .line {
   background: var(--yellow-light);
   border: none;
   height: 1px;
   margin: 32px auto;
+}
+
+.zustanme-v-kontaktu .line {
+  background: var(--primary-verylight);
 }
 
 .slider-container {
@@ -93,21 +140,8 @@ ul li,
 }
 
 .slide {
-  background-color: var(--primary-default);
-  color: white;
-  text-align: left;
   border-radius: 26px;
-  padding: 1rem;
-}
-
-.slide h3 {
-  color: white;
-  margin-top: 16px;
-}
-
-.slide p {
-  font-size: 0.9375rem;
-  line-height: 133%;
+  text-align: left;
 }
 
 /* sections */
@@ -118,8 +152,13 @@ ul li,
   margin: 0 auto 0 auto;
   font-weight: 500;
   font-size: 2.125rem;
-  color: var(--primary-default);
   letter-spacing: 0.04em;
+}
+
+.hero-section .hero-image-container {
+  background-image: url(./img/blue.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .hero-section h5 {
@@ -130,19 +169,12 @@ ul li,
   letter-spacing: 0.04em;
 }
 
-.hero-section .hero-image-container {
-  background-image: url(./img/blue.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
 .hero-section .hero-image-container p {
   margin: 0;
   padding: 41px 45px 0;
   font-size: 1.0625rem;
   line-height: 176%;
   font-weight: 600;
-  color: var(--secondary-ultralight);
 }
 
 .hero-section .hero-image-container h2 {
@@ -161,7 +193,6 @@ ul li,
 
 .hero-section .hero-button {
   margin: 24px auto 31px;
-  color: var(--secondary-default);
   background: linear-gradient(90deg, #ffd480 0%, #fabd45 100%);
   border-radius: 26px;
 }
@@ -239,28 +270,16 @@ ul li,
 .jak-koucink-probiha .slide {
   background-color: white;
   box-shadow: 0px 4px 16px rgba(0, 128, 128, 0.1);
-  border-radius: 26px;
   background-image: url(./icons/01.svg);
   background-repeat: no-repeat;
+  padding: 48px 24px 0;
 }
 
-.jak-koucink-probiha .slide h3 {
-  color: var(--primary-default);
+.jak-koucink-probiha__carousel-heading {
   padding-right: 50%;
-  padding-left: 24px;
-}
-
-.jak-koucink-probiha .slide p {
-  color: var(--secondary-default);
-  padding: 16px 24px 0;
-}
-
-.pojdme-se-poznat h2.blue {
-  color: var(--primary-default);
 }
 
 .pojdme-se-poznat h3.dark-blue {
-  color: var(--secondary-default);
   text-align: left;
   margin: 40px 24px;
 }
@@ -285,19 +304,27 @@ ul li,
   margin: 56px auto;
 }
 
+.zkusenosti .slide {
+  color: white;
+  padding: 1rem;
+}
+
+.zkusenosti__carousel-heading {
+  color: white;
+  margin-top: 16px;
+  font-weight: 700;
+  line-height: 125%;
+  font-size: 1.25rem;
+}
+
+.zkusenosti__carousel-review {
+  font-size: 0.9375rem;
+  line-height: 133%;
+  font-weight: 400;
+}
+
 .zustanme-v-kontaktu {
   padding: 40px 24px;
-}
-.zustanme-v-kontaktu,
-.zustanme-v-kontaktu .mobile-body {
-  background: var(--primary-dark);
-  color: var(--secondary-ultralight);
-}
-.zustanme-v-kontaktu h2 {
-  color: var(--primary-verylight);
-}
-.zustanme-v-kontaktu .line {
-  background-color: var(--primary-verylight);
 }
 
 .otazky {
@@ -318,7 +345,6 @@ ul li,
 
 .otazky h3 {
   font-size: 1.0625rem;
-  color: var(--primary-default);
 }
 
 .otazky button.dropdown-toggle img {
