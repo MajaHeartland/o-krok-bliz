@@ -455,11 +455,7 @@
         method="POST"
       >
         <input type="hidden" name="_subject" value="Koučink-Rezervace" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://silver-blancmange-4507b6.netlify.app/form-button"
-        />
+        <input type="hidden" name="_next" value="form-button" />
         <input
           type="text"
           name="name"
@@ -468,14 +464,17 @@
           class="name"
         />
         <input type="email" name="email" placeholder="E-mail" required />
-        <input
-          type="text"
-          name="topic"
-          placeholder="Co bys chtěl/a probrat?"
-          required
-        /><a
-          href="https://silver-blancmange-4507b6.netlify.app/form-button"
-        ></a>
+
+        <div class="comment">
+          <input
+            type="text"
+            name="topic"
+            placeholder="Co bys chtěl/a probrat?"
+            required
+            class="comment-section"
+          />
+        </div>
+        <a href="#form-button"></a>
         <button class="blue-button d-block" id="form-button" type="submit">
           Odeslat Rezervaci
         </button>

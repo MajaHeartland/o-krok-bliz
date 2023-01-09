@@ -352,6 +352,14 @@ button {
   color: #98b4b4;
 }
 
+.uvodni-setkani .comment-section {
+  height: 162px;
+}
+.uvodni-setkani .comment ::placeholder {
+  position: absolute;
+  top: 10px;
+}
+
 .zustanme-v-kontaktu {
   margin: auto 0;
 }
