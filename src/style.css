@@ -21,7 +21,7 @@ body {
 }
 
 section {
-  margin-bottom: 56px;
+  padding: 56px 16px 0;
 }
 /* font-colours */
 .mobile-h2,
@@ -149,10 +149,10 @@ button {
 
 /* sections */
 .hero-section {
-  margin-top: 65px;
+  padding: 65px 0 56px;
 }
+
 .hero-section h1 {
-  margin: 0 auto 0 auto;
   font-weight: 500;
   font-size: 2.125rem;
   letter-spacing: 0.04em;
@@ -165,7 +165,6 @@ button {
 }
 
 .hero-section h5 {
-  margin: 8px auto 31px auto;
   font-weight: 600;
   font-size: 1.25rem;
   color: var(--primary-light);
@@ -173,7 +172,6 @@ button {
 }
 
 .hero-section .hero-image-container p {
-  margin: 0;
   padding: 41px 45px 0;
   font-size: 1.0625rem;
   line-height: 176%;
@@ -207,6 +205,7 @@ button {
 
 .co-je-to-koucink {
   background-image: url(img/gradient-background.svg);
+  margin: auto 0;
   padding: 0 24px;
   min-height: 730px;
 }
@@ -242,7 +241,6 @@ button {
 
 .proc-zkusit-koucink {
   background-image: url(img/gradient-background.svg);
-  padding: 0 24px;
 }
 
 .proc-zkusit-koucink .icon {
@@ -268,14 +266,21 @@ button {
   padding-right: 50%;
 }
 
+.pojdme-se-poznat {
+  padding: 56px 0;
+}
+
+.pojdme-se-poznat__text-container {
+  margin: 40px 24px auto;
+}
+
 .pojdme-se-poznat h3.dark-blue {
   text-align: left;
-  margin: 40px 24px;
+  margin-top: 40px;
 }
 
 .pojdme-se-poznat p {
   text-align: left;
-  margin: auto 24px;
   font-size: 1.0625rem;
   line-height: 176%;
 }
@@ -333,6 +338,23 @@ button {
   margin-left: 24px;
 }
 
+.uvodni-setkani {
+  background-image: url(./img/gradient-background.svg);
+}
+
+.uvodni-setkani input {
+  border-radius: 16px;
+  border: 1px solid #98b4b4;
+  width: 100%;
+  height: 58px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  color: #98b4b4;
+}
+
+.zustanme-v-kontaktu {
+  margin: auto 0;
+}
 @media (max-width: 360px) {
   .mobile-body {
     font-size: 1rem;

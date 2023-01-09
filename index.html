@@ -230,43 +230,45 @@
         alt="Photo of Tereza"
         width="100%"
       />
-      <h3 class="dark-blue">Jsem Tereza</h3>
-      <p>
-        a jsem holka z IT, která má ráda dobrou kávu a deeptalky se zajímavými
-        lidmi. To poslední je asi taky důvod, proč jsem se stala koučem. Ale
-        pojme si to vzít popořadě.
-        <br />
-        <br />
-        Vždycky jsem měla blízko k lidem a jejich rozvoji (včetně mne samotné),
-        tak jsem nejprve studovala HR a poté na magisterském studiu projektový
-        management, kde mne nadchnul agilní způsob řízení projektů. A to mne
-        dovedlo až k mé současné práci UX Designéra.
-        <br />
-        <br /><span class="d-none">
-          Jenže mi k naplněnému životu stále něco chybělo. Díky koučování jsem
-          si znovu zvědomila, že mne více naplňuje napomáhat v rozvoji lidem,
-          nežli rozvíjet produkt (i když ten je taky pro lidi, že). A tak jsem
-          absolbovala certifikovaný koučovací výcvik u Ing. Jiřího Kunčara PCC
-          (ICF).
+      <div class="pojdme-se-poznat__text-container">
+        <h3 class="dark-blue">Jsem Tereza</h3>
+        <p>
+          a jsem holka z IT, která má ráda dobrou kávu a deeptalky se zajímavými
+          lidmi. To poslední je asi taky důvod, proč jsem se stala koučem. Ale
+          pojme si to vzít popořadě.
           <br />
           <br />
-          Do koučování zapojuji znalosti z UX Designu a agilního vývoje produktu
-          - pojďmě pomocí malých změn postupně vylepšovat i Tvůj život! Ale
-          řekněme si to na rovinu. Pokud sám/a něco nechceš změnit, já Ti
-          nepomůžu.
+          Vždycky jsem měla blízko k lidem a jejich rozvoji (včetně mne
+          samotné), tak jsem nejprve studovala HR a poté na magisterském studiu
+          projektový management, kde mne nadchnul agilní způsob řízení projektů.
+          A to mne dovedlo až k mé současné práci UX Designéra.
           <br />
-          <br />
-          Vím, že důvěra se nevytvoří lusknutím prstu, a proto je zachování
-          mlčenlivosti samozřejmostí a koučování probíhá v souladu s etickým
-          kodexem ICF.
-          <br />
-          <br />
-          Abych Tě na Tvé ceste mohla správně doprovázet, i pro mne je důležité,
-          abychom si “sedli”. Proto je úvodní setkání zdarma.</span
-        >
-      </p>
-      <button class="poznej-mne-vic-button">Poznej mne víc</button>
-      <button class="blue-button">Pojďme se potkat!</button>
+          <br /><span class="d-none">
+            Jenže mi k naplněnému životu stále něco chybělo. Díky koučování jsem
+            si znovu zvědomila, že mne více naplňuje napomáhat v rozvoji lidem,
+            nežli rozvíjet produkt (i když ten je taky pro lidi, že). A tak jsem
+            absolbovala certifikovaný koučovací výcvik u Ing. Jiřího Kunčara PCC
+            (ICF).
+            <br />
+            <br />
+            Do koučování zapojuji znalosti z UX Designu a agilního vývoje
+            produktu - pojďmě pomocí malých změn postupně vylepšovat i Tvůj
+            život! Ale řekněme si to na rovinu. Pokud sám/a něco nechceš změnit,
+            já Ti nepomůžu.
+            <br />
+            <br />
+            Vím, že důvěra se nevytvoří lusknutím prstu, a proto je zachování
+            mlčenlivosti samozřejmostí a koučování probíhá v souladu s etickým
+            kodexem ICF.
+            <br />
+            <br />
+            Abych Tě na Tvé ceste mohla správně doprovázet, i pro mne je
+            důležité, abychom si “sedli”. Proto je úvodní setkání zdarma.</span
+          >
+        </p>
+        <button class="poznej-mne-vic-button">Poznej mne víc</button>
+        <button class="blue-button">Pojďme se potkat!</button>
+      </div>
     </section>
 
     <section class="zkusenosti">
@@ -353,7 +355,7 @@
     <section class="otazky">
       <h2 class="mobile-h2">Máš ještě otázky?</h2>
       <hr class="line" width="48px" />
-      <div class="dropdown">
+      <!-- <div class="dropdown">
         <button
           class="dropdown-toggle"
           data-bs-toggle="dropdown"
@@ -435,7 +437,7 @@
             důležité hodnoty.
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class="uvodni-setkani">
       <h2 class="mobile-h2">Úvodní setkání zdarma</h2>
@@ -453,7 +455,11 @@
         method="POST"
       >
         <input type="hidden" name="_subject" value="Koučink-Rezervace" />
-
+        <input
+          type="hidden"
+          name="_next"
+          value="https://silver-blancmange-4507b6.netlify.app/form-button"
+        />
         <input
           type="text"
           name="name"
@@ -468,7 +474,7 @@
           required
         />
         <button class="blue-button d-block" id="form-button" type="submit">
-          Odeslat Rezervaci
+          <a href="#form-button">Odeslat Rezervaci</a>
         </button>
       </form>
     </section>
