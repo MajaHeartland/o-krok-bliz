@@ -258,8 +258,21 @@ button {
 .jak-koucink-probiha .cell {
   background-color: white;
   box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
-  background-image: url(./icons/01.svg);
+
   background-repeat: no-repeat;
+}
+
+.jak-koucink-probiha .cell:nth-child(1) {
+  background-image: url(./icons/01.svg);
+}
+.jak-koucink-probiha .cell:nth-child(2) {
+  background-image: url(./icons/02.svg);
+}
+.jak-koucink-probiha .cell:nth-child(3) {
+  background-image: url(./icons/03.svg);
+}
+.jak-koucink-probiha .cell:nth-child(4) {
+  background-image: url(./icons/04.svg);
 }
 
 .jak-koucink-probiha__carousel-heading {
