@@ -262,16 +262,16 @@ button {
   background-repeat: no-repeat;
 }
 
-.jak-koucink-probiha .cell:nth-child(1) {
+.jak-koucink-probiha .slide:nth-child(1) {
   background-image: url(./icons/01.svg);
 }
-.jak-koucink-probiha .cell:nth-child(2) {
+.jak-koucink-probiha .slide:nth-child(2) {
   background-image: url(./icons/02.svg);
 }
-.jak-koucink-probiha .cell:nth-child(3) {
+.jak-koucink-probiha .slide:nth-child(3) {
   background-image: url(./icons/03.svg);
 }
-.jak-koucink-probiha .cell:nth-child(4) {
+.jak-koucink-probiha .slide:nth-child(4) {
   background-image: url(./icons/04.svg);
 }
 
@@ -307,12 +307,23 @@ button {
   background: var(--secondary-default);
 }
 
-.zkusenosti .cell {
+.zkusenosti .slider-container {
+  display: flex;
+  overflow-x: scroll;
+}
+.zkusenosti .slide {
   background-color: var(--primary-dark);
   color: white;
   padding: 1rem;
+  text-align: left;
+  margin: 0 10px;
+  min-width: 222px;
+  border-radius: 26px;
 }
 
+.zkusenosti .slider-container::-webkit-scrollbar {
+  display: none;
+}
 .zkusenosti__carousel-heading {
   color: white;
   margin-top: 16px;
@@ -325,6 +336,25 @@ button {
   font-size: 0.9375rem;
   line-height: 133%;
   font-weight: 400;
+}
+
+.zkusenosti .pagination {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  gap: 1em;
+}
+
+.zkusenosti .pagination span {
+  background-color: var(--secondary-light);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.zkusenosti .pagination .active {
+  background-color: var(--yellow-light);
 }
 
 .zustanme-v-kontaktu {
