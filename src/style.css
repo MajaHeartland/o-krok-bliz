@@ -426,6 +426,7 @@ button {
   .hero-section {
     text-align: left;
     margin-left: 30px;
+    overflow: hidden;
   }
   .hero-section .hero-image-container {
     display: flex;
@@ -436,12 +437,68 @@ button {
     min-width: 50%;
   }
   .hero-image-container img {
-    float: right;
+    /* float: right; */
+    transform: translate(50%);
   }
 }
 
-@media screen and (max-width: 700px) {
-  .slider-container {
-    grid-template-columns: repeat(4, 222px);
-  }
+.wrapper {
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: var(--primary-ultralight) 0px 4px 6px;
+  text-align: left;
+}
+
+.collapsible {
+  max-width: 450px;
+  overflow: hidden;
+  font-weight: 500;
+}
+.s-cim-mohu-pomoci__dropdown-header {
+  padding: 25px 20px;
+}
+
+.s-cim-mohu-pomoci__dropdown-header h3 {
+  padding-left: 10px;
+  margin-top: 5px;
+  text-align: left;
+}
+.collapsible .flexbox {
+  display: flex;
+}
+.collapsible input {
+  display: none;
+}
+
+.collapsible label {
+  position: relative;
+  font-weight: 600;
+  display: block;
+  cursor: pointer;
+}
+
+.collapsible label:after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 40px;
+  width: 18px;
+  height: 18px;
+  background: url(./icons/down.svg) no-repeat 0 0;
+  transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label::after {
+  transform: rotateX(180deg);
+  top: 35px;
+}
+
+.collapsible-text {
+  max-height: 1px;
+  transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+  max-height: 300px;
 }
