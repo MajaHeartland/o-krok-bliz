@@ -406,6 +406,16 @@ button {
 .zustanme-v-kontaktu {
   margin: auto 0;
 }
+
+@media (max-width: 350px) {
+  .hero-button,
+  .poznej-mne-vic-button,
+  .blue-button {
+    max-width: 250px;
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 360px) {
   .mobile-body {
     font-size: 1rem;
@@ -416,12 +426,6 @@ button {
   .hero-section .hero-image-container p {
     font-size: 1rem;
     padding: 41px 10px 0;
-  }
-  .hero-button,
-  .poznej-mne-vic-button,
-  .blue-button {
-    max-width: 250px;
-    font-size: 0.7rem;
   }
 }
 
