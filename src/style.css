@@ -92,11 +92,10 @@ button {
 /* buttons */
 
 button {
-  padding: 14px 61.5px;
-  width: 327px;
+  padding: 14px 0;
   color: white;
   border: none;
-  margin: 0 auto;
+  width: 90%;
 }
 
 .blue-button,
@@ -407,16 +406,12 @@ button {
   margin: auto 0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
   .hero-button,
   .poznej-mne-vic-button,
   .blue-button {
-    max-width: 250px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
-}
-
-@media (max-width: 360px) {
   .mobile-body {
     font-size: 1rem;
   }
@@ -426,6 +421,14 @@ button {
   .hero-section .hero-image-container p {
     font-size: 1rem;
     padding: 41px 10px 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .hero-button,
+  .blue-button,
+  .poznej-mne-vic-button {
+    max-width: 320px;
   }
 }
 
