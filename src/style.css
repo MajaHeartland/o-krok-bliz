@@ -93,9 +93,9 @@ button {
 
 button {
   padding: 14px 61.5px;
+  width: 327px;
   color: white;
   border: none;
-  width: 327px;
   margin: 0 auto;
 }
 
@@ -417,8 +417,11 @@ button {
     font-size: 1rem;
     padding: 41px 10px 0;
   }
-  .hero-section .hero-button {
-    max-width: fit-content;
+  .hero-button,
+  .poznej-mne-vic-button,
+  .blue-button {
+    max-width: 250px;
+    font-size: 0.7rem;
   }
 }
 
