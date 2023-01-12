@@ -218,24 +218,67 @@ button {
   margin: 16px 0;
 }
 
-.s-cim-mohu-pomoci button.dropdown-toggle {
-  border: none;
-  background: transparent;
+.s-cim-mohu-pomoci .wrapper {
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
-  box-shadow: var(--primary-ultralight) 0px 4px 6px;
-  margin: 0 auto;
-  width: 80vw;
+  justify-content: center;
   border-radius: 16px;
+  box-shadow: var(--primary-ultralight) 0px 4px 6px;
+  text-align: left;
 }
 
-.s-cim-mohu-pomoci button.dropdown-toggle img {
-  margin-left: 24px;
+.s-cim-mohu-pomoci .collapsible {
+  max-width: 450px;
+  overflow: hidden;
+  font-weight: 500;
+}
+.s-cim-mohu-pomoci__dropdown-header {
+  padding: 25px 20px;
 }
 
-.s-cim-mohu-pomoci button.dropdown-toggle::after {
-  display: none !important;
+.s-cim-mohu-pomoci__dropdown-header h3 {
+  padding-left: 10px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.s-cim-mohu-pomoci .collapsible .flexbox {
+  display: flex;
+}
+
+.s-cim-mohu-pomoci .collapsible input {
+  display: none;
+}
+
+.s-cim-mohu-pomoci .collapsible label {
+  position: relative;
+  font-weight: 600;
+  display: block;
+  cursor: pointer;
+}
+
+.s-cim-mohu-pomoci .collapsible label:after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 40px;
+  width: 18px;
+  height: 18px;
+  background: url(./icons/down.svg) no-repeat 0 0;
+  transition: all 0.3s ease;
+}
+
+.s-cim-mohu-pomoci .collapsible input:checked + label::after {
+  transform: rotateX(180deg);
+  top: 35px;
+}
+
+.s-cim-mohu-pomoci .collapsible-text {
+  max-height: 1px;
+  transition: all 0.3s ease;
+}
+
+.s-cim-mohu-pomoci .collapsible input:checked ~ .collapsible-text {
+  max-height: 300px;
 }
 
 .proc-zkusit-koucink {
@@ -402,16 +445,14 @@ button {
   top: 10px;
 }
 
+.uvodni-setkani .blue-button {
+  margin: 0 auto;
+}
 .zustanme-v-kontaktu {
   margin: auto 0;
 }
 
 @media (max-width: 360px) {
-  .hero-button,
-  .poznej-mne-vic-button,
-  .blue-button {
-    font-size: 0.8rem;
-  }
   .mobile-body {
     font-size: 1rem;
   }
@@ -450,65 +491,4 @@ button {
     /* float: right; */
     transform: translate(50%);
   }
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  border-radius: 16px;
-  box-shadow: var(--primary-ultralight) 0px 4px 6px;
-  text-align: left;
-}
-
-.collapsible {
-  max-width: 450px;
-  overflow: hidden;
-  font-weight: 500;
-}
-.s-cim-mohu-pomoci__dropdown-header {
-  padding: 25px 20px;
-}
-
-.s-cim-mohu-pomoci__dropdown-header h3 {
-  padding-left: 10px;
-  margin-top: 5px;
-  text-align: left;
-}
-.collapsible .flexbox {
-  display: flex;
-}
-.collapsible input {
-  display: none;
-}
-
-.collapsible label {
-  position: relative;
-  font-weight: 600;
-  display: block;
-  cursor: pointer;
-}
-
-.collapsible label:after {
-  content: "";
-  position: absolute;
-  right: 18px;
-  top: 40px;
-  width: 18px;
-  height: 18px;
-  background: url(./icons/down.svg) no-repeat 0 0;
-  transition: all 0.3s ease;
-}
-
-.collapsible input:checked + label::after {
-  transform: rotateX(180deg);
-  top: 35px;
-}
-
-.collapsible-text {
-  max-height: 1px;
-  transition: all 0.3s ease;
-}
-
-.collapsible input:checked ~ .collapsible-text {
-  max-height: 300px;
 }
