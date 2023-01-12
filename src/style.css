@@ -146,6 +146,71 @@ button {
   background-color: var(--yellow-light) !important;
 }
 
+/* dropdown */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: var(--primary-ultralight) 0px 4px 6px;
+  text-align: left;
+}
+
+.collapsible {
+  max-width: 450px;
+  overflow: hidden;
+  font-weight: 500;
+}
+.dropdown-header {
+  padding: 25px 20px;
+}
+
+.dropdown-header h3 {
+  padding-left: 10px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.collapsible .flexbox {
+  display: flex;
+}
+
+.collapsible input {
+  display: none;
+}
+
+.collapsible label {
+  position: relative;
+  font-weight: 600;
+  display: block;
+  cursor: pointer;
+}
+
+.collapsible label:after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  top: 24px;
+  width: 20px;
+  height: 18px;
+  background: url(./icons/down.svg) no-repeat 0 0;
+  transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label::after {
+  transform: rotateX(180deg);
+  top: 20px;
+}
+
+.collapsible-text {
+  max-height: 1px;
+  transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+  max-height: 300px;
+}
+
 /* sections */
 .hero-section {
   padding: 65px 0 56px;
@@ -218,71 +283,9 @@ button {
   margin: 16px 0;
 }
 
-.s-cim-mohu-pomoci .wrapper {
-  display: flex;
-  justify-content: center;
-  border-radius: 16px;
-  box-shadow: var(--primary-ultralight) 0px 4px 6px;
-  text-align: left;
-}
-
-.s-cim-mohu-pomoci .collapsible {
-  max-width: 450px;
-  overflow: hidden;
-  font-weight: 500;
-}
-.s-cim-mohu-pomoci__dropdown-header {
-  padding: 25px 20px;
-}
-
-.s-cim-mohu-pomoci__dropdown-header h3 {
-  padding-left: 10px;
-  margin-top: 5px;
-  text-align: left;
-}
-
-.s-cim-mohu-pomoci .collapsible .flexbox {
-  display: flex;
-}
-
-.s-cim-mohu-pomoci .collapsible input {
-  display: none;
-}
-
-.s-cim-mohu-pomoci .collapsible label {
-  position: relative;
-  font-weight: 600;
-  display: block;
-  cursor: pointer;
-}
-
-.s-cim-mohu-pomoci .collapsible label:after {
-  content: "";
-  position: absolute;
-  right: 18px;
-  top: 40px;
-  width: 18px;
-  height: 18px;
-  background: url(./icons/down.svg) no-repeat 0 0;
-  transition: all 0.3s ease;
-}
-
-.s-cim-mohu-pomoci .collapsible input:checked + label::after {
-  transform: rotateX(180deg);
-  top: 35px;
-}
-
-.s-cim-mohu-pomoci .collapsible-text {
-  max-height: 1px;
-  transition: all 0.3s ease;
-}
-
-.s-cim-mohu-pomoci .collapsible input:checked ~ .collapsible-text {
-  max-height: 300px;
-}
-
 .proc-zkusit-koucink {
   background-image: url(img/gradient-background.svg);
+  background-size: contain;
 }
 
 .proc-zkusit-koucink .icon {
@@ -305,16 +308,16 @@ button {
 }
 
 .jak-koucink-probiha .slide:nth-child(1) {
-  background-image: url(./icons/01.svg);
+  background-image: url(./img/01.svg);
 }
 .jak-koucink-probiha .slide:nth-child(2) {
-  background-image: url(./icons/02.svg);
+  background-image: url(./img/02.svg);
 }
 .jak-koucink-probiha .slide:nth-child(3) {
-  background-image: url(./icons/03.svg);
+  background-image: url(./img/03.svg);
 }
 .jak-koucink-probiha .slide:nth-child(4) {
-  background-image: url(./icons/04.svg);
+  background-image: url(./img/04.svg);
 }
 
 .jak-koucink-probiha__carousel-heading {
