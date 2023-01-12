@@ -400,28 +400,8 @@ button {
   background-color: var(--yellow-light);
 }
 
-.zustanme-v-kontaktu {
-  padding: 40px 24px;
-}
-
-.otazky button.dropdown-toggle {
-  border: none;
-  background: transparent;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  box-shadow: var(--primary-ultralight) 0px 4px 6px;
-  margin: 0 auto;
-  width: 80vw;
-  border-radius: 16px;
-}
-
 .otazky h3 {
   font-size: 1.0625rem;
-}
-
-.otazky button.dropdown-toggle img {
-  margin-left: 24px;
 }
 
 .uvodni-setkani {
@@ -448,6 +428,10 @@ button {
 
 .uvodni-setkani .blue-button {
   margin: 0 auto;
+}
+
+.zustanme-v-kontaktu {
+  padding: 40px 24px;
 }
 .zustanme-v-kontaktu {
   margin: auto 0;
