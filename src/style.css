@@ -303,7 +303,6 @@ button {
 .jak-koucink-probiha .cell {
   background-color: white;
   box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
-
   background-repeat: no-repeat;
 }
 
@@ -332,6 +331,10 @@ button {
   margin: 40px 24px auto;
 }
 
+.pojdme-se-poznat .mobile-h2 {
+  padding: 0 16px;
+}
+
 .pojdme-se-poznat h3.dark-blue {
   text-align: left;
   margin-top: 40px;
@@ -341,11 +344,6 @@ button {
   text-align: left;
   font-size: 1.0625rem;
   line-height: 176%;
-}
-
-.pojdme-se-poznat .faded {
-  /* background: linear-gradient(#000 20%, transparent 80%);
-  -webkit-background-clip: text; */
 }
 
 .pojdme-se-poznat .poznej-mne-vic-button {
