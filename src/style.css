@@ -84,9 +84,9 @@ button {
   font-weight: 600;
 }
 
-.s-cim-mohu-pomoci__list,
 .mobile-body {
   line-height: 176%;
+  font-weight: 400;
 }
 
 /* buttons */
@@ -205,6 +205,7 @@ button {
 .collapsible-text {
   max-height: 1px;
   transition: all 0.3s ease;
+  padding: 0 20px;
 }
 
 .collapsible input:checked ~ .collapsible-text {
