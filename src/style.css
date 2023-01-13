@@ -71,14 +71,14 @@ h3 {
   font-size: 1.25rem;
 }
 
-h4,
+.mobile-h4,
 button,
 .s-cim-mohu-pomoci__list,
 .mobile-body {
   font-size: 1.0625rem;
 }
 
-h4,
+.mobile-h4,
 button {
   font-weight: 600;
 }
