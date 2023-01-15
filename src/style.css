@@ -63,8 +63,9 @@ h3 {
   font-weight: 700;
 }
 
-h2 {
+.mobile-h2 {
   font-size: 1.625rem;
+  padding: 0 16px;
 }
 
 h3 {
@@ -125,17 +126,18 @@ button {
   display: none;
 }
 
-.slider-container {
-  margin-bottom: 50px;
-}
 .cell {
   width: 222px;
   border-radius: 26px;
   text-align: left;
   padding: 48px 24px 0;
   min-height: 100%;
-  margin: auto 10px;
+  margin: -10px 10px 0;
 }
+
+/* ol.flickity-page-dots {
+  bottom: -45px;
+} */
 
 .dot {
   background-color: var(--secondary-light);
@@ -302,6 +304,7 @@ button {
   background-color: white;
   box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
   background-repeat: no-repeat;
+  background-position: 0% 10%;
 }
 
 .jak-koucink-probiha .slide:nth-child(1) {
@@ -318,11 +321,11 @@ button {
 }
 
 .jak-koucink-probiha__carousel-heading {
-  padding-right: 50%;
+  padding-right: 10%;
 }
 
 .pojdme-se-poznat {
-  padding: 56px 0;
+  margin: 56px 0;
 }
 
 .pojdme-se-poznat__text-container {
