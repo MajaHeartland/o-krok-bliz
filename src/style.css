@@ -487,3 +487,63 @@ button {
     transform: translate(50%);
   }
 }
+
+
+/*  */
+
+.item {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  /* margin: 0 10px; */
+  /* min-width: 222px; */
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.owl-stage {
+  padding-left: 0 !important;
+}
+
+.owl-carousel .owl-item img {
+  width: 80px !important;
+}
+
+.zkusenosti .owl-dots button > span {
+  background-color: var(--secondary-light);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+}
+
+.zkusenosti .owl-dots button.active > span {
+  background-color: var(--yellow-light);
+}
+
+.owl-dots {
+  display: flex !important;
+  justify-content: center;
+  margin: 2em 0;
+  gap: 1em;
+}
+
+.owl-dots button {
+  width: auto;
+}
+
+.item__carousel-heading {
+  color: white;
+  margin-top: 16px;
+  font-weight: 700;
+  line-height: 125%;
+  font-size: 1.25rem;
+}
+
+.item__carousel-review {
+  font-size: 0.9375rem;
+  line-height: 133%;
+  font-weight: 400;
+}
