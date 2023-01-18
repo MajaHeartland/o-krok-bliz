@@ -179,7 +179,7 @@
     <section class="jak-koucink-probiha">
       <h2 class="mobile-h2">Jak koučink se mnou probíhá?</h2>
       <hr class="line" width="48px" />
-      <div class="owl-carousel owl-theme">
+      <div class="first-carousel owl-carousel owl-theme">
         <div class="item item-1">
           <h3 class="jak-koucink-probiha__carousel-heading">
             Úvodní setkání zdarma
@@ -273,7 +273,7 @@
     <section class="zkusenosti">
       <h2 class="mobile-h2">Zkušenosti mých klientů</h2>
       <hr class="line" width="48px" />
-      <div class="owl-carousel owl-theme">
+      <div class="second-carousel owl-carousel owl-theme">
         <div class="item">
           <img src="/src/img/review-pic.png" alt="review-picture" />
           <h3 class="item__carousel-heading">1. Marie <br />Neoralová</h3>
@@ -558,7 +558,34 @@
     <script src="/src/assets/owlCarousel/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $(".first-carousel").owlCarousel({
+          loop: false,
+          margin: 16,
+          dots: true,
+          dotsEach: 1,
+          responsive: {
+            0: {
+              items: 1,
+              stagePadding: 70,
+            },
+            600: {
+              items: 2,
+              stagePadding: 70,
+            },
+            1000: {
+              items: 3,
+              // margin: 24,
+              stagePadding: 90,
+            },
+            1200: {
+              items: 6,
+              // margin: 24,
+              // dotsEach: 1,
+              // stagePadding: 90,
+            },
+          },
+        });
+        $(".second-carousel").owlCarousel({
           loop: true,
           margin: 16,
           dots: true,
