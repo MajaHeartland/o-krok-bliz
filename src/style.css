@@ -503,7 +503,12 @@ button {
 }
 
 .owl-stage {
+  display: flex;
   padding-left: 0 !important;
+}
+
+.owl-item {
+  display: flex;
 }
 
 .owl-carousel .owl-item img {
