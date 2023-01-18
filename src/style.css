@@ -314,6 +314,10 @@ button {
   margin-bottom: 32px;
 }
 
+.jak-koucink-probiha .owl-stage {
+  padding-bottom: 20px;
+}
+
 .jak-koucink-probiha .item {
   box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
   /* background-position: 0% 10px; */
