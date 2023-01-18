@@ -320,7 +320,6 @@ button {
 
 .jak-koucink-probiha .item {
   box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
-  /* background-position: 0% 10px; */
 }
 
 .jak-koucink-probiha .item-1 {
@@ -341,6 +340,7 @@ button {
 }
 
 .jak-koucink-probiha__carousel-heading {
+  padding-top: 30px;
   padding-right: 10%;
 }
 
