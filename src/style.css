@@ -473,4 +473,6 @@ button {
   }
 }
 
-/*  */
+.rollout-text {
+  display: none;
+}
