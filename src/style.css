@@ -360,6 +360,9 @@ button {
   line-height: 176%;
 }
 
+.pojdme-se-poznat .rollout-text {
+  display: none;
+}
 .pojdme-se-poznat .poznej-mne-vic-button {
   background: var(--secondary-default);
 }
@@ -471,8 +474,4 @@ button {
     /* float: right; */
     transform: translate(50%);
   }
-}
-
-.rollout-text {
-  display: none;
 }
