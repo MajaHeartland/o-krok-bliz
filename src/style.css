@@ -193,7 +193,12 @@ button {
 }
 
 .owl-stage {
+  display: flex;
   padding-left: 0 !important;
+}
+
+.owl-item {
+  display: flex;
 }
 
 .owl-dots button > span {
