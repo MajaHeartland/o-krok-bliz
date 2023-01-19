@@ -367,6 +367,11 @@ button {
   font-size: 1.0625rem;
   line-height: 176%;
 }
+.pojdme-se-poznat .fade-out-text.closed {
+  background: linear-gradient(90deg, #212529, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .pojdme-se-poznat .rollout-text {
   display: none;
@@ -417,6 +422,22 @@ button {
 
 .uvodni-setkani .comment-section {
   height: 162px;
+}
+.uvodni-setkani .comment ::-webkit-input-placeholder {
+  position: absolute;
+  top: 10px;
+}
+.uvodni-setkani .comment ::-moz-placeholder {
+  position: absolute;
+  top: 10px;
+}
+.uvodni-setkani .comment :-ms-input-placeholder {
+  position: absolute;
+  top: 10px;
+}
+.uvodni-setkani .comment ::-ms-input-placeholder {
+  position: absolute;
+  top: 10px;
 }
 .uvodni-setkani .comment ::placeholder {
   position: absolute;
