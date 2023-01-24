@@ -106,7 +106,7 @@
       <hr class="line" width="48px" />
 
       <div class="hero-image-container">
-        <div class="flex-item-left">
+        <div>
           <p>
             Potřebuješ si srovnat myšlenky?<br />Stojíš na životní
             křižovatce?<br />Potřebuješ změnu?
@@ -129,11 +129,9 @@
             </p>
           </div>
         </div>
-        <div class="flex-item-right">
-          <img src="./src/img/hero-no-blue.png" alt="hero-image" width="100%" />
-        </div>
+        <img src="./src/img/hero-no-blue.png" alt="hero-image" width="100%" />
       </div>
-      <div class="hero-outro">
+      <div class="hero-outro small-screen">
         <p class="mobile-body">
           Zajděme například na kávu, pojďme se projít nebo si jen zavolejme.
           <br />
@@ -164,77 +162,79 @@
     </section>
 
     <section class="s-cim-mohu-pomoci">
-      <h2 class="mobile-h2">S čím Ti mohu pomoci?</h2>
-      <hr class="line" width="48px" />
-      <div class="wrapper">
-        <div class="collapsible">
-          <input type="checkbox" id="prace-a-kariera" />
-          <label for="prace-a-kariera"
-            ><div class="dropdown-header">
-              <div class="flexbox">
-                <img src="./src/icons/work.svg" alt="work-icon" />
-                <h3 class="selected">Práce a kariéra</h3>
+      <div class="container-background">
+        <h2 class="mobile-h2">S čím Ti mohu pomoci?</h2>
+        <hr class="line" width="48px" />
+        <div class="wrapper">
+          <div class="collapsible">
+            <input type="checkbox" id="prace-a-kariera" />
+            <label for="prace-a-kariera"
+              ><div class="dropdown-header">
+                <div class="flexbox">
+                  <img src="./src/icons/work.svg" alt="work-icon" />
+                  <h3 class="selected">Práce a kariéra</h3>
+                </div>
               </div>
+            </label>
+            <div class="collapsible-text mobile-body">
+              <ul>
+                <li>nejsem spokojený/á v práci</li>
+                <li>přemýšlím o změně kariéry</li>
+                <li>jsem na pokraji vyhoření</li>
+                <li>chci zlepšit své dovednosti, ale nevím jak</li>
+                <li>mám problémy s komunikací a vztahy</li>
+                <li>půjdu do důchodu a nevím co dál</li>
+              </ul>
             </div>
-          </label>
-          <div class="collapsible-text mobile-body">
-            <ul>
-              <li>nejsem spokojený/á v práci</li>
-              <li>přemýšlím o změně kariéry</li>
-              <li>jsem na pokraji vyhoření</li>
-              <li>chci zlepšit své dovednosti, ale nevím jak</li>
-              <li>mám problémy s komunikací a vztahy</li>
-              <li>půjdu do důchodu a nevím co dál</li>
-            </ul>
           </div>
         </div>
-      </div>
-      <div class="wrapper">
-        <div class="collapsible">
-          <input type="checkbox" id="osobni-rozvoj" class="prace-a-kariera" />
-          <label for="osobni-rozvoj"
-            ><div class="dropdown-header">
-              <div class="flexbox">
-                <img src="./src/icons/rozvoj.svg" alt="rozvoj-icon" />
-                <h3>Osobní rozvoj</h3>
+        <div class="wrapper">
+          <div class="collapsible">
+            <input type="checkbox" id="osobni-rozvoj" class="prace-a-kariera" />
+            <label for="osobni-rozvoj"
+              ><div class="dropdown-header">
+                <div class="flexbox">
+                  <img src="./src/icons/rozvoj.svg" alt="rozvoj-icon" />
+                  <h3>Osobní rozvoj</h3>
+                </div>
               </div>
+            </label>
+            <div class="collapsible-text mobile-body">
+              <ul>
+                <li>stojím na životní křižovatce a nevím co dál</li>
+                <li>chci zlepšit svůj život, ale nevím, kde začít</li>
+                <li>vím co chci, ale mám problém udělat první krok</li>
+                <li>chci si nastavit ve svém životě balanc</li>
+                <li>mám problém dát sám/u sebe jako prioritu</li>
+                <li>chci umět lépe zvládat stres</li>
+                <li>chybí mi motivace</li>
+              </ul>
             </div>
-          </label>
-          <div class="collapsible-text mobile-body">
-            <ul>
-              <li>stojím na životní křižovatce a nevím co dál</li>
-              <li>chci zlepšit svůj život, ale nevím, kde začít</li>
-              <li>vím co chci, ale mám problém udělat první krok</li>
-              <li>chci si nastavit ve svém životě balanc</li>
-              <li>mám problém dát sám/u sebe jako prioritu</li>
-              <li>chci umět lépe zvládat stres</li>
-              <li>chybí mi motivace</li>
-            </ul>
           </div>
         </div>
-      </div>
-      <div class="wrapper">
-        <div class="collapsible">
-          <input type="checkbox" id="komunikace-a-vztahy" />
-          <label for="komunikace-a-vztahy"
-            ><div class="dropdown-header">
-              <div class="flexbox">
-                <img
-                  src="./src/icons/communication.svg"
-                  alt="communnication-icon"
-                />
-                <h3>Komunikace a vztahy</h3>
+        <div class="wrapper">
+          <div class="collapsible">
+            <input type="checkbox" id="komunikace-a-vztahy" />
+            <label for="komunikace-a-vztahy"
+              ><div class="dropdown-header">
+                <div class="flexbox">
+                  <img
+                    src="./src/icons/communication.svg"
+                    alt="communnication-icon"
+                  />
+                  <h3>Komunikace a vztahy</h3>
+                </div>
               </div>
+            </label>
+            <div class="collapsible-text mobile-body">
+              <ul>
+                <li>chci umět lépe zvládat konflitky</li>
+                <li>chci umět lépe komunikovat svoje potřeby</li>
+                <li>chci umět lépe zvládat krizové situace</li>
+                <li>chci zlepšit vztah sám/a se sebou</li>
+                <li>chci si udělat pořádek ve vztazích</li>
+              </ul>
             </div>
-          </label>
-          <div class="collapsible-text mobile-body">
-            <ul>
-              <li>chci umět lépe zvládat konflitky</li>
-              <li>chci umět lépe komunikovat svoje potřeby</li>
-              <li>chci umět lépe zvládat krizové situace</li>
-              <li>chci zlepšit vztah sám/a se sebou</li>
-              <li>chci si udělat pořádek ve vztazích</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -736,20 +736,44 @@
               items: 1,
               stagePadding: 70,
             },
-            600: {
-              items: 2,
-              stagePadding: 70,
+            280: {
+              items: 1,
+              stagePadding: 20,
             },
-            1000: {
-              items: 3,
-              // margin: 24,
-              stagePadding: 90,
+            350: {
+              items: 1,
+              stagePadding: 50,
             },
-            1200: {
-              items: 6,
-              // margin: 24,
-              // dotsEach: 1,
-              // stagePadding: 90,
+            450: {
+              items: 1,
+              stagePadding: 100,
+            },
+            550: {
+              items: 1,
+              stagePadding: 150,
+            },
+            650: {
+              items: 1,
+              stagePadding: 180,
+            },
+            700: {
+              items: 1,
+              stagePadding: 220,
+            },
+            750: {
+              items: 1,
+              stagePadding: 230,
+            },
+            800: {
+              items: 1,
+              stagePadding: 260,
+            },
+            850: {
+              items: 1,
+              stagePadding: 280,
+            },
+            900: {
+              items: 4,
             },
           },
         });
