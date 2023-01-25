@@ -519,7 +519,7 @@ button {
   }
   .hero-section .hero-image-container {
     background-image: url(./img/background-bigger-screens.jpg);
-    background-size: 100%;
+    background-size: contain;
     display: flex;
   }
 
@@ -548,11 +548,48 @@ button {
   .hero-section .small-screen {
     display: none;
   }
-
+  .co-je-to-koucink,
+  .s-cim-mohu-pomoci,
+  .proc-zkusit-koucink {
+    background-image: none;
+  }
+  .background {
+    background-image: url(./img/gradient-bigger.svg);
+    background-size: contain;
+  }
   .s-cim-mohu-pomoci .container-background {
-    /* background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.65);
     border-radius: 56px;
-    margin: 24px;
-    box-shadow: 10px 5px 5px red; */
+    margin: 24px auto;
+    padding: 50px;
+    width: 80%;
+  }
+
+  .pojdme-se-poznat img {
+    width: 70%;
+  }
+
+  .pojdme-se-poznat__tablet-background {
+    background-image: url(./img/pojdme-se-poznat-tablet-background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top 30% right;
+    padding-bottom: 16px;
+    margin: auto 24px;
+  }
+  .poznej-mne-vic-button {
+    display: none;
+  }
+
+  .pojdme-se-poznat .fade-out-text.closed {
+    background: none;
+  }
+
+  .pojdme-se-poznat .rollout-text.bigger-screen {
+    display: inline;
+  }
+
+  .pojdme-se-poznat__text-container {
+    padding: 16px 53px;
   }
 }
