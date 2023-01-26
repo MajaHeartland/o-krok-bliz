@@ -12,6 +12,11 @@
   --primary-dark: #005656;
 }
 /***** defaults *****/
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
 body {
   font-family: "Inter", sans-serif;
   text-align: center;
@@ -20,7 +25,13 @@ body {
   box-sizing: border-box;
 }
 
-section {
+.co-je-to-koucink,
+.s-cim-mohu-pomoci,
+.proc-zkusit-koucink,
+.jak-koucink-probiha,
+.zkusenosti,
+.otazky,
+.uvodni-setkani {
   padding: 56px 16px 0;
 }
 /* font-colours */
@@ -125,6 +136,7 @@ button {
 .wrapper {
   box-shadow: var(--primary-ultralight) 0 4px 8px;
   border-radius: 16px;
+  background: white;
   text-align: left;
   padding: 15px 0;
   margin: 10px 0;
@@ -310,10 +322,10 @@ button {
 }
 
 .co-je-to-koucink {
-  background-image: url(img/gradient-background.svg);
+  background: linear-gradient(180deg, #ffffff 0%, #e1f8f8 47.4%, #ffffff 100%);
   margin: auto 0;
   padding: 0 24px;
-  min-height: 730px;
+  /* min-height: 730px; */
 }
 
 .co-je-to-koucink h3 {
@@ -326,8 +338,7 @@ button {
 }
 
 .proc-zkusit-koucink {
-  background-image: url(img/gradient-background.svg);
-  background-size: contain;
+  background: linear-gradient(180deg, #ffffff 0%, #e1f8f8 47.4%, #ffffff 100%);
 }
 
 .proc-zkusit-koucink .icon {
@@ -435,7 +446,7 @@ button {
 }
 
 .uvodni-setkani {
-  background-image: url(./img/gradient-background.svg);
+  background: linear-gradient(180deg, #ffffff 0%, #e1f8f8 47.4%, #ffffff 100%);
 }
 
 .uvodni-setkani input,
@@ -553,9 +564,13 @@ button {
   .proc-zkusit-koucink {
     background-image: none;
   }
-  .background {
-    background-image: url(./img/gradient-bigger.svg);
-    background-size: contain;
+  section.background {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #e1f8f8 47.4%,
+      #ffffff 100%
+    );
   }
   .s-cim-mohu-pomoci .container-background {
     background: rgba(255, 255, 255, 0.65);
@@ -570,12 +585,10 @@ button {
   }
 
   .pojdme-se-poznat__tablet-background {
-    background-image: url(./img/pojdme-se-poznat-tablet-background.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top 30% right;
-    padding-bottom: 16px;
-    margin: auto 24px;
+    background: linear-gradient(240.56deg, #ffffff 27.15%, #e1f8f8 100.7%);
+    border-radius: 27.021px;
+    margin: 40px;
+    /* transform: rotate(180deg); */
   }
   .poznej-mne-vic-button {
     display: none;
@@ -591,5 +604,8 @@ button {
 
   .pojdme-se-poznat__text-container {
     padding: 16px 53px;
+  }
+  .uvodni-setkani {
+    background: none;
   }
 }
