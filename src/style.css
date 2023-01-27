@@ -651,7 +651,17 @@ button {
   .uvodni-setkani {
     width: 50%;
   }
+  .pojdme-se-poznat h3 {
+    margin-top: 0 !important;
+  }
+  .pojdme-se-poznat__text-container {
+    margin-top: 0;
+  }
+  .pojdme-se-poznat .flex-left {
+    flex-basis: 100%;
+  }
   .pojdme-se-poznat img {
     width: 100%;
+    transform: translateY(-10%);
   }
 }
