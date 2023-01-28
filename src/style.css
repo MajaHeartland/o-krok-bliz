@@ -648,9 +648,6 @@ button {
     padding: 0 24px;
   }
 
-  .uvodni-setkani {
-    width: 50%;
-  }
   .pojdme-se-poznat h3 {
     margin-top: 0 !important;
   }
@@ -663,5 +660,14 @@ button {
   .pojdme-se-poznat img {
     width: 100%;
     transform: translateY(-10%);
+  }
+
+  .otazky .wrapper {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .uvodni-setkani {
+    width: 70%;
   }
 }
