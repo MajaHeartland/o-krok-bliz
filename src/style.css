@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "hero.css";
 
 :root {
   --primary-default: #008080;
@@ -671,3 +672,25 @@ button {
     width: 70%;
   }
 }
+
+/* navigation */
+.navigation {
+  margin-top: 65px;
+}
+
+.navigation__title {
+  color: var(--primary-default);
+  font-weight: 500;
+    font-size: 2.125rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+}
+
+.navigation__subtitle {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--primary-light);
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
