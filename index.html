@@ -19,7 +19,6 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
-  <body>
     <div class="modal fade" id="myModal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -99,44 +98,37 @@
         </div>
       </div>
     </div>
-    <section class="hero-section">
-      <h1>Tereza Neradová</h1>
-      <h5>Životní a kariérní kouč</h5>
-      <hr class="line" width="48px" />
 
-      <div class="hero-image-container">
-        <div>
-          <p>
-            Potřebuješ si srovnat myšlenky?<br />Stojíš na životní
-            křižovatce?<br />Potřebuješ změnu?
-          </p>
-          <h2 class="mobile-h2">Pojďme se potkat!</h2>
-          <h4 class="mobile-h4">Pomohu Ti udělat první krok.</h4>
-          <button
-            class="hero-button"
-            data-bs-toggle="modal"
-            data-bs-target="#myModal"
-          >
-            Úvodní setkání ZDARMA
-          </button>
-
-          <div class="hero-outro big-screen d-none">
-            <p class="mobile-body">
-              Zajděme například na kávu, pojďme se projít nebo si jen zavolejme.
-              <br />
-              Cokoliv Ti vyhovuje.
-            </p>
-          </div>
-        </div>
-        <img src="./src/img/hero-no-blue.png" alt="hero-image" width="100%" />
+    <!-- Navigation -->
+    <nav class="navigation">
+      <div class="navigation__wrapper">
+        <h1 class="navigation__title">Tereza Neradová</h1>
+        <h5 class="navigation__subtitle">Životní a kariérní kouč</h5>
       </div>
-      <div class="hero-outro small-screen">
-        <p class="mobile-body">
-          Zajděme například na kávu, pojďme se projít nebo si jen zavolejme.
-          <br />
-          Cokoliv Ti vyhovuje.
+    </nav>
+
+    <section class="hero">
+      <div class="hero-bg">
+      </div>
+      <div class="hero-text-wrapper">
+        <p class="hero-paragraph">
+          Potřebuješ si srovnat myšlenky?<br />Stojíš na životní
+          křižovatce?<br />Potřebuješ změnu?
+        </p>
+        <h2 class="hero-title">Pojďme se potkat!</h2>
+        <h4 class="hero-subtitle">Pomohu Ti udělat první krok.</h4>
+        <button
+          class="hero-button"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal"
+        >
+          Úvodní setkání ZDARMA
+        </button>
+        <p class="hero-note">
+          Zajděme například na kávu, pojďme se projít nebo si jen zavolejme.<br>Cokoliv Ti vyhovuje. 
         </p>
       </div>
+      <img class="hero-image" src="./src/img/hero-no-blue.png" alt="hero-image" width="100%" />
     </section>
     <section class="background">
       <section class="co-je-to-koucink">
@@ -455,7 +447,7 @@
           <p>Text Assistant</p>
           <p class="item__carousel-review">
             Koučování pod vedením Terky jsem si zkusila ještě v jejích začátcích
-            a už tehdy bylo sezení s ní naprosto profesionální. Terka se do mě
+            a už tehdy bylo sezení s ní naprosto profesionální. hero se do mě
             dokázala vcítit a přestože jsem měla asi tisíc otázek, ona je na mě
             "odpinkla" zpět a přiměla mě na ně odpovědět samotnou. To se mi
             podařilo jen s její dopomocí, kdy mě při váhání s odpověďmi dokázala
