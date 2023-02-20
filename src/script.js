@@ -12,3 +12,27 @@ function show_hide() {
   }
 }
 rolloutButton.addEventListener("click", show_hide);
+
+const formButton = document.getElementById('form-button')
+formButton.addEventListener("click", sendEmail);
+console.log(formButton)
+
+function sendEmail() {
+  console.log('called')
+  fetch("https://formsubmit.co/ajax/5dd9c70e831165c738d2000305c22722", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        name: "FormSubmit",
+        message: "Cus Tome!"
+    })
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+}
+
+// sendEmail()
