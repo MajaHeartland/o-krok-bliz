@@ -20,119 +20,50 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header sticky-top">
-            <div class="sticky-top">
-              <h2 class="mobile-h2">Úvodní setkání zdarma</h2>
-            </div>
-            <div>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
-          </div>
-          <hr class="line" width="48px" />
-          <img src="/src/icons/clock.svg" alt="clock-icon" width="25px" />
-          <h4 class="mobile-h4 mt-2 mb-4">30 minut</h4>
-          <img src="/src/icons/hands.svg" alt="hands-icon" width="25px" />
-          <h4 class="mobile-h4 mt-2 mb-4">Online/osobně</h4>
-          <p class="mobile-body">
-            Pokud cítíš, že bychom si “sedli”,tak mi napiš. Do 48h se Ti ozvu a
-            domluvíme se na termínu.
-          </p>
-          <form class="modal-form">
-            <input
-              type="text"
-              name="name"
-              placeholder="Jméno a příjmení"
-              required
-              class="name"
-            />
-            <input type="email" name="email" placeholder="E-mail" required />
-
-            <div class="comment">
-              <input
-                type="text"
-                name="topic"
-                placeholder="Co bys chtěl/a probrat?"
-                required
-                class="comment-section"
-              />
-            </div>
-            <div class="modal-button">
-              <button
-                class="blue-button d-block"
-                id="form-button"
-                type="submit"
-                data-bs-dismiss="modal"
-                data-bs-target="#successModal"
-              >
-                Odeslat Zprávu
-              </button>
-            </div>
-            <div class="modal" id="successModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Successful!!</h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <p>Type your message here</p>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
     <!-- Navigation -->
     <nav class="navigation">
       <div class="navigation__wrapper">
         <h1 class="navigation__title">Tereza Neradová</h1>
         <h5 class="navigation__subtitle">Životní a kariérní kouč</h5>
+        <ul>
+          <li><a href="#uvod">Úvod</a></li>
+          <li><a href="#koucink">Koučink</a></li>
+          <li><a href="#poznej-mne">Poznej mne</a></li>
+          <li><a href="#recenze">Recenze</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li>
+            <a href="#setkani"><button>Úvodní setkání zdarma</button></a>
+          </li>
+
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="hero-bg">
-      </div>
+    <section class="hero" id="uvod">
+      <div class="hero-bg"></div>
       <div class="hero-text-wrapper">
         <p class="hero-paragraph">
-          Potřebuješ si srovnat myšlenky?<br />Stojíš na životní
-          křižovatce?<br />Potřebuješ změnu?
+          Potřebuješ si srovnat myšlenky?<br />Stojíš na životní křižovatce?<br />Potřebuješ
+          změnu?
         </p>
         <h2 class="hero-title">Pojďme se potkat!</h2>
         <h4 class="hero-subtitle">Pomohu Ti udělat první krok.</h4>
-        <button
-          class="hero-button"
-          data-bs-toggle="modal"
-          data-bs-target="#myModal"
-        >
-          Úvodní setkání ZDARMA
-        </button>
+        <button class="hero-button">Úvodní setkání ZDARMA</button>
         <p class="hero-note">
-          Zajděme například na kávu, pojďme se projít nebo si jen zavolejme.<br>Cokoliv Ti vyhovuje. 
+          Zajděme například na kávu, pojďme se projít nebo si jen zavolejme.<br />Cokoliv
+          Ti vyhovuje.
         </p>
       </div>
-      <img class="hero-image" src="./src/img/hero-no-blue.png" alt="hero-image" width="100%" />
+      <img
+        class="hero-image"
+        src="./src/img/hero-no-blue.png"
+        alt="hero-image"
+        width="100%"
+      />
     </section>
     <section class="background">
-      <section class="co-je-to-koucink">
+      <section class="co-je-to-koucink" id="koucink">
         <h2 class="mobile-h2">Co je to koučink?</h2>
         <h3>Koučink je efektivní nástroj ke změně</h3>
         <hr class="line" width="48px" />
@@ -306,15 +237,7 @@
           <button class="blue-button" id="trigger-modal">
             Domluvit setkání zdarma
           </button>
-        </div>  
-
-        <button
-          class="blue-button"
-          data-bs-toggle="modal"
-          data-bs-target="#myModal"
-        >
-          Domluvit setkání zdarma
-        </button>
+        </div>
       </section>
     </section>
     <section class="jak-koucink-probiha">
@@ -361,7 +284,7 @@
       </div>
     </section>
 
-    <section class="pojdme-se-poznat">
+    <section class="pojdme-se-poznat" id="poznej-mne">
       <h2 class="mobile-h2">Pojďme se trochu poznat</h2>
       <h2 class="mobile-h2 blue">Ahoj, těší mě</h2>
       <div class="pojdme-se-poznat__tablet-background">
@@ -445,7 +368,7 @@
         Pojďme se potkat!
       </button>
     </section>
-    <section class="zkusenosti">
+    <section class="zkusenosti" id="recenze">
       <h2 class="mobile-h2">Zkušenosti mých klientů</h2>
       <hr class="line" width="48px" />
       <div class="second-carousel owl-carousel owl-theme">
@@ -537,7 +460,7 @@
       </div>
     </section>
     <section class="background">
-      <section class="otazky">
+      <section class="otazky" id="faq">
         <h2 class="mobile-h2">Máš ještě otázky?</h2>
         <hr class="line" width="48px" />
         <div class="wrapper">
@@ -645,7 +568,7 @@
           </div>
         </div>
       </section>
-      <section class="uvodni-setkani">
+      <section class="uvodni-setkani" id="setkani">
         <h2 class="mobile-h2">Úvodní setkání zdarma</h2>
         <hr class="line" width="48px" />
         <img src="/src/icons/clock.svg" alt="clock-icon" />
@@ -698,7 +621,7 @@
       </p>
     </section>
 
-    <section class="zustanme-v-kontaktu">
+    <section class="zustanme-v-kontaktu" id="kontakt">
       <h2 class="mobile-h2">Zůstaňme v kontaktu</h2>
       <hr class="line" width="48px" />
       <div class="zustanme-v-kontaktu__links-container">
@@ -808,7 +731,6 @@
         }
       }
     </script>
-    <script type="module" src="./src/scripts/App.js">
-    </script>
+    <script type="module" src="./src/scripts/App.js"></script>
   </body>
 </html>
