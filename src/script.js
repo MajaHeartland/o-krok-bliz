@@ -13,14 +13,14 @@ function show_hide() {
 }
 rolloutButton.addEventListener("click", show_hide);
 
-/* JavaScript code to toggle navbar visibility */
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos || currentScrollPos < 10) {
-    document.querySelector("nav").classList.remove("hidden");
-  } else {
-    document.querySelector("nav").classList.add("hidden");
-  }
-  prevScrollpos = currentScrollPos;
-};
+/*  toggle navbar visibility */
+// let prevScrollpos = window.pageYOffset;
+// window.onscroll = function () {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos || currentScrollPos < 10) {
+//     document.querySelector("nav").classList.remove("hidden");
+//   } else {
+//     document.querySelector("nav").classList.add("hidden");
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
