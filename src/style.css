@@ -244,33 +244,6 @@ button {
   width: auto;
 }
 
-/* modal */
-
-.modal-header {
-  background-color: white;
-}
-.modal .mobile-body {
-  padding: 0 16px;
-}
-
-.modal-button {
-  background-color: white;
-  width: 100%;
-}
-
-.modal .blue-button {
-  width: 90%;
-  margin: 0 auto;
-}
-.modal input {
-  width: 95% !important;
-  margin-bottom: 14px !important;
-}
-
-.modal img {
-  margin: 0 auto;
-}
-
 /* sections */
 
 .proc-zkusit-koucink {
