@@ -25,7 +25,6 @@ body {
   box-sizing: border-box;
 }
 
-.co-je-to-koucink,
 .s-cim-mohu-pomoci,
 .proc-zkusit-koucink,
 .jak-koucink-probiha,
@@ -332,22 +331,6 @@ nav .line {
 }
 /* sections */
 
-.co-je-to-koucink {
-  background: linear-gradient(180deg, #ffffff 0%, #e1f8f8 47.4%, #ffffff 100%);
-  margin: auto 0;
-  padding: 0 24px;
-  /* min-height: 730px; */
-}
-
-.co-je-to-koucink h3 {
-  margin: 16px auto 0;
-  line-height: 125%;
-}
-
-.co-je-to-koucink .arrow-icon {
-  margin: 16px 0;
-}
-
 .proc-zkusit-koucink {
   background: linear-gradient(180deg, #ffffff 0%, #e1f8f8 47.4%, #ffffff 100%);
 }
@@ -521,13 +504,11 @@ nav .line {
 }
 
 @media (min-width: 500px) {
-  .hero-button,
   .blue-button,
   .poznej-mne-vic-button {
     max-width: 320px;
   }
 
-  .co-je-to-koucink,
   .s-cim-mohu-pomoci,
   .proc-zkusit-koucink {
     background-image: none;
@@ -595,15 +576,6 @@ nav .line {
 
   .flex-card {
     flex-basis: 100%;
-  }
-  .co-je-to-koucink .side-arrow {
-    display: inline;
-  }
-  .co-je-to-koucink .down-arrow {
-    display: none;
-  }
-  .co-je-to-koucink .mobile-body {
-    padding: 0 24px;
   }
 
   .pojdme-se-poznat h3 {
