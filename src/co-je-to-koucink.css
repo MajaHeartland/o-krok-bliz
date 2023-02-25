@@ -17,6 +17,11 @@
   margin: 16px 0;
 }
 
+/* arrow for co je to koucink section - for desktop only*/
+.side-arrow {
+  display: none;
+}
+
 @media (min-width: 500px) {
   .co-je-to-koucink {
     background-image: none;
