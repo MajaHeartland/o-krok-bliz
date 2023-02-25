@@ -1,0 +1,21 @@
+.proc-zkusit-koucink {
+  padding: 56px 16px 0;
+}
+
+.proc-zkusit-koucink .icon {
+  margin-bottom: 8px;
+}
+
+.proc-zkusit-koucink h4 {
+  margin-bottom: 16px;
+}
+
+.proc-zkusit-koucink .mobile-body {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 500px) {
+  .proc-zkusit-koucink {
+    background-image: none;
+  }
+}

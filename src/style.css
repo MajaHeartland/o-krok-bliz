@@ -25,7 +25,6 @@ body {
   box-sizing: border-box;
 }
 
-.proc-zkusit-koucink,
 .jak-koucink-probiha,
 .zkusenosti,
 .otazky,
@@ -243,22 +242,6 @@ button {
 
 /* sections */
 
-.proc-zkusit-koucink {
-  background: linear-gradient(180deg, #ffffff 0%, #e1f8f8 47.4%, #ffffff 100%);
-}
-
-.proc-zkusit-koucink .icon {
-  margin-bottom: 8px;
-}
-
-.proc-zkusit-koucink h4 {
-  margin-bottom: 16px;
-}
-
-.proc-zkusit-koucink .mobile-body {
-  margin-bottom: 32px;
-}
-
 .jak-koucink-probiha .owl-stage {
   padding-bottom: 20px;
 }
@@ -421,9 +404,6 @@ button {
     max-width: 320px;
   }
 
-  .proc-zkusit-koucink {
-    background-image: none;
-  }
   section.background {
     background: linear-gradient(
       180deg,
