@@ -26,8 +26,7 @@ body {
 }
 
 .jak-koucink-probiha,
-.zkusenosti,
-.otazky {
+.zkusenosti {
   padding: 56px 16px 0;
 }
 /* font-colours */
@@ -39,8 +38,7 @@ body {
 }
 
 h3,
-.jak-koucink-probiha__carousel-heading,
-.otazky h3 {
+.jak-koucink-probiha__carousel-heading {
   color: var(--primary-default);
 }
 
@@ -265,10 +263,6 @@ button {
   font-weight: 400;
 }
 
-.otazky h3 {
-  font-size: 1.0625rem;
-}
-
 @media (max-width: 360px) {
   .mobile-body,
   .collapsible h3 {
@@ -305,10 +299,5 @@ button {
 
   .flex-card {
     flex-basis: 100%;
-  }
-
-  .otazky .wrapper {
-    width: 70%;
-    margin: 10px auto;
   }
 }

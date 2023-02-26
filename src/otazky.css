@@ -1,0 +1,15 @@
+.otazky {
+  padding: 56px 16px 0;
+}
+
+.otazky h3 {
+  color: var(--primary-default);
+  font-size: 1.0625rem;
+}
+
+@media (min-width: 500px) {
+  .otazky .wrapper {
+    width: 70%;
+    margin: 10px auto;
+  }
+}
