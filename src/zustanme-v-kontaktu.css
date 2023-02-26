@@ -1,0 +1,23 @@
+.zustanme-v-kontaktu {
+  padding: 40px 24px;
+}
+
+.zustanme-v-kontaktu,
+.zustanme-v-kontaktu .mobile-body {
+  color: var(--secondary-ultralight);
+}
+.zustanme-v-kontaktu h2 {
+  color: var(--primary-verylight);
+}
+
+.zustanme-v-kontaktu__links-container {
+  padding-left: -16px;
+}
+
+.zustanme-v-kontaktu {
+  background: var(--primary-dark);
+}
+
+.zustanme-v-kontaktu .line {
+  background: var(--primary-verylight);
+}
