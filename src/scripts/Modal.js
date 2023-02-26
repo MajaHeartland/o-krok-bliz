@@ -1,5 +1,10 @@
+import Form from './Form.js'
+
 export default {
-    data() {
+  components: {
+    Form
+  },
+  data() {
       return { 
          form: {
            name: '',
@@ -63,46 +68,9 @@ export default {
               <h2 class="mobile-h2"><strong>Úvodní setkání zdarma</strong></h2>
             </div>
             <div class="modal__body">
-
-            <hr class="line" width="48px" />
-            <img src="src/icons/clock.svg" alt="clock-icon" class="modal__icon" />
-            <h4 class="mobile-h4 mt-2 mb-4">30 minut</h4>
-            <img src="/src/icons/hands.svg" alt="hands-icon" class="modal__icon" />
-            <h4 class="mobile-h4 mt-2 mb-4">Online/osobně</h4>
-            <p class="mobile-body">
-              Pokud cítíš, že bychom si “sedli”,tak mi napiš. Do 48h se Ti ozvu a
-              domluvíme se na termínu.
-            </p>
-            <form class="modal-form">
-              <input
-                v-model="form.name"
-                type="text"
-                name="name"
-                placeholder="Jméno a příjmení"
-                required
-                class="name"
-              />
-              <input v-model="form.email" type="email" name="email" placeholder="E-mail" required />
-              <div class="comment">
-                <input
-                  v-model="form.topic"
-                  type="textarea"
-                  name="topic"
-                  placeholder="Co bys chtěl/a probrat?"
-                  required
-                  class="comment-section"
-                />
-              </div>
-            </form>
-            
-
+              <Form></Form>
             </div>
-            <div class="modal__footer">
-              <button @click="submitForm" class="blue-button modal__submit">
-                Domluvit setkání zdarma
-              </button>
-            </div>
-          </div>
+          </div>  
           </transition>
       </div>
     `
