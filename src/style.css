@@ -38,23 +38,10 @@ body {
   color: var(--secondary-default);
 }
 
-.zustanme-v-kontaktu h2 {
-  color: var(--primary-verylight);
-}
-
 h3,
 .jak-koucink-probiha__carousel-heading,
 .otazky h3 {
   color: var(--primary-default);
-}
-
-.zustanme-v-kontaktu,
-.zustanme-v-kontaktu .mobile-body {
-  color: var(--secondary-ultralight);
-}
-
-.zustanme-v-kontaktu {
-  background: var(--primary-dark);
 }
 
 /* font styles */
@@ -116,10 +103,6 @@ button {
   border: none;
   height: 1px;
   margin: 32px auto;
-}
-
-.zustanme-v-kontaktu .line {
-  background: var(--primary-verylight);
 }
 
 /* dropdown */
@@ -284,14 +267,6 @@ button {
 
 .otazky h3 {
   font-size: 1.0625rem;
-}
-
-.zustanme-v-kontaktu {
-  padding: 40px 24px;
-}
-
-.zustanme-v-kontaktu__links-container {
-  padding-left: -16px;
 }
 
 @media (max-width: 360px) {
