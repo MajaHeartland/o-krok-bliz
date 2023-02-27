@@ -1,7 +1,13 @@
+import Notification from './Notification.js'
+
 export default {
     props: ['isModal'],
+    components: {
+      Notification
+    },
     data() {
-      return { 
+      return {
+         showNotification: false,
          form: {
            name: '',
            email: '',
@@ -26,6 +32,11 @@ export default {
       })
           .then(response => response.json())
           .then(data => {
+            this.showNotification = true
+            setTimeout(() => {
+              this.$emit('formSubmit')
+              this.showNotification = false
+            }, 2500)
             this.clearForm()
           })
           .catch(error => console.log(error));
@@ -39,7 +50,7 @@ export default {
       }
     },
     template: `
-      <div>
+      <div class="form">
         <hr class="form__line"/>
         <img src="src/icons/clock.svg" alt="clock-icon" class="form__icon" />
         <div class="form__info">30 minut</div>
@@ -74,6 +85,9 @@ export default {
                 Odeslat rezervaci
               </button>
             </div>
+            <transition name="notification">
+              <Notification v-if="showNotification"></Notification>
+            </transition>
       </div>
     `
   }

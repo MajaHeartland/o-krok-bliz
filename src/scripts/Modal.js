@@ -42,7 +42,7 @@ export default {
               </h2>
             </div>
             <div class="modal__body">
-              <Form :is-modal="true" ></Form>
+              <Form :is-modal="true" @form-submit="closeModal"></Form>
             </div>
           </div>  
           </transition>
