@@ -25,23 +25,14 @@ body {
   box-sizing: border-box;
 }
 
-.jak-koucink-probiha,
-.zkusenosti,
-.otazky {
+.zkusenosti {
   padding: 56px 16px 0;
 }
 /* font-colours */
 .mobile-h2,
 .mobile-h4,
-.mobile-body,
-.jak-koucink-probiha__carousel-text {
+.mobile-body {
   color: var(--secondary-default);
-}
-
-h3,
-.jak-koucink-probiha__carousel-heading,
-.otazky h3 {
-  color: var(--primary-default);
 }
 
 /* font styles */
@@ -213,36 +204,6 @@ button {
 
 /* sections */
 
-.jak-koucink-probiha .owl-stage {
-  padding-bottom: 20px;
-}
-
-.jak-koucink-probiha .item {
-  box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
-}
-
-.jak-koucink-probiha .item-1 {
-  background-image: url(./img/01.svg);
-}
-.jak-koucink-probiha .item-2 {
-  background-image: url(./img/02.svg);
-}
-.jak-koucink-probiha .item-3 {
-  background-image: url(./img/03.svg);
-}
-.jak-koucink-probiha .item-4 {
-  background-image: url(./img/04.svg);
-}
-
-.jak-koucink-probiha :is(.item-1, .item-2, .item-3, .item-4) {
-  background-repeat: no-repeat;
-}
-
-.jak-koucink-probiha__carousel-heading {
-  padding-top: 30px;
-  padding-right: 10%;
-}
-
 .zkusenosti .item {
   background-color: var(--primary-dark);
   color: white;
@@ -265,17 +226,12 @@ button {
   font-weight: 400;
 }
 
-.otazky h3 {
-  font-size: 1.0625rem;
-}
-
 @media (max-width: 360px) {
   .mobile-body,
   .collapsible h3 {
     font-size: 1rem;
   }
-  .wrapper .collapsible-text,
-  .otazky h3 {
+  .wrapper .collapsible-text {
     font-size: 0.8rem;
   }
   .collapsible label:after {
@@ -305,10 +261,5 @@ button {
 
   .flex-card {
     flex-basis: 100%;
-  }
-
-  .otazky .wrapper {
-    width: 70%;
-    margin: 10px auto;
   }
 }
