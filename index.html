@@ -7,13 +7,15 @@
     <title>Tereza Neradová</title>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/modal.css" />
+    <link rel="stylesheet" href="src/form.css" />
+    <link rel="stylesheet" href="src/notification.css" />
     <link rel="stylesheet" href="src/navigation.css" />
     <link rel="stylesheet" href="src/hero.css" />
     <link rel="stylesheet" href="src/co-je-to-koucink.css" />
     <link rel="stylesheet" href="src/s-cim-mohu-pomoci.css" />
     <link rel="stylesheet" href="src/proc-zkusit-koucink.css" />
     <link rel="stylesheet" href="src/pojdme-se-poznat.css" />
-    <link rel="stylesheet" href="src/uvodni-setkani.css" />
+    <link rel="stylesheet" href="src/session.css" />
     <link rel="stylesheet" href="src/zustanme-v-kontaktu.css" />
     <link rel="stylesheet" href="src/otazky.css" />
     <link rel="stylesheet" href="src/assets/owlCarousel/owl.carousel.min.css" />
@@ -31,7 +33,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navigation">
+    <nav class="navigation" id="navbar">
       <div class="navigation__wrapper">
         <div class="flexbox">
           <div class="navigation__flex-left">
@@ -581,41 +583,14 @@
           </div>
         </div>
       </section>
-      <section class="uvodni-setkani" id="setkani">
-        <h2 class="mobile-h2">Úvodní setkání zdarma</h2>
-        <hr class="line" width="48px" />
-        <img src="/src/icons/clock.svg" alt="clock-icon" />
-        <h4 class="mobile-h4 mt-2">30 minut</h4>
-        <img src="/src/icons/hands.svg" alt="hands-icon" />
-        <h4 class="mobile-h4 mt-2 mb-4">Online/osobně</h4>
-        <p class="mobile-body">
-          Pokud cítíš, že bychom si “sedli”,tak mi napiš. Do 48h se Ti ozvu a
-          domluvíme se na termínu.
-        </p>
-        <form>
-          <input
-            type="text"
-            name="name"
-            placeholder="Jméno a příjmení"
-            required
-            class="name"
-          />
-          <input type="email" name="email" placeholder="E-mail" required />
 
-          <div class="comment">
-            <input
-              type="text"
-              name="topic"
-              placeholder="Co bys chtěl/a probrat?"
-              required
-              class="comment-section"
-            />
-          </div>
-          <button class="blue-button d-block" id="form-button" type="submit">
-            Odeslat Zprávu
-          </button>
-        </form>
+      <section class="session" id="setkani">
+        <div class="session__container">
+          <h3 class="session__title">Úvodní setkání zdarma</h3>
+          <div id="session-wrapper"></div>
+        </div>
       </section>
+
     </section>
     <!-- <section class="sam-sobe-koucem">
       <h2 class="mobile-h2">Sám sobě koučem</h2>
@@ -671,7 +646,6 @@
         Michala Rusaňuková
       </p>
     </section>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -799,5 +773,6 @@
       }
     </script>
     <script type="module" src="./src/scripts/App.js"></script>
+    <script type="module" src="./src/scripts/FormApp.js"></script>
   </body>
 </html>
