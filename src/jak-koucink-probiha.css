@@ -1,0 +1,40 @@
+.jak-koucink-probiha {
+  padding: 56px 16px 0;
+}
+
+.jak-koucink-probiha__carousel-text {
+  color: var(--secondary-default);
+}
+.jak-koucink-probiha__carousel-heading {
+  color: var(--primary-default);
+}
+
+.jak-koucink-probiha .owl-stage {
+  padding-bottom: 20px;
+}
+
+.jak-koucink-probiha .item {
+  box-shadow: rgba(0, 128, 128, 0.1) 0 4px 16px;
+}
+
+.jak-koucink-probiha .item-1 {
+  background-image: url(./img/01.svg);
+}
+.jak-koucink-probiha .item-2 {
+  background-image: url(./img/02.svg);
+}
+.jak-koucink-probiha .item-3 {
+  background-image: url(./img/03.svg);
+}
+.jak-koucink-probiha .item-4 {
+  background-image: url(./img/04.svg);
+}
+
+.jak-koucink-probiha :is(.item-1, .item-2, .item-3, .item-4) {
+  background-repeat: no-repeat;
+}
+
+.jak-koucink-probiha__carousel-heading {
+  padding-top: 30px;
+  padding-right: 10%;
+}
