@@ -12,6 +12,7 @@
     font-size: 0.8rem;
   }
 }
+
 @media (min-width: 500px) {
   .otazky .wrapper {
     width: 70%;

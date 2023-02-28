@@ -35,6 +35,10 @@ body {
   color: var(--secondary-default);
 }
 
+h3 {
+  color: var(--primary-default);
+}
+
 /* font styles */
 h2,
 h3 {
