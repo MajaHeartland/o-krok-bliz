@@ -26,15 +26,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navigation" id="navbar">
+    <!-- <nav class="navigation" id="navbar">
       <div class="navigation__wrapper">
         <div class="flexbox">
           <div class="navigation__flex-left">
@@ -60,7 +57,7 @@
           </div>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <section class="hero" id="uvod">
       <div class="hero-bg"></div>
@@ -141,80 +138,76 @@
         <div class="container-background">
           <h2 class="mobile-h2">S čím Ti mohu pomoci?</h2>
           <hr class="line" width="48px" />
-          <div class="s-cim-mohu-pomoci__flexbox">
-            <div class="wrapper">
-              <div class="collapsible">
-                <input type="checkbox" id="prace-a-kariera" />
-                <label for="prace-a-kariera"
-                  ><div class="dropdown-header">
-                    <div class="flexbox">
-                      <img src="./src/icons/work.svg" alt="work-icon" />
-                      <h3 class="selected">Práce a kariéra</h3>
-                    </div>
+          <div class="s-cim-mohu-pomoci__dropdown">
+            <div class="s-cim-mohu-pomoci__dropdown-item dropdowns">
+              <div class="s-cim-mohu-pomoci__flexbox">
+                <div class="s-cim-mohu-pomoci__dropdown-header">
+                  <div class="s-cim-mohu-pomoci__flexbox">
+                    <img src="/src/icons/work.svg" alt="work icon" />
+                    <h3>Práce a kariéra</h3>
                   </div>
-                </label>
-                <div class="collapsible-text mobile-body">
-                  <ul>
-                    <li>nejsem spokojený/á v práci</li>
-                    <li>přemýšlím o změně kariéry</li>
-                    <li>jsem na pokraji vyhoření</li>
-                    <li>chci zlepšit své dovednosti, ale nevím jak</li>
-                    <li>mám problémy s komunikací a vztahy</li>
-                    <li>půjdu do důchodu a nevím co dál</li>
-                  </ul>
+                </div>
+                <div class="arrow" id="arrow">
+                  <img src="/src/icons/down.svg" alt="dropdown arrow" />
+                </div>
+              </div>
+              <div class="s-cim-mohu-pomoci__dropdown-content">
+                <div class="mobile-body">
+                  <li>nejsem spokojený/á v práci</li>
+                  <li>přemýšlím o změně kariéry</li>
+                  <li>jsem na pokraji vyhoření</li>
+                  <li>chci zlepšit své dovednosti, ale nevím jak</li>
+                  <li>mám problémy s komunikací a vztahy</li>
+                  <li>půjdu do důchodu a nevím co dál</li>
                 </div>
               </div>
             </div>
-            <div class="wrapper">
-              <div class="collapsible">
-                <input
-                  type="checkbox"
-                  id="osobni-rozvoj"
-                  class="prace-a-kariera"
-                />
-                <label for="osobni-rozvoj"
-                  ><div class="dropdown-header">
-                    <div class="flexbox">
-                      <img src="./src/icons/rozvoj.svg" alt="rozvoj-icon" />
-                      <h3>Osobní rozvoj</h3>
-                    </div>
+            <div class="s-cim-mohu-pomoci__dropdown-item dropdowns">
+              <div class="s-cim-mohu-pomoci__flexbox">
+                <div class="s-cim-mohu-pomoci__dropdown-header">
+                  <div class="s-cim-mohu-pomoci__flexbox">
+                    <img src="./src/icons/rozvoj.svg" alt="rozvoj-icon" />
+                    <h3>Osobní rozvoj</h3>
                   </div>
-                </label>
-                <div class="collapsible-text mobile-body">
-                  <ul>
-                    <li>stojím na životní křižovatce a nevím co dál</li>
-                    <li>chci zlepšit svůj život, ale nevím, kde začít</li>
-                    <li>vím co chci, ale mám problém udělat první krok</li>
-                    <li>chci si nastavit ve svém životě balanc</li>
-                    <li>mám problém dát sám/u sebe jako prioritu</li>
-                    <li>chci umět lépe zvládat stres</li>
-                    <li>chybí mi motivace</li>
-                  </ul>
+                </div>
+                <div class="arrow" id="arrow">
+                  <img src="/src/icons/down.svg" alt="dropdown arrow" />
+                </div>
+              </div>
+              <div class="s-cim-mohu-pomoci__dropdown-content">
+                <div class="mobile-body">
+                  <li>stojím na životní křižovatce a nevím co dál</li>
+                  <li>chci zlepšit svůj život, ale nevím, kde začít</li>
+                  <li>vím co chci, ale mám problém udělat první krok</li>
+                  <li>chci si nastavit ve svém životě balanc</li>
+                  <li>mám problém dát sám/u sebe jako prioritu</li>
+                  <li>chci umět lépe zvládat stres</li>
+                  <li>chybí mi motivace</li>
                 </div>
               </div>
             </div>
-            <div class="wrapper">
-              <div class="collapsible">
-                <input type="checkbox" id="komunikace-a-vztahy" />
-                <label for="komunikace-a-vztahy"
-                  ><div class="dropdown-header">
-                    <div class="flexbox">
-                      <img
-                        src="./src/icons/communication.svg"
-                        alt="communnication-icon"
-                      />
-                      <h3>Komunikace a vztahy</h3>
-                    </div>
+            <div class="s-cim-mohu-pomoci__dropdown-item dropdowns">
+              <div class="s-cim-mohu-pomoci__flexbox">
+                <div class="s-cim-mohu-pomoci__dropdown-header">
+                  <div class="s-cim-mohu-pomoci__flexbox">
+                    <img
+                      src="./src/icons/communication.svg"
+                      alt="communnication-icon"
+                    />
+                    <h3>Komunikace a vztahy</h3>
                   </div>
-                </label>
-                <div class="collapsible-text mobile-body">
-                  <ul>
-                    <li>chci umět lépe zvládat konflitky</li>
-                    <li>chci umět lépe komunikovat svoje potřeby</li>
-                    <li>chci umět lépe zvládat krizové situace</li>
-                    <li>chci zlepšit vztah sám/a se sebou</li>
-                    <li>chci si udělat pořádek ve vztazích</li>
-                  </ul>
+                </div>
+                <div class="arrow" id="arrow">
+                  <img src="/src/icons/down.svg" alt="dropdown arrow" />
+                </div>
+              </div>
+              <div class="s-cim-mohu-pomoci__dropdown-content">
+                <div class="mobile-body">
+                  <li>chci umět lépe zvládat konflitky</li>
+                  <li>chci umět lépe komunikovat svoje potřeby</li>
+                  <li>chci umět lépe zvládat krizové situace</li>
+                  <li>chci zlepšit vztah sám/a se sebou</li>
+                  <li>chci si udělat pořádek ve vztazích</li>
                 </div>
               </div>
             </div>
@@ -479,107 +472,115 @@
       <section class="otazky" id="faq">
         <h2 class="mobile-h2">Máš ještě otázky?</h2>
         <hr class="line" width="48px" />
-        <div class="wrapper">
-          <div class="collapsible">
-            <input type="checkbox" id="cena" />
-            <label for="cena"
-              ><div class="dropdown-header">
-                <div class="flexbox">
-                  <img src="./src/icons/money.svg" alt="money-icon" />
+        <div class="otazky__dropdown">
+          <div class="otazky__dropdown-item dropdowns">
+            <div class="otazky__flexbox">
+              <div class="otazky__dropdown-header">
+                <div class="otazky__flexbox">
+                  <img src="/src/icons/money.svg" alt="money icon" />
                   <h3>Kolik stojí jedno sezení?</h3>
                 </div>
               </div>
-            </label>
-            <div class="collapsible-text mobile-body">
-              <p>
-                Hodina koučování Tě vyjde na 1 200 Kč. Pokud se po prvním
-                koučování domluvíme na více setkáních, cena za hodinu je nižší.
-              </p>
+              <div class="arrow" id="arrow">
+                <img src="/src/icons/down.svg" alt="dropdown arrow" />
+              </div>
+            </div>
+            <div class="otazky__dropdown-content">
+              <div class="mobile-body">
+                <p>
+                  Hodina koučování Tě vyjde na 1 200 Kč. Pokud se po prvním
+                  koučování domluvíme na více setkáních, cena za hodinu je
+                  nižší.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="wrapper">
-          <div class="collapsible">
-            <input type="checkbox" id="kde" />
-            <label for="kde"
-              ><div class="dropdown-header">
-                <div class="flexbox">
+        <div class="otazky__dropdown">
+          <div class="otazky__dropdown-item dropdowns">
+            <div class="otazky__flexbox">
+              <div class="otazky__dropdown-header">
+                <div class="otazky__flexbox">
                   <img
                     src="./src/icons/communication.svg"
-                    alt="communication-icon"
+                    alt="communication icon"
                   />
-                  <h3>
-                    Je lepší koučink online <br />
-                    nebo offline?
-                  </h3>
+                  <h3>Je lepší koučink online nebo offline?</h3>
                 </div>
               </div>
-            </label>
-            <div class="collapsible-text mobile-body">
-              <p>
-                Každý jsme v jiné situaci, řešíme jiné téma a tudíž potřebujeme
-                jiné množství času. Někdo si dá jedno sezení a ozve se mi za půl
-                roku, někdo chce průběžný rozvoj.
-                <br />
-                <br />
-                Pokud však řešíš komplexnější téma a chceš vidět výsledky co
-                nejdříve, doporučuji plánovat setkání po 14 dnech. Ideálně ve
-                stejný den a čas.
-              </p>
+              <div class="arrow" id="arrow">
+                <img src="/src/icons/down.svg" alt="dropdown arrow" />
+              </div>
+            </div>
+            <div class="otazky__dropdown-content">
+              <div class="mobile-body">
+                <p>
+                  To záleží čistě na Tobě. Co Ti více vyhovuje. Můžeš zkusit
+                  obojí a můžeme to i střídat. Offline koučuji pouze v Praze -
+                  Holešovice, Letná a Karlín.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="wrapper">
-          <div class="collapsible">
-            <input type="checkbox" id="kolik" />
-            <label for="kolik"
-              ><div class="dropdown-header">
-                <div class="flexbox">
-                  <img src="./src/icons/calendar.svg" alt="calendar-icon" />
+        <div class="otazky__dropdown">
+          <div class="otazky__dropdown-item dropdowns">
+            <div class="otazky__flexbox">
+              <div class="otazky__dropdown-header">
+                <div class="otazky__flexbox">
+                  <img src="./src/icons/calendar.svg" alt="calendar icon" />
                   <h3>
                     Kolik sezení je zapotřebí <br />
                     ke změně?
                   </h3>
                 </div>
               </div>
-            </label>
-            <div class="collapsible-text mobile-body">
-              <p>
-                Každý jsme v jiné situaci, řešíme jiné téma a tudíž potřebujeme
-                jiné množství času. Někdo si dá jedno sezení a ozve se mi za půl
-                roku, někdo chce průběžný rozvoj.
-                <br /><br />
-                Pokud však řešíš komplexnější téma a chceš vidět výsledky co
-                nejdříve, doporučuji plánovat setkání po 14 dnech. Ideálně ve
-                stejný den a čas.
-              </p>
+              <div class="arrow" id="arrow">
+                <img src="/src/icons/down.svg" alt="dropdown arrow" />
+              </div>
+            </div>
+            <div class="otazky__dropdown-content">
+              <div class="mobile-body">
+                <p>
+                  Každý jsme v jiné situaci, řešíme jiné téma a tudíž
+                  potřebujeme jiné množství času. Někdo si dá jedno sezení a
+                  ozve se mi za půl roku, někdo chce průběžný rozvoj.
+                  <br /><br />
+                  Pokud však řešíš komplexnější téma a chceš vidět výsledky co
+                  nejdříve, doporučuji plánovat setkání po 14 dnech. Ideálně ve
+                  stejný den a čas.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="wrapper">
-          <div class="collapsible">
-            <input type="checkbox" id="nestiham" />
-            <label for="nestiham"
-              ><div class="dropdown-header">
-                <div class="flexbox">
-                  <img src="./src/icons/sad-face.svg" alt="sad-face-icon" />
-                  <h3>
-                    Nestíhám, jsem nemocný/á <br />nebo jsem jen zapomněl/a ...
-                  </h3>
+        <div class="otazky__dropdown">
+          <div class="otazky__dropdown-item dropdowns">
+            <div class="otazky__flexbox">
+              <div class="otazky__dropdown-header">
+                <div class="otazky__flexbox">
+                  <img src="./src/icons/sad-face.svg" alt="sad face icon" />
+                  <h3>Nestíhám, jsem nemocný/á nebo jsem jen zapomněl/a ...</h3>
                 </div>
               </div>
-            </label>
-            <div class="collapsible-text mobile-body">
-              <p>
-                To se může stát každému z nás. Důležité je ale to, co s tím
-                uděláme. Pokud mi dáš vědět nejpozději 24 h dopředu, Tvůj
-                koučink přeplánujeme na nejbližší možný termín.
-                <br />
-                Pokud nestíháš nebo jsi zapomněl a dáš mi vědět co nejdříve, tak
-                také najdeme jiný čas. Ale nastavme si reálná očekávání, toto
-                toleruji pouze jednou, protože spolehlivost a ... jsou pro mne
-                důležité hodnoty.
-              </p>
+              <div class="arrow" id="arrow">
+                <img src="/src/icons/down.svg" alt="dropdown arrow" />
+              </div>
+            </div>
+            <div class="otazky__dropdown-content">
+              <div class="mobile-body">
+                <p>
+                  To se může stát každému z nás. Důležité je ale to, co s tím
+                  uděláme. Pokud mi dáš vědět nejpozději 24 h dopředu, Tvůj
+                  koučink přeplánujeme na nejbližší možný termín.
+                  <br />
+                  <br />
+                  Pokud nestíháš nebo jsi zapomněl a dáš mi vědět co nejdříve,
+                  tak také najdeme jiný čas. Ale nastavme si reálná očekávání,
+                  toto toleruji pouze jednou, protože spolehlivost a ... jsou
+                  pro mne důležité hodnoty.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -646,11 +647,11 @@
         Michala Rusaňuková
       </p>
     </section>
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
 
     <script src="/src/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>

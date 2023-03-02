@@ -3,8 +3,39 @@
 }
 
 .otazky h3 {
-  color: var(--primary-default);
-  font-size: 1.0625rem;
+  padding-left: 10px;
+}
+.otazky__dropdown-item {
+  cursor: pointer;
+  box-shadow: var(--primary-ultralight) 0 4px 8px;
+  border-radius: 16px;
+  background: white;
+  text-align: left;
+  padding: 35px;
+  margin: 16px 0;
+}
+
+.otazky__dropdown-content {
+  display: none;
+  text-align: left;
+  padding: 15px;
+}
+
+.otazky__dropdown-item.active .otazky__dropdown-content {
+  display: block;
+}
+
+.otazky__flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  transition: all 0.3s ease;
+}
+
+.otazky__dropdown-item.active .arrow {
+  transform: rotateX(180deg);
 }
 
 @media (max-width: 360px) {
@@ -14,8 +45,12 @@
 }
 
 @media (min-width: 500px) {
-  .otazky .wrapper {
-    width: 70%;
-    margin: 10px auto;
+  .otazky {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .otazky h3 {
+    font-size: 1.25rem;
   }
 }

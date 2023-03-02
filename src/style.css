@@ -100,71 +100,6 @@ button {
   margin: 32px auto;
 }
 
-/* dropdown */
-
-.wrapper {
-  box-shadow: var(--primary-ultralight) 0 4px 8px;
-  border-radius: 16px;
-  background: white;
-  text-align: left;
-  padding: 15px 0;
-  margin: 10px 0;
-  gap: 8px;
-}
-
-.collapsible {
-  max-width: 450px;
-  overflow: hidden;
-}
-
-.dropdown-header h3 {
-  padding-left: 10px;
-  margin-top: 10px;
-}
-
-.collapsible .flexbox {
-  display: flex;
-  align-items: center;
-  justify-content: stretch;
-}
-
-.collapsible input {
-  display: none;
-}
-
-.collapsible label {
-  position: relative;
-  font-weight: 600;
-  display: block;
-  cursor: pointer;
-}
-
-.collapsible label:after {
-  content: "";
-  position: absolute;
-  right: 18px;
-  top: 27px;
-  width: 20px;
-  height: 18px;
-  background: url(./icons/down.svg) no-repeat 0 0;
-  transition: all 0.3s ease;
-}
-
-.collapsible input:checked + label::after {
-  transform: rotateX(180deg);
-  top: 20px;
-}
-
-.collapsible-text {
-  max-height: 1px;
-  transition: all 0.3s ease;
-  padding: 0 10px;
-}
-
-.collapsible input:checked ~ .collapsible-text {
-  max-height: 300px;
-}
-
 /* carousel */
 .item {
   padding: 1rem;
@@ -231,15 +166,8 @@ button {
 }
 
 @media (max-width: 360px) {
-  .mobile-body,
-  .collapsible h3 {
+  .mobile-body {
     font-size: 1rem;
-  }
-  .wrapper .collapsible-text {
-    font-size: 0.8rem;
-  }
-  .collapsible label:after {
-    top: 23px;
   }
 }
 

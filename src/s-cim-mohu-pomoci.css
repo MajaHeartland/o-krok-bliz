@@ -2,9 +2,40 @@
   padding: 56px 16px 0;
 }
 
-.s-cim-mohu-pomoci__list {
-  color: var(--secondary-default);
-  font-size: 1.0625rem;
+.s-cim-mohu-pomoci h3 {
+  padding-left: 10px;
+}
+.s-cim-mohu-pomoci__dropdown-item {
+  cursor: pointer;
+  box-shadow: var(--primary-ultralight) 0 4px 8px;
+  border-radius: 16px;
+  background: white;
+  text-align: left;
+  padding: 35px;
+  margin: 16px 0;
+}
+
+.s-cim-mohu-pomoci__dropdown-content {
+  display: none;
+  text-align: left;
+  padding: 15px;
+}
+
+.s-cim-mohu-pomoci__dropdown-item.active .s-cim-mohu-pomoci__dropdown-content {
+  display: block;
+}
+
+.s-cim-mohu-pomoci__flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  transition: all 0.3s ease;
+}
+
+.s-cim-mohu-pomoci__dropdown-item.active .arrow {
+  transform: rotateX(180deg);
 }
 
 @media (min-width: 500px) {

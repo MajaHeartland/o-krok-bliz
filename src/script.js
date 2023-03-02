@@ -24,3 +24,11 @@ rolloutButton.addEventListener("click", show_hide);
 //   }
 //   prevScrollpos = currentScrollPos;
 // };
+
+const items = document.querySelectorAll(".dropdowns");
+
+function toggleDropdown() {
+  this.classList.toggle("active");
+}
+
+items.forEach((item) => item.addEventListener("click", toggleDropdown));
