@@ -20,7 +20,7 @@
 
 .otazky__dropdown-content {
   display: none;
-  text-align: left;
+  padding-top: 16px;
 }
 
 .otazky__dropdown-item.active .otazky__dropdown-content {
@@ -45,5 +45,12 @@
   .otazky {
     margin: 0 auto;
     width: 80%;
+  }
+  .otazky__dropdown-item {
+    padding: 30px 20px;
+  }
+  .otazky__dropdown-content {
+    display: none;
+    padding-right: 16px;
   }
 }
