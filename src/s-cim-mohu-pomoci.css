@@ -20,6 +20,7 @@
 .s-cim-mohu-pomoci__dropdown-content {
   display: none;
   text-align: left;
+  padding-top: 16px;
 }
 
 /* not working */
@@ -57,5 +58,22 @@
     margin: 24px auto;
     padding: 50px;
     width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .s-cim-mohu-pomoci__flexbox-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  .s-cim-mohu-pomoci .container-background {
+    margin: 24px auto;
+    padding: 32px;
+    width: 100%;
+  }
+  .s-cim-mohu-pomoci__dropdown-item {
+    flex-basis: 100%;
+    margin: 0 10px;
   }
 }
