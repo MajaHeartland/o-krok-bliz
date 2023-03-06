@@ -165,6 +165,9 @@ button {
   font-weight: 400;
 }
 
+.outro {
+  padding: 24px;
+}
 @media (max-width: 360px) {
   .mobile-body {
     font-size: 1rem;
