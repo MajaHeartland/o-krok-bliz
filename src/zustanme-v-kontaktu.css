@@ -1,5 +1,6 @@
 .zustanme-v-kontaktu {
   padding: 40px 24px;
+  background: var(--primary-dark);
 }
 
 .zustanme-v-kontaktu,
@@ -10,14 +11,22 @@
   color: var(--primary-verylight);
 }
 
-.zustanme-v-kontaktu__links-container {
-  padding-left: -16px;
-}
-
-.zustanme-v-kontaktu {
-  background: var(--primary-dark);
-}
-
 .zustanme-v-kontaktu .line {
   background: var(--primary-verylight);
+}
+
+.zustanme-v-kontaktu__links-container img {
+  padding-right: 16px;
+  width: 33px;
+}
+
+.zustanme-v-kontaktu__links-container a {
+  color: var(--secondary-ultralight);
+  text-decoration: none;
+}
+
+.zustanme-v-kontaktu__links-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

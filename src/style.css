@@ -70,12 +70,6 @@ button {
   font-weight: 400;
 }
 
-/* anchor */
-a {
-  color: var(--primary-default) !important;
-  text-decoration: none !important;
-}
-
 /* buttons */
 
 button {
