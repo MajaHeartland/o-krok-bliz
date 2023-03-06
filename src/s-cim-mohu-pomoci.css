@@ -4,22 +4,29 @@
 
 .s-cim-mohu-pomoci h3 {
   padding-left: 10px;
+  margin: 0;
 }
+
 .s-cim-mohu-pomoci__dropdown-item {
   cursor: pointer;
   box-shadow: var(--primary-ultralight) 0 4px 8px;
   border-radius: 16px;
   background: white;
   text-align: left;
-  padding: 35px;
+  padding: 30px 20px;
   margin: 16px 0;
 }
 
 .s-cim-mohu-pomoci__dropdown-content {
   display: none;
   text-align: left;
-  padding: 15px;
 }
+
+/* not working */
+.s-cim-mohu-pomoci__dropdown-content li {
+  list-style-position: outside !important;
+}
+/* not working */
 
 .s-cim-mohu-pomoci__dropdown-item.active .s-cim-mohu-pomoci__dropdown-content {
   display: block;
@@ -27,6 +34,7 @@
 
 .s-cim-mohu-pomoci__flexbox {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -49,9 +57,5 @@
     margin: 24px auto;
     padding: 50px;
     width: 80%;
-  }
-
-  .s-cim-mohu-pomoci h3 {
-    font-size: 1.25rem;
   }
 }
