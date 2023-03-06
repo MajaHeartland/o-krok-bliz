@@ -172,6 +172,9 @@
     text-align: left;
   }
 
+  .hero-note-mobile {
+    display: none;
+  }
   .hero-image {
     position: absolute;
     width: 540px;
