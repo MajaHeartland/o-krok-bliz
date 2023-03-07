@@ -1,7 +1,11 @@
 .jak-koucink-probiha {
-  padding: 56px 16px 0;
+  padding-top: 56px;
 }
 
+.jak-koucink-probiha .first-carousel{
+  padding-left: 16px;
+
+}
 .jak-koucink-probiha__carousel-heading {
   color: var(--primary-default);
   padding-top: 30px;
@@ -34,4 +38,11 @@
 
 .jak-koucink-probiha :is(.item-1, .item-2, .item-3, .item-4) {
   background-repeat: no-repeat;
+}
+
+@media (min-width: 500px){
+  .jak-koucink-probiha .first-carousel{
+    padding-left: 60px;
+  }
+  
 }

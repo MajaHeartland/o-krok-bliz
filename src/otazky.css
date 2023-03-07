@@ -44,7 +44,7 @@
 @media (min-width: 500px) {
   .otazky {
     margin: 0 auto;
-    width: 80%;
+  padding: 56px 60px 0;
   }
   .otazky__dropdown-item {
     padding: 30px 20px;

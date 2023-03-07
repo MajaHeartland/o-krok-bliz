@@ -25,9 +25,7 @@ body {
   box-sizing: border-box;
 }
 
-.zkusenosti {
-  padding: 56px 16px 0;
-}
+
 /* font-colours */
 .mobile-h2,
 .mobile-h4,
@@ -136,6 +134,14 @@ button {
 }
 
 /* sections */
+.zkusenosti {
+  padding-top: 56px;
+  
+}
+
+.zkusenosti .second-carousel{
+  padding-left: 16px;
+}
 
 .zkusenosti .item {
   background-color: var(--primary-dark);
@@ -162,11 +168,11 @@ button {
 .outro {
   padding: 24px;
 }
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .mobile-body {
     font-size: 1rem;
   }
-}
+} */
 
 @media (min-width: 500px) {
   .blue-button {
@@ -180,6 +186,10 @@ button {
       #e1f8f8 47.4%,
       #ffffff 100%
     );
+  }
+
+  .zkusenosti .second-carousel{
+    padding-left: 60px;
   }
 }
 

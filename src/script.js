@@ -25,6 +25,8 @@ rolloutButton.addEventListener("click", show_hide);
 //   prevScrollpos = currentScrollPos;
 // };
 
+
+// dropdowns //
 const items = document.querySelectorAll(".dropdowns");
 
 function toggleDropdown() {

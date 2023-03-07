@@ -17,5 +17,7 @@
 @media (min-width: 500px) {
   .proc-zkusit-koucink {
     background-image: none;
+  padding: 56px 60px 0;
+
   }
 }

@@ -30,3 +30,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 500px){
+  .zustanme-v-kontaktu {
+  padding: 40px 125px;
+
+  }
+}

@@ -23,12 +23,6 @@
   padding-top: 16px;
 }
 
-/* not working */
-.s-cim-mohu-pomoci__dropdown-content li {
-  list-style-position: outside !important;
-}
-/* not working */
-
 .s-cim-mohu-pomoci__dropdown-item.active .s-cim-mohu-pomoci__dropdown-content {
   display: block;
 }
@@ -50,6 +44,7 @@
 @media (min-width: 500px) {
   .s-cim-mohu-pomoci {
     background-image: none;
+    padding: 56px 60px 0;
   }
 
   .s-cim-mohu-pomoci .container-background {
@@ -57,7 +52,7 @@
     border-radius: 56px;
     margin: 24px auto;
     padding: 50px;
-    width: 80%;
+    /* width: 80%; */
   }
 }
 
