@@ -126,6 +126,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: stretch;
+  min-height: 58px;
 }
 
 .collapsible input {
