@@ -2,9 +2,8 @@
   padding-top: 56px;
 }
 
-.jak-koucink-probiha .first-carousel{
-  padding-left: 16px;
-
+.jak-koucink-probiha .first-carousel {
+  /* padding-left: 16px; */
 }
 .jak-koucink-probiha__carousel-heading {
   color: var(--primary-default);
@@ -40,9 +39,8 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: 500px){
-  .jak-koucink-probiha .first-carousel{
-    padding-left: 60px;
+@media (min-width: 500px) {
+  .jak-koucink-probiha .first-carousel {
+    /* padding-left: 60px; */
   }
-  
 }
