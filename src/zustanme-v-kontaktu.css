@@ -17,7 +17,7 @@
 
 .zustanme-v-kontaktu__links-container img {
   padding-right: 16px;
-  width: 33px;
+  width: 19px;
 }
 
 .zustanme-v-kontaktu__links-container a {
@@ -31,8 +31,8 @@
   align-items: center;
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
   .zustanme-v-kontaktu {
-  padding: 40px 125px;
+    padding: 40px 125px;
   }
 }
