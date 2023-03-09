@@ -25,9 +25,8 @@ rolloutButton.addEventListener("click", show_hide);
 //   prevScrollpos = currentScrollPos;
 // };
 
-
 // dropdowns //
-const items = document.querySelectorAll(".dropdowns");
+const items = document.querySelectorAll(".accordions");
 
 function toggleDropdown() {
   this.classList.toggle("active");
