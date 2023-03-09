@@ -1,5 +1,6 @@
 .otazky {
   padding: 56px 16px 0;
+  margin-bottom: 56px;
 }
 
 .otazky h3 {
@@ -32,6 +33,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 50px;
+}
+
+.otazky__content-description {
+  margin: 0;
 }
 
 .arrow {
@@ -44,14 +50,25 @@
 
 @media (min-width: 500px) {
   .otazky {
-    margin: 0 auto;
     padding: 56px 60px 0;
   }
-  .otazky__accordion-item {
-    padding: 30px 20px;
+}
+
+@media (min-width: 744px) {
+  .otazky {
+    padding: 96px 60px;
+    margin: 0 auto;
   }
-  .otazky__accordion-content {
-    display: none;
-    padding-right: 16px;
+
+  .otazky__accordion-item {
+    margin-bottom: 32px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .otazky {
+    max-width: 900px;
+    box-sizing: content-box;
   }
 }
