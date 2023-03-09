@@ -11,10 +11,10 @@
   font-weight: 600;
   color: white;
   margin-bottom: 26px;
+  color: var(--secondary-ultralight);
 }
 
-.hero-title,
-.hero-subtitle {
+.hero-title {
   color: white;
 }
 
@@ -30,6 +30,7 @@
   margin-bottom: 24px;
   font-size: 1.0625rem;
   font-weight: 600;
+  color: var(--primary-ultralight);
 }
 
 .hero-button {

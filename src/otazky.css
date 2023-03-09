@@ -4,9 +4,10 @@
 
 .otazky h3 {
   padding-left: 10px;
-  font-size: 1.0625rem !important;
-  line-height: 147% !important;
+  font-size: 1.0625rem;
+  line-height: 147%;
   margin: 0;
+  font-weight: 500;
 }
 .otazky__dropdown-item {
   cursor: pointer;
@@ -44,7 +45,7 @@
 @media (min-width: 500px) {
   .otazky {
     margin: 0 auto;
-  padding: 56px 60px 0;
+    padding: 56px 60px 0;
   }
   .otazky__dropdown-item {
     padding: 30px 20px;

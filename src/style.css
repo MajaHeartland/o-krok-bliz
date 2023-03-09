@@ -93,7 +93,7 @@ button {
 
 /* carousel */
 .item {
-  padding: 1rem;
+  padding: 24px;
   text-align: left;
   border-radius: 26px;
   cursor: pointer;

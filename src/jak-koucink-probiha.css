@@ -6,9 +6,13 @@
   color: var(--primary-default);
   padding-top: 30px;
   padding-right: 10%;
+  font-size: 1.625rem;
+  line-height: 115%;
 }
 .jak-koucink-probiha__carousel-text {
   color: var(--secondary-default);
+  font-size: 0.9375rem;
+  line-height: 133%;
 }
 
 .jak-koucink-probiha .owl-stage {

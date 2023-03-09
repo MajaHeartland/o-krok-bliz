@@ -47,9 +47,9 @@
   background: var(--secondary-default);
 }
 
-.pojdme-se-poznat a{
-text-decoration: none;
-color: var(--primary-default);
+.pojdme-se-poznat a {
+  text-decoration: none;
+  color: var(--primary-default);
 }
 
 @media (min-width: 500px) {
