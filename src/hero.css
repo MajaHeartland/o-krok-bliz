@@ -61,6 +61,8 @@
     height: 831px;
     min-width: calc(100vw - 20px);
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .hero-text-wrapper,
