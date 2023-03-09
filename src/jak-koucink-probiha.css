@@ -38,3 +38,25 @@
 .jak-koucink-probiha :is(.item-1, .item-2, .item-3, .item-4) {
   background-repeat: no-repeat;
 }
+
+@media (min-width: 1280px) {
+  .jak-koucink-probiha .owl-stage {
+    padding: 0 40px 20px !important;
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .jak-koucink-probiha .item-1,
+  .jak-koucink-probiha .item-2,
+  .jak-koucink-probiha .item-3 {
+    margin-right: 24px !important;
+  }
+}
+
+@media (min-width: 1680px) {
+  .jak-koucink-probiha .owl-stage {
+    width: 80% !important;
+  }
+}
