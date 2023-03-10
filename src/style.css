@@ -13,6 +13,10 @@
 }
 /***** defaults *****/
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 3rem;
