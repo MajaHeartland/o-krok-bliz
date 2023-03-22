@@ -1,35 +1,18 @@
 /* navigation */
 .navigation {
-  /* margin-top: 65px; */
+  display: none;
 }
 
-.navigation .flexbox{
-justify-content: space-between;
+.navigation-mobile {
+  margin: 65px auto 27px;
 }
-
-@media (min-width: 745px) {
-  .navigation {
-    margin-top: 45px;
-    margin-left: 60px;
-    background-color: white;
-  }
-}
-
-@media (min-width: 745px) {
-  .navigation__wrapper {
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
-  }
-}
-
 .navigation__title {
   color: var(--primary-default);
   font-weight: 500;
   font-size: 2.125rem;
   letter-spacing: 0.04em;
+  margin-top: 0;
   margin-bottom: 8px;
-  text-align: left;
 }
 
 .navigation__subtitle {
@@ -37,30 +20,72 @@ justify-content: space-between;
   font-size: 1.25rem;
   color: var(--primary-light);
   letter-spacing: 0.04em;
-  margin-bottom: 20px;
-  text-align: left;
+  margin: 0 auto 27px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 745px) {
+  .navigation-mobile {
+    display: none;
+  }
+
   .navigation {
-    /* max-width: 1430px; */
-    /* margin: 0 auto; */
+    display: inline-block;
     margin-top: 48px;
+    padding: 0 60px;
+    background-color: white;
   }
 
-  .navigation__wrapper {
-    margin-left: 60px;
+  .navigation .flexbox {
+    justify-content: space-between;
   }
-} 
-/* end of navigation*/
 
-/* navbar */
+  .navigation__flex-right {
+    display: none;
+  }
+
+  .navigation__title,
+  .navigation__subtitle {
+    text-align: left;
+  }
+
+  .navigation__subtitle {
+    margin-bottom: 0;
+  }
+
+  .navigation .line {
+    margin: 17px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navigation__flex-right {
+    display: inline-block;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav-desktop {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navigation {
+    max-width: 1400px;
+  }
+}
+
+/* links */
+
 nav {
   top: 0;
   width: 100%;
   height: 80px;
   background: #fff;
-  padding: 0 100px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -87,26 +112,19 @@ nav ul li a {
 }
 
 nav {
-  /* other styles */
   position: sticky;
-  top: 0;
-  width: 100%;
+  top: 48px;
   transition: top 0.3s;
 }
 
 nav.hidden {
-  top: -200px;
-}
-
-nav .line {
-  margin: 32px 0;
+  top: -100px;
 }
 
 .nav-button {
   width: fit-content;
-  font-size: 1.1em;
+  font-size: 1.0625rem;
   background-color: var(--primary-default);
   border-radius: 26px;
   padding: 6px 24px;
 }
-
