@@ -25,12 +25,11 @@
 @media (min-width: 500px) {
   .co-je-to-koucink {
     background-image: none;
-  padding: 56px 60px 0;
-
+    padding: 56px 60px 0;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .co-je-to-koucink .side-arrow {
     display: inline;
   }

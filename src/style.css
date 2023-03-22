@@ -186,7 +186,7 @@ button {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .flexbox {
     display: flex;
   }
