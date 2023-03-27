@@ -39,10 +39,8 @@
               <li class="nav-desktop"><a href="#poznej-mne">Poznej mne</a></li>
               <li class="nav-desktop"><a href="#recenze">Recenze</a></li>
               <li class="nav-desktop"><a href="#faq">FAQ</a></li>
-              <li>
-                <a href="#setkani"
-                  ><button class="nav-button">Úvodní setkání zdarma</button></a
-                >
+              <li id="app-top">
+                <a href="#setkani"><button class="nav-button" id="trigger-modal">Úvodní setkání zdarma</button></a>
               </li>
               <li class="nav-desktop"><a href="#kontakt">Kontakt</a></li>
             </ul>
@@ -63,7 +61,9 @@
         </p>
         <h2 class="hero-title">Pojďme se potkat!</h2>
         <h4 class="hero-subtitle">Pomohu Ti udělat první krok.</h4>
-        <button class="hero-button">Úvodní setkání ZDARMA</button>
+        <div id="app-cta">
+          <button class="hero-button">Úvodní setkání ZDARMA</button>
+        </div>
         <p class="hero-note">
           Zajděme například na kávu, pojďme se projít nebo si jen zavolejme.<br />Cokoliv
           Ti vyhovuje.
@@ -382,8 +382,12 @@
       <button class="poznej-mne-vic-button" id="poznej-me-vic-button">
         Poznej mne víc
       </button>
-      <button class="blue-button">Pojďme se potkat!</button>
     </section>
+    <div id="app-bottom">
+      <button class="blue-button" id="trigger-modal">
+        Pojďme se potkat!
+      </button>
+    </div>
     <section class="zkusenosti" id="recenze">
       <h2 class="mobile-h2">Zkušenosti mých klientů</h2>
       <hr class="line" width="48px" />
@@ -827,6 +831,9 @@
       }
     </script>
     <script type="module" src="./src/scripts/App.js"></script>
+    <script type="module" src="./src/scripts/AppTop.js"></script>
+    <script type="module" src="./src/scripts/AppBottom.js"></script>
+    <script type="module" src="./src/scripts/AppCta.js"></script>
     <script type="module" src="./src/scripts/FormApp.js"></script>
   </body>
 </html>

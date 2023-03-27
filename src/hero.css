@@ -184,7 +184,7 @@
   }
   .hero-image {
     position: absolute;
-    width: 540px;
+    width: 520px;
     top: 10px;
     left: 432px;
   }
@@ -214,7 +214,7 @@
   }
 
   .hero-image {
-    top: 0;
+    top: 20px;
     right: 100px;
     left: unset;
   }
