@@ -71,6 +71,7 @@
 @media (min-width: 1280px) {
   .nav-desktop {
     display: inline-block;
+    margin-top: 5px;
   }
 }
 
