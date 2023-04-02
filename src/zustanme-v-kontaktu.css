@@ -20,7 +20,8 @@
   width: 33px;
 }
 
-.zustanme-v-kontaktu__links-container a {
+.zustanme-v-kontaktu__links-container a,
+.credits a {
   color: var(--secondary-ultralight);
   text-decoration: none;
 }
