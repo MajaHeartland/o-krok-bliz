@@ -37,6 +37,9 @@
   margin-top: 24px;
 }
 
+.credits {
+  line-height: 176%;
+}
 @media (min-width: 600px) {
   .zustanme-v-kontaktu {
     padding: 40px 125px;
