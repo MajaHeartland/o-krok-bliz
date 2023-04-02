@@ -113,14 +113,9 @@ nav ul li a {
   font-weight: 400;
 }
 
-nav {
+nav.large-screens {
   position: sticky;
-  top: 48px;
   transition: top 0.3s;
-}
-
-nav.hidden {
-  top: -100px;
 }
 
 .nav-button {
