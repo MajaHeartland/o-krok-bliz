@@ -92,6 +92,12 @@
   overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+  .modal__body {
+    min-height: 40vh;
+  }
+}
+
 @keyframes scrollUp {
   from {
     transform: translate(0, 150%);
@@ -152,5 +158,63 @@
 
   .modal__body {
     padding: 0 40px 40px 40px;
+  }
+}
+
+
+/* Modal review */
+
+.modal-review__header {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px 24px 16px;
+}
+
+.modal-review__avatar {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+
+.modal-review__wrapper {
+  text-align: left;
+}
+
+.modal-review__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-top: 13.5px;
+  color: var(--primary-default);
+}
+
+.modal-review__subtitle {
+  color: var(--secondary-default);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal-review__text {
+  padding: 0 0 24px;
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .modal-review__header {
+    padding: 40px 40px 24px 40px;
+  }
+
+  .modal__close-section--review {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 1px;
   }
 }
