@@ -11,7 +11,6 @@ export default {
       }
     },
     mounted() {
-        console.log('mounted')
         window.addEventListener('showReviewModal', (e) => {
             this.showModal = true
             this.review = e.detail?.review

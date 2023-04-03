@@ -7,8 +7,6 @@ export default {
     mounted() {
       const htmlEl = document.documentElement;
       htmlEl.classList.add('modal__screen-lock');
-
-      console.log(this.review)
     },
     methods: {
       closeModal: function() {

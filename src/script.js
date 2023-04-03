@@ -43,10 +43,7 @@ items.forEach((item) => item.addEventListener("click", toggleDropdown));
 
 // carousel
 const reviewsList = Array.from(document.getElementsByClassName('item-carousel'))
-console.log(reviewsList)
-
 reviewsList.forEach((el, index) => {
-  // https://stackoverflow.com/questions/783899/how-can-i-count-text-lines-inside-an-dom-element-can-i
   const newEl = document.createElement('span')
   newEl.textContent = 'Zobrazit více'
   newEl.setAttribute('class', 'item__show-more')
@@ -61,12 +58,9 @@ function emitCustomEventFromClickReview(e) {
   const name = elByIndex.getElementsByClassName('item__carousel-heading')[0].textContent
   const jobPosition = elByIndex.getElementsByClassName('item__carousel-subtitle')[0].textContent
   const text = elByIndex.getElementsByClassName('item__carousel-review')[0].textContent
-
-  // get index from object and pass data to object 
   const event = new CustomEvent('showReviewModal', {
     bubbles: true,
     detail: { 
-      //payload HERE
       review: {
         avatar,
         name,
@@ -76,5 +70,4 @@ function emitCustomEventFromClickReview(e) {
     },
   });
   dispatchEvent(event)
-  console.log(event)
 }
