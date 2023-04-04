@@ -386,10 +386,10 @@
       <h2 class="mobile-h2">Zkušenosti mých klientů</h2>
       <hr class="line" width="48px" />
       <div class="second-carousel owl-carousel owl-theme">
-        <div class="item">
-          <!-- <img src="/src/img/review-pic.png" alt="review-picture" /> -->
+        <div class="item-carousel" id="0">
+          <!-- <img class="item__carousel-avatar" src="src/img/review-pic.png" alt="review-picture" /> -->
           <h3 class="item__carousel-heading">Marie <br />Pabiánová</h3>
-          <p>Text Assistant</p>
+          <p class="item__carousel-subtitle">Text Assistant</p>
           <p class="item__carousel-review">
             Koučování pod vedením Terky jsem si zkusila ještě v jejích začátcích
             a už tehdy bylo sezení s ní naprosto profesionální. Terka se do mě
@@ -405,10 +405,10 @@
             důvěru a věřím, že ji u ní naleznete i vy. Jednoznačně doporučuji!
           </p>
         </div>
-        <div class="item">
-          <!-- <img src="/src/img/review-pic.png" alt="review-picture" /> -->
+        <div class="item-carousel">
+          <!-- <img class="item__carousel-avatar" src="src/img/review-pic.png" alt="review-picture" /> -->
           <h3 class="item__carousel-heading">Daria <br />Greshniaeva</h3>
-          <p>Text Assistant</p>
+          <p class="item__carousel-subtitle">Text Assistant</p>
           <p class="item__carousel-review">
             I wanted to try a coaching session for a long time, but I didn’t
             know properly how it works. So when the opportunity came from
@@ -418,10 +418,10 @@
             couldn’t even imagine what may happen in just one hour!
           </p>
         </div>
-        <div class="item">
-          <!-- <img src="/src/img/review-pic.png" alt="review-picture" /> -->
+        <div class="item-carousel">
+          <!-- <img class="item__carousel-avatar" src="src/img/review-pic.png" alt="review-picture" /> -->
           <h3 class="item__carousel-heading">Kateřina <br />Novotná</h3>
-          <p>Text Assistant</p>
+          <p class="item__carousel-subtitle">Text Assistant</p>
           <p class="item__carousel-review">
             Velmi příjemné vystupování, zodpovědný a profesionální přístup. Díky
             Terce jsem si ujasnila klíčové věci ve svém tématu a už během
@@ -429,10 +429,10 @@
             Doporučuji.
           </p>
         </div>
-        <div class="item">
+        <div class="item-carousel">
           <!-- <img src="/src/img/review-pic.png" alt="review-picture" /> -->
           <h3 class="item__carousel-heading">Nicole <br />Krivan</h3>
-          <p>Text Assistant</p>
+          <p class="item__carousel-subtitle">Text Assistant</p>
           <p class="item__carousel-review">
             Tereza is an excellent listener. She took the time to listen to my
             professional struggles, then asked guiding questions around what I
@@ -441,30 +441,30 @@
             me. I highly recommend Tereza as a professional/life design coach.
           </p>
         </div>
-        <div class="item">
-          <!-- <img src="/src/img/review-pic.png" alt="review-picture" /> -->
+        <div class="item-carousel">
+          <!-- <img class="item__carousel-avatar" src="src/img/review-pic.png" alt="review-picture" /> -->
           <h3 class="item__carousel-heading">Marie <br />Ditrtová</h3>
-          <p>Text Assistant</p>
+          <p class="item__carousel-subtitle">Text Assistant</p>
           <p class="item__carousel-review">
             Díky sezení s Terkou jsem si dokázala ujasnit spoustu věcí. Její
             přístup a skvěle namířené otázky mě dokázaly motivovat k tomu začít
             aktivně postupovat k dosažením svého cíle. Vřele doporučuji :)
           </p>
         </div>
-        <div class="item">
-          <!-- <img src="/src/img/review-pic.png" alt="review-picture" /> -->
+        <div class="item-carousel">
+          <!-- <img class="item__carousel-avatar" src="src/img/review-pic.png" alt="review-picture" /> -->
           <h3 class="item__carousel-heading">Marek<br />Hušek</h3>
-          <p>Text Assistant</p>
+          <p class="item__carousel-subtitle">Text Assistant</p>
           <p class="item__carousel-review">
             U Terky mě v řešení mých plánů povzbuzovalo její aktivní
             naslouchání. Živé strukturované otázky mi pomáhaly nacházet
             souvislosti a další možnosti. Doporučuji :)
           </p>
         </div>
-        <div class="item">
-          <!-- <img src="/src/img/review-pic.png" alt="review-picture" /> -->
+        <div class="item-carousel">
+          <!-- <img class="item__carousel-avatar" src="src/img/review-pic.png" alt="review-picture" /> -->
           <h3 class="item__carousel-heading">Kateřina<br />Poláková</h3>
-          <p>Text Assistant</p>
+          <p class="item__carousel-subtitle">Text Assistant</p>
           <p class="item__carousel-review">
             Terezka je vnímavá a klade moc dobré otázky. Nechá člověka vypovídat
             a opravdu naslouchá. Jsem vděčná za každou novou výzvu, kterou jsem
@@ -473,6 +473,7 @@
         </div>
       </div>
     </section>
+    <div id="app-review"></div>
     <section class="background">
       <section class="otazky" id="faq">
         <h2 class="mobile-h2">Máš ještě otázky?</h2>
@@ -662,9 +663,9 @@
       </div>
     </section>
 
-    <script src="/src/script.js"></script>
+    <script src="src/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="/src/assets/owlCarousel/owl.carousel.min.js"></script>
+    <script src="src/assets/owlCarousel/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".first-carousel").owlCarousel({
@@ -828,6 +829,11 @@
       }
     </script>
     <script type="module" src="./src/scripts/App.js"></script>
+ 15-zkusenoti-modaly
+    <script type="module" src="./src/scripts/AppReview.js"></script>
+    <script type="module" src="./src/scripts/AppTop.js"></script>
+=======
+>>>>>> main
     <script type="module" src="./src/scripts/AppBottom.js"></script>
     <script type="module" src="./src/scripts/AppCta.js"></script>
     <script type="module" src="./src/scripts/FormApp.js"></script>

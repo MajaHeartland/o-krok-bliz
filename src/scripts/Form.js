@@ -54,7 +54,7 @@ export default {
         <hr class="form__line"/>
         <img src="src/icons/clock.svg" alt="clock-icon" class="form__icon" />
         <div class="form__info">30 minut</div>
-        <img src="/src/icons/hands.svg" alt="hands-icon" class="form__icon" />
+        <img src="src/icons/hands.svg" alt="hands-icon" class="form__icon" />
         <div class="form__info">Online/osobně</div>
         <p class="form__description">
           Pokud cítíš, že bychom si “sedli”,tak mi napiš. Do 48h se Ti ozvu a

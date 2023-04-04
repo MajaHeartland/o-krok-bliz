@@ -39,3 +39,35 @@ function toggleDropdown() {
 }
 
 items.forEach((item) => item.addEventListener("click", toggleDropdown));
+
+
+// carousel
+const reviewsList = Array.from(document.getElementsByClassName('item-carousel'))
+reviewsList.forEach((el, index) => {
+  const newEl = document.createElement('span')
+  newEl.textContent = 'Zobrazit více'
+  newEl.setAttribute('class', 'item__show-more')
+  newEl.setAttribute('id', index)
+  newEl.addEventListener("click", (e) => emitCustomEventFromClickReview(e))
+  el.appendChild(newEl)
+})
+
+function emitCustomEventFromClickReview(e) {
+  const elByIndex = reviewsList[e.target.id]
+  const avatar = elByIndex.getElementsByClassName('item__carousel-avatar')[0]?.src ?? ''
+  const name = elByIndex.getElementsByClassName('item__carousel-heading')[0].textContent
+  const jobPosition = elByIndex.getElementsByClassName('item__carousel-subtitle')[0].textContent
+  const text = elByIndex.getElementsByClassName('item__carousel-review')[0].textContent
+  const event = new CustomEvent('showReviewModal', {
+    bubbles: true,
+    detail: { 
+      review: {
+        avatar,
+        name,
+        jobPosition,
+        text
+      }
+    },
+  });
+  dispatchEvent(event)
+}
