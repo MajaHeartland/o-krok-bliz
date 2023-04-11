@@ -1,6 +1,6 @@
 .session {
   padding: 56px 24px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #E1F8F8 92.19%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #e1f8f8 92.19%, #ffffff 100%);
 }
 
 .session__container {
@@ -8,7 +8,7 @@
 }
 
 .session__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -25,11 +25,11 @@
 @media (min-width: 500px) {
   .session {
     background: transparent;
-    padding: 0 56px 60px;
+    padding: 0 56px;
   }
 
   .session__container {
-    padding: 96px 60px;
+    padding: 96px 60px 0;
     background: rgba(255, 255, 255, 0.65);
     border-radius: 56px;
   }
@@ -48,9 +48,7 @@
 
   .session__container {
     max-width: 900px;
-    padding: 112px 210px 96px;
+    padding: 112px 210px 0;
     box-sizing: border-box;
   }
 }
-
-
