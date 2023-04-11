@@ -50,7 +50,8 @@
 }
 
 .form__input--long::placeholder,
-.modal-form input::placeholder {
+.modal-form input::placeholder,
+textarea.form__input {
   font-family: "Inter", sans-serif;
 }
 .form__footer {
