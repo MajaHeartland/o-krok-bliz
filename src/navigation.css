@@ -118,7 +118,7 @@ nav.large-screens {
 }
 
 @media (min-width: 1400px) {
-  .navigation {
+  .navigation > div {
     max-width: 1400px;
   }
 }
