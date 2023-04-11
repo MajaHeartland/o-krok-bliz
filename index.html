@@ -684,7 +684,6 @@
             },
             350: {
               items: 1,
-              stagePadding: 80,
             },
             450: {
               items: 1,
@@ -771,6 +770,7 @@
         $(".second-carousel").owlCarousel({
           loop: false,
           margin: 16,
+          // center: true,
           dots: true,
           dotsEach: 1,
           responsive: {
@@ -815,7 +815,9 @@
               stagePadding: 280,
             },
             1024: {
-              items: 4,
+              items: 3,
+              stagePadding: 200,
+              // center: true,
             },
           },
         });

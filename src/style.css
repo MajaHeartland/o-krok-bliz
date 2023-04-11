@@ -214,4 +214,8 @@ button {
   .flex-card {
     flex-basis: 100%;
   }
+
+  /* .second-carousel {
+    max-width: 800px;
+  } */
 }
