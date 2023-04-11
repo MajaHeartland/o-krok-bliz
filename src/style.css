@@ -145,7 +145,7 @@ button {
 }
 
 .zkusenosti .item-carousel {
-  background-color: var(--primary-dark);
+  background-color: var(--primary-default);
   color: white;
   padding: 24px;
   text-align: left;
