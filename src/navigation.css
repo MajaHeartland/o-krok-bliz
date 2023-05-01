@@ -34,11 +34,14 @@ nav ul li a {
 }
 
 nav.large-screens {
+  position: -webkit-sticky;
   position: sticky;
   transition: top 0.3s;
 }
 
 .nav-button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 1.0625rem;
   background-color: var(--primary-default);
