@@ -83,6 +83,11 @@ button {
   width: 90vw;
 }
 
+@media (min-width: 744px) {
+  button {
+    padding: 20px 0;
+  }
+}
 .blue-button {
   border-radius: 26px;
   margin-top: 24px;
