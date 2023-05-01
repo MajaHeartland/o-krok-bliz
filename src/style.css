@@ -180,6 +180,7 @@ button {
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
 }
 
@@ -214,8 +215,4 @@ button {
   .flex-card {
     flex-basis: 100%;
   }
-
-  /* .second-carousel {
-    max-width: 800px;
-  } */
 }
