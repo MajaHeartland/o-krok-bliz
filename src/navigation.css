@@ -12,6 +12,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 nav ul {
@@ -37,6 +38,7 @@ nav.large-screens {
   position: -webkit-sticky;
   position: sticky;
   transition: top 0.3s;
+  display: block;
 }
 
 .nav-button {
