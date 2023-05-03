@@ -43,21 +43,34 @@ items.forEach((item) => item.addEventListener("click", toggleDropdown));
 
 // carousel
 const reviewsList = Array.from(document.getElementsByClassName('item-carousel'))
+const originalReviewTextArr = []
+
 reviewsList.forEach((el, index) => {
+  const reviewContent = el.getElementsByClassName('item__carousel-review')[0]
+  originalReviewTextArr.push(reviewContent.textContent)
+  const text = reviewContent.textContent?.split(" ").filter(el => el.length)
+  const str = reviewContent.textContent.split(" ").filter(el => el.length).slice(0, 50).join(" ") 
+
+  if (text.length < 50) {
+    return
+  } else {
+    reviewContent.textContent = str + '...'
+  }
+
   const newEl = document.createElement('span')
   newEl.textContent = 'Zobrazit více'
   newEl.setAttribute('class', 'item__show-more')
   newEl.setAttribute('id', index)
-  newEl.addEventListener("click", (e) => emitCustomEventFromClickReview(e))
+  newEl.addEventListener("click", (e) => emitCustomEventFromClickReview(e, index))
   el.appendChild(newEl)
 })
 
-function emitCustomEventFromClickReview(e) {
+function emitCustomEventFromClickReview(e, index) {
   const elByIndex = reviewsList[e.target.id]
   const avatar = elByIndex.getElementsByClassName('item__carousel-avatar')[0]?.src ?? ''
   const name = elByIndex.getElementsByClassName('item__carousel-heading')[0].textContent
   const jobPosition = elByIndex.getElementsByClassName('item__carousel-subtitle')[0].textContent
-  const text = elByIndex.getElementsByClassName('item__carousel-review')[0].textContent
+  const text = originalReviewTextArr[index]
   const event = new CustomEvent('showReviewModal', {
     bubbles: true,
     detail: { 
