@@ -108,7 +108,7 @@
     color: var(--secondary-ultralight);
     margin-bottom: 64px;
     text-align: left;
-    margin-bottom: 56px;
+    margin-top: 0;
   }
 
   .hero-bg {
@@ -143,6 +143,7 @@
     z-index: 1;
     padding: 0;
     margin-bottom: 16px;
+    margin-top: 0;
   }
 
   .hero-subtitle {
@@ -153,6 +154,7 @@
     z-index: 1;
     color: var(--secondary-ultralight);
     margin-bottom: 32px;
+    margin-top: 0;
   }
 
   .hero-button {
@@ -176,6 +178,7 @@
     color: #ffffff;
     max-width: 325px;
     text-align: left;
+    margin: 0;
   }
 
   .hero-note-mobile {
@@ -184,8 +187,8 @@
   .hero-image {
     position: absolute;
     width: 520px;
-    top: 10px;
-    left: 432px;
+    top: 20px;
+    left: 452px
   }
 }
 
