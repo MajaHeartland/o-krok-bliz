@@ -45,3 +45,14 @@
     padding: 40px 125px;
   }
 }
+
+@media (min-width: 1024px) {
+  .zustanme-v-kontaktu__links-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.zustanme-v-kontaktu__linkedin,
+.zustanme-v-kontaktu__instagram {
+  margin: 0;
+}
