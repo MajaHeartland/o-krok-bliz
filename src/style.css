@@ -149,6 +149,28 @@ button {
   padding-top: 56px;
 }
 
+@media (min-width: 1024px) {
+  .zkusenosti {
+    max-width: 870px;
+    margin: 0 auto;
+  }
+
+  .owl-carousel.owl-drag .owl-item {
+    min-width: 280px !important;
+  }
+
+  .owl-carousel .owl-stage {
+    padding-left: 0 !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .zkusenosti {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
 .zkusenosti .item-carousel {
   background-color: var(--primary-default);
   color: white;
