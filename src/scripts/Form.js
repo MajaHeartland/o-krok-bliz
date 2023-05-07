@@ -57,7 +57,7 @@ export default {
         <img src="src/icons/no-gradient-icons/hands.svg" alt="hands-icon" class="form__icon" />
         <div class="form__info">Online/osobně</div>
         <p class="form__description">
-          Pokud cítíš, že bychom si “sedli”,tak mi napiš. Do 48h se Ti ozvu a
+          Pokud cítíš, že bychom si „sedli“,tak mi napiš. Do 48h se Ti ozvu a
           domluvíme se na termínu.
         </p>
             <form class="modal-form">
