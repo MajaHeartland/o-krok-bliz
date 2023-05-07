@@ -1,60 +1,60 @@
-import Notification from './Notification.js'
+import Notification from "./Notification.js";
 
 export default {
-    props: ['isModal'],
-    components: {
-      Notification
-    },
-    data() {
-      return {
-         showNotification: false,
-         form: {
-           name: '',
-           email: '',
-           topic: '',
-         }
-      }
-    },
-    methods: {
-      submitForm: function() {
-        const {name, email, topic} = this.form
-        fetch("https://formsubmit.co/ajax/5dd9c70e831165c738d2000305c22722", {
-          method: "POST",
-          headers: { 
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-              name,
-              email,
-              topic,
-          })
-      })
-          .then(response => response.json())
-          .then(data => {
-            this.showNotification = true
-            setTimeout(() => {
-              this.$emit('formSubmit')
-              this.showNotification = false
-            }, 2500)
-            this.clearForm()
-          })
-          .catch(error => console.log(error));
+  props: ["isModal"],
+  components: {
+    Notification,
+  },
+  data() {
+    return {
+      showNotification: false,
+      form: {
+        name: "",
+        email: "",
+        topic: "",
       },
-      clearForm: function() {
-        this.form = {
-          name: '',
-           email: '',
-           topic: '',
-        }
-      }
+    };
+  },
+  methods: {
+    submitForm: function () {
+      const { name, email, topic } = this.form;
+      fetch("https://formsubmit.co/ajax/5dd9c70e831165c738d2000305c22722", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          topic,
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          this.showNotification = true;
+          setTimeout(() => {
+            this.$emit("formSubmit");
+            this.showNotification = false;
+          }, 2500);
+          this.clearForm();
+        })
+        .catch((error) => console.log(error));
     },
-    template: `
+    clearForm: function () {
+      this.form = {
+        name: "",
+        email: "",
+        topic: "",
+      };
+    },
+  },
+  template: `
       <div class="form">
         <hr class="form__line"/>
-        <img src="src/icons/clock.svg" alt="clock-icon" class="form__icon" />
+        <img src="src/icons/no-gradient-icons/time.svg" alt="clock-icon" class="form__icon" />
         <div class="form__info">30 minut</div>
-        <img src="src/icons/hands.svg" alt="hands-icon" class="form__icon" />
+        <img src="src/icons/no-gradient-icons/hands.svg" alt="hands-icon" class="form__icon" />
         <div class="form__info">Online/osobně</div>
         <p class="form__description">
           Pokud cítíš, že bychom si “sedli”,tak mi napiš. Do 48h se Ti ozvu a
@@ -89,5 +89,5 @@ export default {
               <Notification v-if="showNotification"></Notification>
             </transition>
       </div>
-    `
-  }
+    `,
+};

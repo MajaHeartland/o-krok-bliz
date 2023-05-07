@@ -35,7 +35,7 @@
 
 .hero-button {
   max-width: 310px;
-  background: linear-gradient(90deg, #ffd480 0%, #fabd45 100%);
+  background: var(--yellow-light);
   border-radius: 26px;
   color: var(--secondary-default);
   margin-bottom: 26px;
@@ -188,7 +188,7 @@
     position: absolute;
     width: 520px;
     top: 20px;
-    left: 452px
+    left: 452px;
   }
 }
 

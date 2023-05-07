@@ -13,7 +13,7 @@
 }
 
 .form__icon {
-  width: 24px;
+  width: 24px !important;
 }
 
 .form__info {

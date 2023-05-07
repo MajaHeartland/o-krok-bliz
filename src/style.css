@@ -86,7 +86,7 @@ button {
 .blue-button {
   border-radius: 26px;
   margin-top: 24px;
-  background: linear-gradient(90deg, #00adad 0%, #008080 100%);
+  background: var(--primary-default);
 }
 
 @media (min-width: 744px) {
