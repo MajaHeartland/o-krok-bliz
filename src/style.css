@@ -9,6 +9,7 @@
   --secondary-ultralight: #def0f0;
   --primary-verylight: #c0ebeb;
   --yellow-light: #fabd45;
+  --yellow-very-light: #ffd480;
   --primary-dark: #005656;
 }
 /***** defaults *****/
@@ -86,7 +87,7 @@ button {
 .blue-button {
   border-radius: 26px;
   margin-top: 24px;
-  background: var(--primary-default);
+  background: var(--primary-dark);
 }
 
 @media (min-width: 744px) {
