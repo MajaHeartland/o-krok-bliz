@@ -50,6 +50,8 @@
   .zustanme-v-kontaktu__links-container {
     display: flex;
     justify-content: space-around;
+    position: relative;
+    left: -30px;
   }
 }
 .zustanme-v-kontaktu__linkedin,
