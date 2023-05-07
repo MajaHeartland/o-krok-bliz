@@ -35,7 +35,7 @@
 
 .hero-button {
   max-width: 310px;
-  background: var(--yellow-very-light);
+  background: var(--yellow-light);
   border-radius: 26px;
   color: var(--secondary-default);
   margin-bottom: 26px;
