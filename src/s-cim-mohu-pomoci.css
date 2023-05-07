@@ -70,6 +70,7 @@
   .s-cim-mohu-pomoci .container-background {
     margin: 24px auto;
     padding: 32px;
+    min-height: 400px;
   }
   .s-cim-mohu-pomoci__accordion-item {
     flex-basis: 100%;
