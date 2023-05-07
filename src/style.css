@@ -83,17 +83,20 @@ button {
   width: 90vw;
 }
 
-@media (min-width: 744px) {
-  button {
-    padding: 20px 0;
-  }
-}
 .blue-button {
   border-radius: 26px;
   margin-top: 24px;
   background: linear-gradient(90deg, #00adad 0%, #008080 100%);
 }
 
+@media (min-width: 744px) {
+  button {
+    padding: 20px 0;
+  }
+  .blue-button {
+    border-radius: 40px;
+  }
+}
 /* lines */
 
 .line {
