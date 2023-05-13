@@ -53,6 +53,7 @@
 .modal-form input::placeholder,
 textarea.form__input {
   font-family: "Inter", sans-serif;
+  color: var(--secondary-very-light);
 }
 .form__footer {
   display: flex;
