@@ -87,7 +87,7 @@ button {
 .blue-button {
   border-radius: 26px;
   margin-top: 24px;
-  background: var(--primary-dark);
+  background: var(--primary-default);
 }
 
 @media (min-width: 744px) {
