@@ -805,12 +805,17 @@
           },
         });
       });
+      const rightIcon =
+        '<img src="./src/icons/no-gradient-icons/carousel-arrow-right.svg" class="carousel-right-arrow" alt="right carousel arrow">';
+      const leftIcon =
+        '<img src="./src/icons/no-gradient-icons/carousel-arrow-left.svg" class="carousel-left-arrow" alt="left carousel arrow">';
       $(document).ready(function () {
         $(".second-carousel").owlCarousel({
           loop: false,
           margin: 16,
           dots: true,
           dotsEach: 1,
+          navText: [leftIcon, rightIcon],
           responsive: {
             0: {
               items: 1,
@@ -853,13 +858,12 @@
               stagePadding: 280,
             },
             1024: {
-              items: 2,
-              stagePadding: 200,
-              // center: true,
+              items: 3,
+              nav: true,
             },
             1440: {
-              items: 3,
-              stagePadding: 200,
+              items: 4,
+              nav: true,
             },
           },
         });
