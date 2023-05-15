@@ -141,6 +141,7 @@ button {
 .owl-dots {
   display: flex !important;
   justify-content: center;
+  margin: 1em 0;
   gap: 1em;
 }
 
