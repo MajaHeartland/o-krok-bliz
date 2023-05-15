@@ -168,6 +168,10 @@ button {
     padding-left: 0 !important;
   }
 
+  .zkusenosti .owl-nav button {
+    width: 100%;
+  }
+
   .carousel-right-arrow,
   .carousel-left-arrow {
     padding: 20px 25px;
