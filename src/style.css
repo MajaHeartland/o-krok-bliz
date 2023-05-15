@@ -141,7 +141,6 @@ button {
 .owl-dots {
   display: flex !important;
   justify-content: center;
-  margin: 2em 0;
   gap: 1em;
 }
 
@@ -156,7 +155,7 @@ button {
 
 @media (min-width: 1024px) {
   .zkusenosti {
-    max-width: 870px;
+    max-width: 880px;
     margin: 0 auto;
   }
 
@@ -166,6 +165,7 @@ button {
 
   .owl-carousel .owl-stage {
     padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .zkusenosti .owl-nav button {
@@ -183,11 +183,20 @@ button {
   }
 
   .carousel-right-arrow {
-    right: -42px;
+    right: -2em;
   }
 
   .carousel-left-arrow {
-    left: -42px;
+    left: -2em;
+  }
+}
+@media (min-width: 1280px) {
+  .carousel-right-arrow {
+    right: -8em;
+  }
+
+  .carousel-left-arrow {
+    left: -8em;
   }
 }
 
@@ -195,6 +204,23 @@ button {
   .zkusenosti {
     max-width: 1170px;
     margin: 0 auto;
+  }
+
+  .carousel-right-arrow {
+    right: -3em;
+  }
+
+  .carousel-left-arrow {
+    left: -3em;
+  }
+}
+@media (min-width: 1680px) {
+  .carousel-right-arrow {
+    right: -6em;
+  }
+
+  .carousel-left-arrow {
+    left: -6em;
   }
 }
 
