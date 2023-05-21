@@ -17,6 +17,16 @@ export default {
         const htmlEl = document.documentElement;
         htmlEl.classList.remove('modal__screen-lock');
       },
+      closeModalAfterFormSubmision: function() {
+        this.$emit('closeModal', 'submit')
+        const htmlEl = document.documentElement;
+        htmlEl.classList.remove('modal__screen-lock');
+      },
+      closeModalAfterFormSubmisionWithError: function() {
+        this.$emit('closeModal', 'error')
+        const htmlEl = document.documentElement;
+        htmlEl.classList.remove('modal__screen-lock');
+      },
       clickOutside: function(event) {
         const eventTarget = event.srcElement
         if (eventTarget && Array.from(eventTarget.classList).includes('modal__backdrop')) {
@@ -42,7 +52,12 @@ export default {
               </h2>
             </div>
             <div class="modal__body">
-              <Form :is-modal="true" @form-submit="closeModal"></Form>
+              <Form 
+                :is-modal="true"
+                @form-error="closeModalAfterFormSubmisionWithError" 
+                @form-submit="closeModalAfterFormSubmision" 
+                :enable-notification="false" >
+            </Form>
             </div>
           </div>  
           </transition>
