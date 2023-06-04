@@ -147,7 +147,7 @@ export default {
                   v-model="form.name"
                   type="text"
                   name="name"
-                  placeholder="Jméno a příjmení"
+                  placeholder="Vyplň prosím Tvoje jméno a příjmení"
                   required
                   class="form__input"
                   @input="formTouchedFields.name = true"
@@ -156,7 +156,7 @@ export default {
               </div>
 
               <div class="form__item-wrapper">
-                  <input v-model="form.email" type="email" name="email" placeholder="E-mail" required class="form__input" @input="formTouchedFields.email = true" />
+                  <input v-model="form.email" type="email" name="email" placeholder="Vyplň prosím Tvůj e-mail" required class="form__input" @input="formTouchedFields.email = true" />
                 <span v-if="formTouchedFields.email && !isEmailFilled" class="form__error"> Email musí být vyplněn </span>
                 <span v-else-if="formTouchedFields.email && !isEmailValid" class="form__error"> Email není zadán ve správném formátu </span>
               </div>
@@ -166,7 +166,8 @@ export default {
                   v-model="form.topic"
                   type="textarea"
                   name="topic"
-                  placeholder="Co bys chtěl/a probrat?"
+                  placeholder="Napiš mi prosím krátkou zprávu
+"
                   required
                   class="form__input form__input--long"
                   @input="formTouchedFields.topic = true"
