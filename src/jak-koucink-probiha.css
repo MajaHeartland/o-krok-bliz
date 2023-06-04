@@ -60,3 +60,10 @@
     width: 80% !important;
   }
 }
+
+@media (min-width: 1430px) {
+  .jak-koucink-probiha {
+    max-width: 1430px;
+    margin: 0 auto;
+  }
+}

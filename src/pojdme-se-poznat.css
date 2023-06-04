@@ -109,6 +109,12 @@
     width: 80%;
   }
 }
+@media (min-width: 1430px) {
+  .pojdme-se-poznat {
+    max-width: 1430px;
+    margin: 0 auto !important;
+  }
+}
 @media (min-width: 1440px) {
   .pojdme-se-poznat {
     margin: auto 30px;

@@ -79,3 +79,10 @@
     padding: 24px 20px;
   }
 }
+
+@media (min-width: 1430px) {
+  .s-cim-mohu-pomoci {
+    max-width: 1430px;
+    margin: 0 auto;
+  }
+}

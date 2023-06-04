@@ -28,3 +28,10 @@
     padding: 56px 60px 0;
   }
 }
+
+@media (min-width: 1430px) {
+  .proc-zkusit-koucink {
+    max-width: 1430px;
+    margin: 0 auto;
+  }
+}
