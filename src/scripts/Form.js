@@ -6,7 +6,7 @@ export default {
     enableNotification: {
       type: Boolean,
       default: true,
-    }
+    },
   },
   components: {
     Notification,
@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       showNotification: false,
-      errors:[],
+      errors: [],
       form: {
         name: "",
         email: "",
@@ -23,53 +23,55 @@ export default {
       formTouchedFields: {
         name: false,
         email: false,
-        topic: false
-      }
+        topic: false,
+      },
     };
   },
   methods: {
     submitForm: async function () {
-      if(!this.isFormValid){
+      if (!this.isFormValid) {
         this.formTouchedFields = {
           name: true,
           email: true,
-          topic: true
-        }
+          topic: true,
+        };
         this.$nextTick(() => {
-          this.focusFirstErrorInput()
+          this.focusFirstErrorInput();
         });
-        return
+        return;
       }
       const { name, email, topic } = this.form;
 
       try {
-        await fetch("https://formsubmit.co/ajax/5dd9c70e831165c738d2000305c22722", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            topic,
-          }),
-        });
+        await fetch(
+          "https://formsubmit.co/ajax/5dd9c70e831165c738d2000305c22722",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              name,
+              email,
+              topic,
+            }),
+          }
+        );
 
         this.$emit("formSubmit");
 
-          if(this.enableNotification){
-            this.showNotification = true;
-            setTimeout(() => {
-              this.showNotification = false;
-            }, 2500);
-          }
-          
-        this.clearForm();
+        if (this.enableNotification) {
+          this.showNotification = true;
+          setTimeout(() => {
+            this.showNotification = false;
+          }, 2500);
+        }
 
+        this.clearForm();
       } catch (error) {
         this.$emit("formError");
-        console.log('There was an error', error);
+        console.log("There was an error", error);
       }
     },
     clearForm: function () {
@@ -81,49 +83,52 @@ export default {
       this.formTouchedFields = {
         name: false,
         email: false,
-        topic: false
-      }
+        topic: false,
+      };
     },
-    checkForm:function() {
+    checkForm: function () {
       this.errors = [];
-      if(!this.form.name) this.errors.push("Name required.");
-      if(!this.form.email) {
+      if (!this.form.name) this.errors.push("Name required.");
+      if (!this.form.email) {
         this.errors.push("Email required.");
-      } else if(!this.validEmail(this.form.email)) {
-        this.errors.push("Valid email required.");        
+      } else if (!this.validEmail(this.form.email)) {
+        this.errors.push("Valid email required.");
       }
-      if(!this.errors.length) return true;
+      if (!this.errors.length) return true;
     },
-    focusFirstErrorInput:function() {
-      const errorMessageEl = document.querySelector('.form__error')
+    focusFirstErrorInput: function () {
+      const errorMessageEl = document.querySelector(".form__error");
       if (errorMessageEl) {
-        errorMessageEl.previousElementSibling.focus()
+        errorMessageEl.previousElementSibling.focus();
       }
     },
-    validEmail: function(email) {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    validEmail: function (email) {
+      var re =
+        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return re.test(email);
-    }
+    },
   },
   computed: {
     isNameValid() {
-      return this.form.name.length
+      return this.form.name.length;
     },
     isEmailFilled() {
-      return this.form.email.length
+      return this.form.email.length;
     },
     isEmailValid() {
-      return this.validEmail(this.form.email)
+      return this.validEmail(this.form.email);
     },
     isTopicValid() {
-      return this.form.topic.length
+      return this.form.topic.length;
     },
     isFormValid() {
-      return !!(this.isNameValid 
-             && this.isEmailFilled
-             && this.isEmailValid
-             && this.isTopicValid)
-    }
+      return !!(
+        this.isNameValid &&
+        this.isEmailFilled &&
+        this.isEmailValid &&
+        this.isTopicValid
+      );
+    },
   },
   template: `
       <div class="form">
@@ -133,7 +138,7 @@ export default {
         <img src="src/icons/no-gradient-icons/hands.svg" alt="hands-icon" class="form__icon" />
         <div class="form__info">Online/osobně</div>
         <p class="form__description">
-          Pokud cítíš, že bychom si „sedli“,tak mi napiš. Do 48 h se Ti ozvu a
+          Pokud cítíš, že bychom si „sedli“, tak mi napiš. Do 48 h se Ti ozvu a
           domluvíme se na termínu.
         </p>
             <form class="modal-form">
