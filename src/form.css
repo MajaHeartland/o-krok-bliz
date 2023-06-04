@@ -63,7 +63,8 @@
 
 .form__input--long::placeholder,
 .modal-form input::placeholder,
-textarea.form__input {
+textarea.form__input,
+form input {
   font-family: "Inter", sans-serif;
   color: var(--secondary-very-light);
 }
@@ -84,5 +85,5 @@ textarea.form__input {
 }
 
 .form__submit--disabled {
-  opacity: 0.4
+  opacity: 0.4;
 }
