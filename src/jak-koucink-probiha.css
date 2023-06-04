@@ -42,8 +42,6 @@
 @media (min-width: 1280px) {
   .jak-koucink-probiha .owl-stage {
     padding: 0 40px 20px !important;
-    width: 90% !important;
-    margin: 0 auto;
   }
 }
 
@@ -55,15 +53,9 @@
   }
 }
 
-@media (min-width: 1680px) {
-  .jak-koucink-probiha .owl-stage {
-    width: 80% !important;
-  }
-}
-
 @media (min-width: 1430px) {
   .jak-koucink-probiha {
     max-width: 1430px;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
 }
