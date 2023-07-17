@@ -251,6 +251,7 @@ button {
   line-height: 133%;
   font-weight: 400;
   overflow: hidden;
+  max-height: 250px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 8;

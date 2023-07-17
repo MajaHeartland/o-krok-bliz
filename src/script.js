@@ -41,29 +41,37 @@ function toggleDropdown() {
 items.forEach((item) => item.addEventListener("click", toggleDropdown));
 
 
-// carousel
+window.addEventListener("DOMContentLoaded", (event) => {
+  handleCarouselPreviewText()
+});
+
 const reviewsList = Array.from(document.getElementsByClassName('item-carousel'))
 const originalReviewTextArr = []
 
-reviewsList.forEach((el, index) => {
+// carousel
+function handleCarouselPreviewText() {
+  reviewsList.forEach((el, index) => {
   const reviewContent = el.getElementsByClassName('item__carousel-review')[0]
   originalReviewTextArr.push(reviewContent.textContent)
-  const text = reviewContent.textContent?.split(" ").filter(el => el.length)
-  const str = reviewContent.textContent.split(" ").filter(el => el.length).slice(0, 50).join(" ") 
+  
+  setTimeout(() => {
+      const isTextClamped = elm => elm.scrollHeight > elm.clientHeight
 
-  if (text.length < 50) {
-    return
-  } else {
-    reviewContent.textContent = str + '...'
-  }
+      if (!isTextClamped(reviewContent)) {
+        return
+      } else {
+        const newEl = document.createElement('span')
+        newEl.textContent = 'Zobrazit více'
+        newEl.setAttribute('class', 'item__show-more')
+        newEl.setAttribute('id', index)
+        newEl.addEventListener("click", (e) => emitCustomEventFromClickReview(e, index))
+        el.appendChild(newEl)
+        reviewContent.style.height = '200px';
+      }
+    }, 1000);
+  })
+}
 
-  const newEl = document.createElement('span')
-  newEl.textContent = 'Zobrazit více'
-  newEl.setAttribute('class', 'item__show-more')
-  newEl.setAttribute('id', index)
-  newEl.addEventListener("click", (e) => emitCustomEventFromClickReview(e, index))
-  el.appendChild(newEl)
-})
 
 function emitCustomEventFromClickReview(e, index) {
   const elByIndex = reviewsList[e.target.id]
