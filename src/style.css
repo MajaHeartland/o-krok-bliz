@@ -57,6 +57,13 @@ h3 {
   padding: 0 16px;
 }
 
+@media (min-width: 744px) {
+  .mobile-h2 {
+    font-size: 34px;
+    padding: 0 16px;
+  }
+}
+
 h3 {
   font-size: 1.25rem;
 }
@@ -88,7 +95,6 @@ button {
 
 .blue-button {
   border-radius: 26px;
-  margin-top: 24px;
   background: var(--primary-default);
 }
 
@@ -106,7 +112,7 @@ button {
   background: var(--yellow-light);
   border: none;
   height: 1px;
-  margin: 32px auto;
+  margin: 40px auto;
 }
 
 /* carousel */
@@ -152,7 +158,8 @@ button {
 
 /* sections */
 .zkusenosti {
-  padding-top: 56px;
+  padding-top: 112px;
+  padding-bottom: 56px;
 }
 
 @media (min-width: 1024px) {
@@ -244,6 +251,10 @@ button {
   font-weight: 700;
   line-height: 125%;
   font-size: 1.25rem;
+}
+
+.item__carousel-subtitle{
+  height: 40px;
 }
 
 .zkusenosti .item__carousel-review {

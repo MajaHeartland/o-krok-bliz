@@ -1,5 +1,13 @@
 .jak-koucink-probiha {
-  padding-top: 56px;
+  padding-top: 36px;
+}
+
+@media (min-width: 774px) {
+  .jak-koucink-probiha {
+    padding-top: 82px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .jak-koucink-probiha__carousel-heading {
@@ -12,6 +20,11 @@
   color: var(--secondary-default);
   font-size: 0.9375rem;
   line-height: 133%;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
 }
 
 .jak-koucink-probiha .owl-stage {

@@ -15,9 +15,11 @@ nav {
 }
 
 nav ul {
+  display: flex;
+  align-items: center;
   margin-top: 5px;
   padding: 0;
-  display: flex;
+  gap: 32px;
 }
 
 nav ul li {
@@ -26,7 +28,6 @@ nav ul li {
 
 nav ul li a {
   color: #fff;
-  padding: 0 10px;
   font-size: 1.1em;
   text-decoration: none;
   color: var(--primary-default) !important;
@@ -47,6 +48,11 @@ nav.large-screens {
   background-color: var(--primary-default);
   border-radius: 26px;
   padding: 6px 24px;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
 }
 .navigation-mobile {
   margin: 25px auto 27px;
@@ -118,10 +124,18 @@ nav.large-screens {
     display: inline-block;
     margin-top: 5px;
   }
+
+  .navigation {
+    margin: 0 auto;
+    height: 148px;
+    padding-top: 48px;
+  }
 }
 
 @media (min-width: 1400px) {
   .navigation > div {
     max-width: 1400px;
+    margin: 0 auto;
+        padding: 0 30px;
   }
 }

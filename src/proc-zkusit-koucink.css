@@ -1,5 +1,6 @@
 .proc-zkusit-koucink {
   padding: 56px 16px 0;
+  padding-bottom: 56px;
   background: linear-gradient(180deg, #ffffff 0%, #e1f8f8 47.4%, #ffffff 100%);
 }
 
@@ -15,6 +16,12 @@
   margin-bottom: 32px;
 }
 
+@media (min-width: 1024px) {
+  .proc-zkusit-koucink .mobile-body {
+    margin-bottom: 50px;
+  }
+}
+
 .proc-zkusit-koucink .flexbox {
   justify-content: space-between;
 }
@@ -26,6 +33,7 @@
   .proc-zkusit-koucink {
     background-image: none;
     padding: 56px 60px 0;
+    padding-bottom: 112px;
   }
 }
 

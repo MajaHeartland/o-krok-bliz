@@ -95,6 +95,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  height: 400px;
 }
 .owl-carousel.owl-grab {
   cursor: move;
@@ -181,4 +182,14 @@
   z-index: 1;
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .second-carousel .owl-dots {
+    margin-top: 32px;
+  }
+}
+
+.hide-arrow {
+  display: none;
 }

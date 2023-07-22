@@ -65,10 +65,3 @@
 .notification-leave-to {
   opacity: 0;
 }
-
-@media (min-width: 1300px) {
-  .navigation {
-    max-width: 1430px;
-    margin: 0 auto;
-  }
-}

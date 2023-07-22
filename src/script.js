@@ -12,7 +12,7 @@ function show_hide() {
     fading.classList.add("closed");
   }
 }
-rolloutButton.addEventListener("click", show_hide);
+// rolloutButton.addEventListener("click", show_hide);
 
 /*  toggle navbar visibility */
 let prevScrollpos = window.pageYOffset;
@@ -23,7 +23,7 @@ window.onscroll = function () {
     if (prevScrollpos > currentScrollPos) {
       navbar.style.top = "0";
     } else {
-      navbar.style.top = "-100px";
+      navbar.style.top = "-148px";
     }
   } else {
     navbar.classList.remove("large-screens");
@@ -66,7 +66,7 @@ function handleCarouselPreviewText() {
         newEl.setAttribute('id', index)
         newEl.addEventListener("click", (e) => emitCustomEventFromClickReview(e, index))
         el.appendChild(newEl)
-        reviewContent.style.height = '200px';
+        // reviewContent.style.height = '200px';
       }
     }, 1000);
   })

@@ -10,6 +10,11 @@
   margin-top: 40px;
 }
 
+.pojdme-se-poznat .cta-button{
+  display: flex;
+  margin-top: 40px;
+}
+
 .poznej-mne-vic-button {
   border-radius: 26px;
   margin-top: 24px;
@@ -18,6 +23,7 @@
 
 .pojdme-se-poznat__text-container {
   margin: 40px 24px auto;
+  margin-bottom: 40px;
 }
 
 .pojdme-se-poznat .mobile-h2 {
@@ -28,6 +34,7 @@
   text-align: left;
   font-size: 1.0625rem;
   line-height: 176%;
+  max-width: 720px;
 }
 .pojdme-se-poznat .fade-out-text.closed {
   background: linear-gradient(90deg, #212529, #fff);
@@ -51,7 +58,7 @@
   }
 
   .pojdme-se-poznat img {
-    width: 70%;
+    width: 468px;
   }
 
   .pojdme-se-poznat__tablet-background {
@@ -79,6 +86,10 @@
 }
 
 @media (min-width: 1024px) {
+  .pojdme-se-poznat {
+    padding-top: 112px;
+  }
+
   .pojdme-se-poznat__tablet-background {
     margin-top: 50px;
   }
@@ -106,7 +117,7 @@
   }
   .pojdme-se-poznat__image-container img {
     transform: translate(0, -10%);
-    width: 80%;
+    width: 468px;
   }
 }
 @media (min-width: 1430px) {

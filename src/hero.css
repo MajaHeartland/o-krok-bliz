@@ -1,6 +1,5 @@
 /* hero section */
 .hero {
-  margin-bottom: 36px;
   overflow: hidden;
 }
 
@@ -43,6 +42,8 @@
 
 .hero-note-mobile {
   padding: 24px;
+  margin-bottom: 0;
+  padding-bottom: 36px;
 }
 
 @media (max-width: 744px) {
@@ -85,7 +86,6 @@
     position: relative;
     height: 715px;
     overflow: hidden;
-    margin-bottom: 115px;
   }
 
   .hero-text-wrapper {
@@ -197,7 +197,7 @@
     max-width: 1430px;
     margin: 0 auto;
     margin-top: -25px;
-    margin-bottom: 115px;
+    margin-bottom: 10px;
   }
 
   .hero-text-wrapper {

@@ -289,7 +289,7 @@
             Úvodní setkání zdarma
           </h3>
           <p class="jak-koucink-probiha__carousel-text">
-            V rámci 30 minut si ráda vyslechnu Tvoje očekávání, téma a také
+            V rámci 30 minut on-line setkání si ráda vyslechnu Tvoje očekávání, téma a také
             zjistíme, zda si „sedneme“. Koučovací vztah je o důvěře a o tom, aby
             se obě strany cítily dobře.
           </p>
@@ -300,8 +300,7 @@
           </h3>
           <p class="jak-koucink-probiha__carousel-text">
             Těším se na naše první sezení. Sejdeme se on-line nebo osobně na 60
-            minut a blíže rozebereme Tvoje téma. Pomocí nástrojů a našeho
-            rozhovoru si najdeš odpovědi na Tvoje otázky a stanovíš si akční
+            minut a blíže rozebereme Tvoje téma. Pomocí našeho rozhovoru a různých koučovacích nástrojů si najdeš odpovědi na Tvoje otázky a stanovíš si akční
             kroky.
           </p>
         </div>
@@ -347,20 +346,16 @@
               <br />
               Vždycky jsem měla blízko k lidem a rozvoji, tak jsem nejprve
               studovala HR a poté na magisterském studiu projektový management
-              inovací, kde mne nadchnul agilní způsob řízení<span
-                class="fade-out-text closed"
-                id="fade-out-text"
-              >
+              inovací, kde mne nadchnul agilní způsob řízení
+              <span>
                 projektů. A to mne dovedlo až k mé současné práci UX Researchera
                 a Designéra.</span
               >
               <br />
-              <br /><span class="rollout-text bigger-screen" id="rollout-text">
-                Jenže mi k naplněnému životu stále něco chybělo. Díky koučování
-                jsem si znovu zvědomila, že mne více naplňuje napomáhat v
-                rozvoji lidem, nežli rozvíjet produkt (i když ten je taky pro
-                lidi, že). A tak jsem absolbovala certifikovaný koučovací výcvik
-                u
+              <br /><span class="bigger-screen">
+                Jenže mi k naplněnému životu stále něco chybělo. Díky koučování jsem si znovu zvědomila, že mne více naplňuje napomáhat
+                v rozvoji lidem, nežli rozvíjet produkt (i když ten je taky pro lidi, že). A tak jsem absolbovala certifikovaný
+                koučovací výcvik u
                 <a
                   href="https://www.koucinkcentrum.cz/jiri-kuncar"
                   target="_blank"
@@ -391,16 +386,13 @@
                 zdarma.</span
               >
             </p>
+            <div id="app-bottom" class="cta-button">
+              <button class="blue-button" id="trigger-modal">
+                Pojďme se potkat!
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <button class="poznej-mne-vic-button" id="poznej-me-vic-button">
-        Poznej mne víc
-      </button>
-      <div id="app-bottom">
-        <button class="blue-button" id="trigger-modal">
-          Pojďme se potkat!
-        </button>
       </div>
     </section>
     <section class="zkusenosti">
@@ -562,8 +554,7 @@
               <div class="mobile-body">
                 <p class="otazky__content-description">
                   Hodina koučování Tě vyjde na 1 200 Kč. Pokud se po prvním
-                  koučování domluvíme na více setkáních, cena za hodinu je
-                  nižší.
+                  koučování domluvíme na více setkáních, cena za hodinu je 1 000 Kč.
                 </p>
               </div>
             </div>
@@ -759,7 +750,7 @@
             },
             350: {
               items: 1,
-              stagePadding: 60,
+              stagePadding: 75,
             },
             450: {
               items: 1,
@@ -816,6 +807,8 @@
         '<img src="./src/icons/no-gradient-icons/carousel-arrow-left.svg" class="carousel-left-arrow" alt="left carousel arrow">';
       $(document).ready(function () {
         $(".second-carousel").owlCarousel({
+          onInitialized: hideArrows,
+          onChanged: hideArrows,
           loop: false,
           margin: 16,
           dots: true,
@@ -832,7 +825,7 @@
             },
             350: {
               items: 1,
-              stagePadding: 80,
+              stagePadding: 75,
             },
             450: {
               items: 1,
@@ -873,6 +866,27 @@
           },
         });
       });
+
+      function hideArrows(event) {
+        const sc = document.querySelector('.second-carousel')
+        const dots = sc.querySelectorAll('.owl-dot')
+        const activeIndex = event.item.index
+        const arrowLeft = document.querySelector('.carousel-left-arrow')
+        const arrowRight = document.querySelector('.carousel-right-arrow')
+
+        if (arrowLeft) {
+          activeIndex === 0
+            ? arrowLeft.classList.add('hide-arrow')
+            : arrowLeft.classList.remove('hide-arrow')
+        }
+
+        if(arrowRight) {
+          activeIndex === dots?.length - 1
+            ? arrowRight.classList.add('hide-arrow')
+            : arrowRight.classList.remove('hide-arrow')
+        }
+        
+    }
     </script>
     <script type="module" src="./src/scripts/App.js"></script>
     <!-- 15-zkusenoti-modaly -->

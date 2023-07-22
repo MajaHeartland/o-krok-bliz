@@ -51,10 +51,16 @@
     display: flex;
     justify-content: space-around;
     position: relative;
-    left: -30px;
   }
 }
 .zustanme-v-kontaktu__linkedin,
 .zustanme-v-kontaktu__instagram {
   margin: 0;
+}
+
+
+.zustanme-v-kontaktu__links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
