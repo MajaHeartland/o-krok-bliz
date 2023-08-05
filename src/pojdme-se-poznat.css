@@ -15,6 +15,13 @@
   margin-top: 40px;
 }
 
+@media (max-width: 1024px) {
+  .pojdme-se-poznat .cta-button {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+}
+
 .poznej-mne-vic-button {
   border-radius: 26px;
   margin-top: 24px;

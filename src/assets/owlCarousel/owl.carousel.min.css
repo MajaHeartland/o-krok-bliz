@@ -95,7 +95,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 400px;
+  /* height: 430px; */
 }
 .owl-carousel.owl-grab {
   cursor: move;
