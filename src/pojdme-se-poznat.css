@@ -200,6 +200,14 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .icf-badge {
+
+    bottom: 130px;
+    left: 50px;
+  }
+}
+
 .pojdme-se-poznat__image-container {
   position: relative;
 }
