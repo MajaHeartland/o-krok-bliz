@@ -52,7 +52,7 @@ const originalReviewTextArr = []
 function handleCarouselPreviewText() {
   reviewsList.forEach((el, index) => {
   const reviewContent = el.getElementsByClassName('item__carousel-review')[0]
-  originalReviewTextArr.push(reviewContent.textContent)
+  originalReviewTextArr.push(reviewContent.innerHTML)
   
   setTimeout(() => {
       const isTextClamped = elm => elm.scrollHeight > elm.clientHeight

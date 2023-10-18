@@ -44,8 +44,7 @@ export default {
             </div>       
 
             <div class="modal__body">
-                <p class="modal-review__text">
-                    {{review.text}}
+                <p class="modal-review__text" v-html="review.text"> 
                 </p>
             </div>
           
